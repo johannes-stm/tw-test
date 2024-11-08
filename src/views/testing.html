@@ -10,20 +10,86 @@
 
     <!-- Header -->
     <header>
-      <nav class="container flex items-center">
-        <!-- Logo -->
-        <div class="py-1"><img src="../../public/images/logo.png.png" alt="Logo Einzigware" class="h-20 w-auto"/></div>
-        
-        <!-- Navigation + Aktion -->
-        <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase">
-          <li class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown">Produkte</li>
-          <li class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown">Verkäufer</li>
-          <li class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown">Über Uns</li>
-          <li class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown">Kontakt</li>
-          <button type="button" class="bg-wm-brown text-white border-wm-brown border-2 box-border rounded-full px-4 py-1.5 uppercase">Verkäufer werden</button>
-          <button type="button" class="bg-wm-beige text-wm-black border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase">Anmelden</button>
-          <button type="button" class="bg-wm-black text-wm-beige border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase">Registrieren</button>
-        </ul>
+      
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="md:flex md:items-center md:gap-12">
+            <a class="block text-teal-600" href="#">
+              <span class="sr-only">Home</span>
+              <div class="py-1"><img src="../../public/images/logo.png.png" alt="Logo Einzigware" class="h-20 w-auto"/></div>
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <nav aria-label="Global">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75"
+                    href="#"
+                  >
+                  Produkte
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75"
+                    href="#"
+                  >
+                    Verkäufer
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75"
+                    href="#"
+                  >
+                    Über uns 
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-gray-500 transition hover:text-gray-500/75"
+                    href="#"
+                  >
+                    Kontakt
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="sm:flex sm:gap-4">
+              <a
+                class="bg-wm-brown text-white border-wm-brown border-2 box-border rounded-full px-4 py-1.5 uppercase"
+                href="#"
+              >
+              Verkäufer werden
+              </a>
+
+              <div class="hidden sm:flex">
+                <a
+                  class="bg-wm-beige text-wm-black border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase"
+                  href="#"
+                >
+                  Anmelden
+                </a>
+              </div>
+
+              <div class="hidden sm:flex">
+                <a
+                  class="bg-wm-black text-wm-beige border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase"
+                  href="#"
+                >
+                  Registrieren
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </nav>
     </header>
 
