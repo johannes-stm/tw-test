@@ -12,7 +12,9 @@ module.exports = {
       }
     },
     fontFamily: {
-      Noto: ["Noto, sans-serif"],
+      sans: ['ui-sans-serif', 'system-ui'],
+      serif: ['ui-serif', 'Georgia'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
     },
     container: {
       center:true,
