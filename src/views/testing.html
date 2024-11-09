@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Einzigware</title>
+    <style>
+      /* Initially hide all iframes */
+      .content-section {
+        display: none;
+        width: 100%;
+        border: none;
+      }
+
+      /* Show only the targeted iframe */
+      #show-products:target ~ #products-frame,
+      #show-sellers:target ~ #sellers-frame,
+      #show-about-us:target ~ #about-us-frame,
+      #show-contact:target ~ #contact-frame,
+      #show-login:target ~ #login-frame,
+      #show-registration:target ~ #registration-frame,
+      #show-become-seller:target ~ #become-seller-frame {
+        display: block;
+      }
+
+      /* Ensure hero section displays by default */
+      #hero-section {
+        display: block;
+      }
+
+      /* Hide the hero section when any iframe is targeted */
+      #show-products:target ~ #hero-section,
+      #show-sellers:target ~ #hero-section,
+      #show-about-us:target ~ #hero-section,
+      #show-contact:target ~ #hero-section,
+      #show-login:target ~ #hero-section,
+      #show-registration:target ~ #hero-section,
+      #show-become-seller:target ~ #hero-section {
+        display: none;
+      }
+
+      /* Hide the anchor spans to prevent scrolling */
+      #show-products,
+      #show-sellers,
+      #show-about-us,
+      #show-contact,
+      #show-login,
+      #show-registration,
+      #show-become-seller {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <!-- Header -->
+  <header>
+    <div class="container px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="md:flex md:items-center md:gap-12">
+          <div class=><img
+            src="../../public/images/logo.png.png"
+            alt="Logo Einzigware"
+            class="h-16 w-auto"
+          />
+        </div>
+      </div>
+      <div class="hidden lg:block">
+        <nav>
+          <ul class="flex items-center gap-6">
+            <li>
+              <a
+                class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
+                href="#show-products"
+              >
+                Produkte
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
+                href="#show-sellers"
+              >
+                Verkäufer
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
+                href="#show-about-us"
+              >
+                Über uns
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
+                href="#show-contact"
+              >
+                Kontakt
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="sm:flex sm:gap-4">
+          <a
+            class="bg-wm-beige text-wm-black border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase"
+            href="#show-login"
+          >
+            Anmelden
+          </a>
+
+          <div class="hidden sm:flex">
+            <a
+              class="bg-wm-black text-wm-beige border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase"
+              href="#show-registration"
+            >
+              Registrieren
+            </a>
+          </div>
+
+          <div class="hidden sm:flex">
+            <a
+              class="bg-wm-brown text-white border-wm-brown border-2 box-border rounded-full px-4 py-1.5 uppercase"
+              href="#show-become-seller"
+            >
+              Verkäufer werden
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero-section" class="content-section">
+    <div class="bg-wm-beige bg-cover bg-center w-full"></div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero-section" class="content-section">
+      <div class="bg-wm-beige bg-cover bg-center w-full">
+        <!-- (Hero content goes here) -->
+      </div>
+    </section>
+
+    <!--Workaround to prevent scrolling directly into the frame-->
+    <span id="show-products"></span>
+    <span id="show-sellers"></span>
+    <span id="show-about-us"></span>
+    <span id="show-contact"></span>
+    <span id="show-login"></span>
+    <span id="show-registration"></span>
+    <span id="show-become-seller"></span>
+    <!-- Single iframe to Load Dynamic Content -->
+    <iframe
+      id="products-frame"
+      src="products.html"
+      class="content-section h-screen"
+    ></iframe>
+    <iframe
+      id="sellers-frame"
+      src="sellers.html"
+      class="content-section h-screen"
+    ></iframe>
+    <iframe
+      id="about-us-frame"
+      src="about-us.html"
+      class="content-section h-screen"
+    ></iframe>
+    <iframe
+      id="contact-frame"
+      src="contact.html"
+      class="content-section h-screen"
+    ></iframe>
+    <iframe
+      id="login-frame"
+      src="login.html"
+      class="content-section h-screen"
+    ></iframe>
+    <iframe
+      id="registration-frame"
+      src="registration.html"
+      class="content-section h-screen"
+    ></iframe>
+    <iframe
+      id="become-seller-frame"
+      src="become-seller.html"
+      class="content-section"
+    ></iframe>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-200 py-8">
+    <div
+      class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8"
+    >
+      <!-- Spalte 1: Logo -->
+      <div class="flex justify-center md:justify-start">
+        <img
+          src="../../public/images/logo_colored.png"
+          alt="Einzigware Logo"
+          class="w-48 h-48"
+        />
+      </div>
+
+      <!-- Spalte 2 und 3 mit Slogan oben -->
+      <div class="md:col-span-2 text-center md:text-left">
+        <p class="text-gray-400 mb-4">Wir bringen Heimat nach Hause</p>
+
+        <div class="grid grid-cols-2 gap-8">
+          <!-- Spalte 2: Hyperlinks -->
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-gray-400">Standorte</a>
+            <a href="#" class="hover:text-gray-400">Produkte</a>
+            <a href="#" class="hover:text-gray-400">Verkäufer werden</a>
+            <a href="#" class="hover:text-gray-400">Unsere Vision</a>
+          </div>
+
+          <!-- Spalte 3: Hyperlinks -->
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="hover:text-gray-400">Kontakt</a>
+            <a href="#" class="hover:text-gray-400">Versand</a>
+            <a href="#" class="hover:text-gray-400">Impressum</a>
+            <a href="#" class="hover:text-gray-400">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-8 text-gray-500">
+      <p>&copy; 2024 Einzigware</p>
+    </div>
+  </footer>
+</html>
