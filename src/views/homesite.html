@@ -6,14 +6,16 @@
   <link rel="stylesheet" href="../css/output.css" />
   <title>Einzigware</title>
 </head>
+
 <body>
-  <!-- Header -->
+  <!-- Header v1.0 -->
   <header>
     <div class="container px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <div class=><img src="../../public/images/logo.png.png" alt="Logo Einzigware" class="h-16 w-auto" />
-          </div>
+          <a href="/src/views/homesite.html">
+            <img src="../../public/images/logo.png" alt="Logo Einzigware" class="cursor-pointer h-16 w-auto transform transition duration-200 hover:scale-105 hover:rotate-1"/>
+          </a>
         </div>
         <div class="hidden lg:block">
           <nav>
@@ -24,21 +26,18 @@
                   Produkte
                 </a>
               </li>
-
               <li>
                 <a class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
                   href="#">
                   Verkäufer
                 </a>
               </li>
-
               <li>
                 <a class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
-                  href="#">
+                  href="/src/views/about.html">
                   Über uns
                 </a>
               </li>
-
               <li>
                 <a class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
                   href="#">
@@ -50,21 +49,18 @@
         </div>
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
-
-            <a class="bg-wm-beige text-wm-black border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase"
+            <a class="bg-wm-beige text-wm-black border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase transform hover:scale-105 transition duration-200"
               href="#">
               Anmelden
             </a>
-
             <div class="hidden sm:flex">
-              <a class="bg-wm-black text-wm-beige border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase"
+              <a class="bg-wm-black text-wm-beige border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase transform hover:scale-105 transition duration-200"
                 href="#">
                 Registrieren
               </a>
             </div>
-
             <div class="hidden sm:flex">
-              <a class="bg-wm-brown text-white border-wm-brown border-2 box-border rounded-full px-4 py-1.5 uppercase"
+              <a class="bg-wm-brown text-white border-wm-brown border-2 box-border rounded-full px-4 py-1.5 uppercase transform hover:scale-105 transition duration-200"
                 href="#">
                 Verkäufer werden
               </a>
@@ -73,8 +69,8 @@
         </div>
       </div>
     </div>
-    </nav>
   </header>
+
   <!-- Hero -->
   <section>
     <div class="bg-wm-beige">
@@ -102,13 +98,13 @@
       </div>
     </div>
   </section>
-  </body>
+</body>
 
   <!-- Standorte -->
   <section>
     <div class="container mx-auto py-8">
       <div class="text-center">
-        <h2 class="font-serif text-3xl">Standorte im Fokus</h2>
+        <h2 class="font-serif text-3xl">Regionen im Fokus</h2>
       </div>
     </div>
     <div class="container mx-auto px-4 pb-8">
@@ -117,17 +113,17 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         
         <!-- Box 1 -->
-        <div class="bg-wm-beige p-4 rounded-lg text-center transform transition duration-300 hover:scale-105">
-          <img src="../../public/images/homepage/schwarzwald.png" alt="Bild 1" class="w-full object-contain transform scale-90">
-          <div class="mt-4">
+        <div class="bg-wm-beige rounded-lg text-center transform transition duration-300 hover:scale-105">
+          <img src="../../public/images/homepage/schwarzwald.png" alt="Bild 1" class="w-full object-contain">
+          <div class="my-4">
             <h3 class="font-bold">Baden-Württemberg</h3>
             <p class="text-gray-600">Schwarzwald</p>
           </div>
         </div>
     
         <!-- Box 2 -->
-        <div class="bg-wm-beige p-4 rounded-lg text-center transform transition duration-300 hover:scale-105">
-          <img src="../../public/images/homepage/schwarzwald.png" alt="Bild 1" class="w-full object-contain transform scale-90">
+        <div class="bg-wm-beige p-2 rounded-lg text-center transform transition duration-300 hover:scale-105">
+          <img src="../../public/images/homepage/schwarzwald.png" alt="Bild 1" class="w-full object-contain">
           <div class="mt-4">
             <h3 class="font-bold">Baden-Württemberg</h3>
             <p class="text-gray-600">Schwarzwald</p>
@@ -163,12 +159,92 @@
     
       </div>
     </div>
-    
   </section>
+
   <!-- Produkte -->
+  <section>
+    <div class="container mx-auto pb-8">
+      <div>
+        <h2 class="font-serif text-3xl text-center">Aktuelle Produkte im Trend</h2>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 overflow-x-auto mx-auto px-4 p-8">
+
+        <!-- Artikel 1 -->
+        <div>
+          <div>
+            <img src="../../public/images/homepage/senf.jpg" alt="" class="w-72 object-cover">
+          </div>
+          <div>
+            <p class="font-bold">Tannen-Honig</p>
+            <p>Tannenimkerei Schwarzwald</p>
+            <p class="mt-4 font-bold">ab 4,99€</p>
+          </div>
+        </div>
+        <!-- Artikel 1 -->
+        <div>
+          <div>
+            <img src="../../public/images/homepage/senf.jpg" alt="" class="w-72 object-cover">
+          </div>
+          <div>
+            <p class="font-bold">Tannen-Honig</p>
+            <p>Tannenimkerei Schwarzwald</p>
+            <p class="mt-4 font-bold">ab 4,99€</p>
+          </div>
+        </div>
+        <!-- Artikel 1 -->
+        <div>
+          <div>
+            <img src="../../public/images/homepage/senf.jpg" alt="" class="w-72 object-cover">
+          </div>
+          <div>
+            <p class="font-bold">Tannen-Honig</p>
+            <p>Tannenimkerei Schwarzwald</p>
+            <p class="mt-4 font-bold">ab 4,99€</p>
+          </div>
+        </div>
+        <!-- Artikel 1 -->
+        <div>
+          <div>
+            <img src="../../public/images/homepage/senf.jpg" alt="" class="w-72 object-cover">
+          </div>
+          <div>
+            <p class="font-bold">Tannen-Honig</p>
+            <p>Tannenimkerei Schwarzwald</p>
+            <p class="mt-4 font-bold">ab 4,99€</p>
+          </div>
+        </div>
+
+         <!-- Artikel 1 -->
+         <div>
+          <div>
+            <img src="../../public/images/homepage/senf.jpg" alt="" class="w-72 object-cover">
+          </div>
+          <div>
+            <p class="font-bold">Tannen-Honig</p>
+            <p>Tannenimkerei Schwarzwald</p>
+            <p class="mt-4 font-bold">ab 4,99€</p>
+          </div>
+        </div>
+
+         <!-- Artikel 1 -->
+         <div>
+          <div>
+            <img src="../../public/images/homepage/senf.jpg" alt="" class="w-72 object-cover">
+          </div>
+          <div>
+            <p class="font-bold">Tannen-Honig</p>
+            <p>Tannenimkerei Schwarzwald</p>
+            <p class="mt-4 font-bold">ab 4,99€</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-200 py-8">
+  <footer class="bg-wm-black text-gray-200 py-8">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8">
       <!-- Spalte 1: Logo -->
       <div class="flex justify-center md:justify-start">
