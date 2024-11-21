@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,7 +42,7 @@
 
       /* Hide the anchor spans to prevent scrolling */
       #show-products,
-      #show-sellers, 
+      #show-sellers,
       #show-about-us,
       #show-contact,
       #show-login,
@@ -58,79 +58,79 @@
     <div class="container px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <div class=><img
-            src="../../public/images/logo.png.png"
+          <img
+            src="../../public/images/logo.png"
             alt="Logo Einzigware"
             class="h-16 w-auto"
           />
         </div>
-      </div>
-      <div class="hidden lg:block">
-        <nav>
-          <ul class="flex items-center gap-6">
-            <li>
-              <a
-                class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
-                href="#show-products"
-              >
-                Produkte
-              </a>
-            </li>
+        <div class="hidden lg:block">
+          <nav>
+            <ul class="flex items-center gap-6">
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="#show-products"
+                >
+                  Produkte
+                </a>
+              </li>
 
-            <li>
-              <a
-                class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
-                href="#show-sellers"
-              >
-                Verkäufer
-              </a>
-            </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="#show-sellers"
+                >
+                  Verkäufer
+                </a>
+              </li>
 
-            <li>
-              <a
-                class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
-                href="#show-about-us"
-              >
-                Über uns
-              </a>
-            </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="#show-about-us"
+                >
+                  Über uns
+                </a>
+              </li>
 
-            <li>
-              <a
-                class="cursor-pointer hover:underline underline-offset-4 decoration-2 decoration-wm-darkbrown uppercase"
-                href="#show-contact"
-              >
-                Kontakt
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="flex items-center gap-4">
-        <div class="sm:flex sm:gap-4">
-          <a
-            class="bg-wm-beige text-wm-black border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase"
-            href="#show-login"
-          >
-            Anmelden
-          </a>
-
-          <div class="hidden sm:flex">
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="#show-contact"
+                >
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
             <a
-              class="bg-wm-black text-wm-beige border-wm-black border-2 box-border rounded-full px-4 py-1.5 uppercase"
-              href="#show-registration"
+              class="box-border rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black"
+              href="#show-login"
             >
-              Registrieren
+              Anmelden
             </a>
-          </div>
 
-          <div class="hidden sm:flex">
-            <a
-              class="bg-wm-brown text-white border-wm-brown border-2 box-border rounded-full px-4 py-1.5 uppercase"
-              href="#show-become-seller"
-            >
-              Verkäufer werden
-            </a>
+            <div class="hidden sm:flex">
+              <a
+                class="box-border rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige"
+                href="#show-registration"
+              >
+                Registrieren
+              </a>
+            </div>
+
+            <div class="hidden sm:flex">
+              <a
+                class="box-border rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white"
+                href="#show-become-seller"
+              >
+                Verkäufer werden
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -139,14 +139,14 @@
 
   <!-- Hero Section -->
   <section id="hero-section" class="content-section">
-    <div class="bg-wm-beige bg-cover bg-center w-full"></div>
+    <div class="w-full bg-wm-beige bg-cover bg-center"></div>
   </section>
 
   <!-- Main Content Area -->
   <main>
     <!-- Hero Section -->
     <section id="hero-section" class="content-section">
-      <div class="bg-wm-beige bg-cover bg-center w-full">
+      <div class="w-full bg-wm-beige bg-cover bg-center">
         <!-- (Hero content goes here) -->
       </div>
     </section>
@@ -197,22 +197,22 @@
     ></iframe>
   </main>
 
-  <footer class="bg-gray-900 text-gray-200 py-8">
+  <footer class="bg-gray-900 py-8 text-gray-200">
     <div
-      class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8"
+      class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
     >
       <!-- Spalte 1: Logo -->
       <div class="flex justify-center md:justify-start">
         <img
           src="../../public/images/logo_colored.png"
           alt="Einzigware Logo"
-          class="w-48 h-48"
+          class="h-48 w-48"
         />
       </div>
 
       <!-- Spalte 2 und 3 mit Slogan oben -->
-      <div class="md:col-span-2 text-center md:text-left">
-        <p class="text-gray-400 mb-4">Wir bringen Heimat nach Hause</p>
+      <div class="text-center md:col-span-2 md:text-left">
+        <p class="mb-4 text-gray-400">Wir bringen Heimat nach Hause</p>
 
         <div class="grid grid-cols-2 gap-8">
           <!-- Spalte 2: Hyperlinks -->
@@ -235,7 +235,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="text-center mt-8 text-gray-500">
+    <div class="mt-8 text-center text-gray-500">
       <p>&copy; 2024 Einzigware</p>
     </div>
   </footer>
