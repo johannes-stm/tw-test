@@ -9,6 +9,7 @@
       /* Initially hide all iframes */
       .content-section {
         display: none;
+        /* All iframes hidden by default */
         width: 100%;
         border: none;
       }
@@ -22,6 +23,7 @@
       #show-registration:target ~ #registration-frame,
       #show-become-seller:target ~ #become-seller-frame {
         display: block;
+        /* Only the targeted iframe will appear */
       }
 
       /* Ensure hero section displays by default */
@@ -50,19 +52,38 @@
       #show-become-seller {
         display: none;
       }
+
+      /* Styling specific to the products iframe */
+      #products-frame,
+      #sellers-frame,
+      #about-us-frame,
+      #contact-frame,
+      #login-frame,
+      #registration-frame,
+      #become-seller-frame {
+        width: 100%;
+        /* Ensure iframe stretches to full width */
+        border: none;
+        /* Remove iframe borders */
+        height: 100vh;
+        /* Expand iframe to full page height */
+        overflow: hidden;
+        /* Hide any internal scrollbars */
+      }
     </style>
   </head>
 
-  <!-- Header -->
   <header>
     <div class="container px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <img
-            src="../../public/images/logo.png"
-            alt="Logo Einzigware"
-            class="h-16 w-auto"
-          />
+          <a href="/src/views/homesite.html">
+            <img
+              src="../../public/images/logo.png"
+              alt="Logo Einzigware"
+              class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+            />
+          </a>
         </div>
         <div class="hidden lg:block">
           <nav>
@@ -75,7 +96,6 @@
                   Produkte
                 </a>
               </li>
-
               <li>
                 <a
                   class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
@@ -84,7 +104,6 @@
                   Verkäufer
                 </a>
               </li>
-
               <li>
                 <a
                   class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
@@ -93,7 +112,6 @@
                   Über uns
                 </a>
               </li>
-
               <li>
                 <a
                   class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
@@ -108,24 +126,22 @@
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
             <a
-              class="box-border rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black"
+              class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
               href="#show-login"
             >
               Anmelden
             </a>
-
             <div class="hidden sm:flex">
               <a
-                class="box-border rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige"
+                class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
                 href="#show-registration"
               >
                 Registrieren
               </a>
             </div>
-
             <div class="hidden sm:flex">
               <a
-                class="box-border rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white"
+                class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
                 href="#show-become-seller"
               >
                 Verkäufer werden
@@ -163,41 +179,49 @@
     <iframe
       id="products-frame"
       src="products.html"
-      class="content-section h-screen"
+      class="content-section"
+      scrolling="no"
     ></iframe>
     <iframe
       id="sellers-frame"
       src="sellers.html"
-      class="content-section h-screen"
+      class="content-section"
+      scrolling="no"
     ></iframe>
     <iframe
       id="about-us-frame"
       src="about-us.html"
-      class="content-section h-screen"
+      class="content-section"
+      scrolling="no"
     ></iframe>
     <iframe
       id="contact-frame"
       src="contact.html"
-      class="content-section h-screen"
+      class="content-section"
+      scrolling="no"
     ></iframe>
     <iframe
       id="login-frame"
       src="login.html"
-      class="content-section h-screen"
+      class="content-section"
+      scrolling="no"
     ></iframe>
     <iframe
       id="registration-frame"
       src="registration.html"
-      class="content-section h-screen"
+      class="content-section"
+      scrolling="no"
     ></iframe>
     <iframe
       id="become-seller-frame"
       src="become-seller.html"
       class="content-section"
+      scrolling="no"
     ></iframe>
   </main>
 
-  <footer class="bg-gray-900 py-8 text-gray-200">
+  <!-- Footer -->
+  <footer class="bg-wm-black py-8 text-gray-200">
     <div
       class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
     >
@@ -206,7 +230,7 @@
         <img
           src="../../public/images/logo_colored.png"
           alt="Einzigware Logo"
-          class="h-48 w-48"
+          class="h-48 w-48 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
         />
       </div>
 
