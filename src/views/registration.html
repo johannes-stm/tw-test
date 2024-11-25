@@ -6,10 +6,73 @@
     <link rel="stylesheet" href="../css/output.css" />
     <title>Document</title>
   </head>
-  <body>
+
+  <header class="sticky top-0 bg-white z-50 shadow-md">
+    <div class="container px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="md:flex md:items-center md:gap-12">
+          <a href="/src/views/index.html">
+            <img src="../../public/images/logo.png" alt="Logo Einzigware"
+              class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105" />
+          </a>
+        </div>
+        <div class="hidden lg:block">
+          <nav>
+            <ul class="flex items-center gap-6">
+              <li>
+                <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="products.html">
+                  Produkte
+                </a>
+              </li>
+              <li>
+                <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="sellers.html">
+                  Verkäufer
+                </a>
+              </li>
+              <li>
+                <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="about.html">
+                  Über uns
+                </a>
+              </li>
+              <li>
+                <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="contact.html">
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
+              href="login.html">
+              Anmelden
+            </a>
+            <div class="hidden sm:flex">
+              <a class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
+                href="registration.html">
+                Registrieren
+              </a>
+            </div>
+            <div class="hidden sm:flex">
+              <a class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
+                href="become-seller.html">
+                Verkäufer werden
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
     <section id="content-section-1" class="content-sectio">
       <h2>Registration</h2>
       <p>This is some alternative content to replace the hero section.</p>
     </section>
-  </body>
+
 </html>
