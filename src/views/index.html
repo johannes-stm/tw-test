@@ -1,93 +1,84 @@
 <!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/output.css" />
-    <title>Einzigware</title>
-  </head>
+<html lang="en">
 
-  <body>
-    <!-- Header v1.0 -->
-    <header>
-      <div class="container px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-          <div class="md:flex md:items-center md:gap-12">
-            <a href="/src/views/index.html">
-              <img
-                src="../../public/images/logo.png"
-                alt="Logo Einzigware"
-                class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
-              />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/output.css" />
+  <title>Einzigware</title>
+</head>
+
+<header class="sticky top-0 bg-white z-50 shadow-md">
+  <div class="container px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <div class="md:flex md:items-center md:gap-12">
+        <a href="/src/views/index.html">
+          <img src="../../public/images/logo.png" alt="Logo Einzigware"
+            class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105" />
+        </a>
+      </div>
+      <div class="hidden lg:block">
+        <nav>
+          <ul class="flex items-center gap-6">
+            <li>
+              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                href="products.html">
+                Produkte
+              </a>
+            </li>
+            <li>
+              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                href="sellers.html">
+                Verkäufer
+              </a>
+            </li>
+            <li>
+              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                href="about.html">
+                Über uns
+              </a>
+            </li>
+            <li>
+              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                href="contact.html">
+                Kontakt
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="sm:flex sm:gap-4">
+          <a class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
+            href="login.html">
+            Anmelden
+          </a>
+          <div class="hidden sm:flex">
+            <a class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
+              href="registration.html">
+              Registrieren
             </a>
           </div>
-          <div class="hidden lg:block">
-            <nav>
-              <ul class="flex items-center gap-6">
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="#"
-                  >
-                    Produkte
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="#"
-                  >
-                    Verkäufer
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="/src/views/about.html"
-                  >
-                    Über uns
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="#"
-                  >
-                    Kontakt
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="sm:flex sm:gap-4">
-              <a
-                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
-                href="#"
-              >
-                Anmelden
-              </a>
-              <div class="hidden sm:flex">
-                <a
-                  class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
-                  href="#"
-                >
-                  Registrieren
-                </a>
-              </div>
-              <div class="hidden sm:flex">
-                <a
-                  class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
-                  href="#"
-                >
-                  Verkäufer werden
-                </a>
-              </div>
-            </div>
+          <div class="hidden sm:flex">
+            <a class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
+              href="become-seller.html">
+              Verkäufer werden
+            </a>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
+
+
+<!-- Hero Section -->
+<section id="hero-section" class="content-section">
+  <div class="w-full bg-wm-beige bg-cover bg-center"></div>
+</section>
+
+<!-- Main Content Area -->
+<main>
 
     <!-- Hero -->
     <section>
@@ -343,48 +334,45 @@
       </div>
     </div>
   </section>
+</main>
 
-  <!-- Footer -->
-  <footer class="bg-wm-black py-8 text-gray-200">
-    <div
-      class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
-    >
-      <!-- Spalte 1: Logo -->
-      <div class="flex justify-center md:justify-start">
-        <img
-          src="../../public/images/logo_colored.png"
-          alt="Einzigware Logo"
-          class="h-48 w-48"
-        />
-      </div>
+<!-- Footer -->
+<footer class="bg-wm-black py-8 text-gray-200">
+  <div class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+    <!-- Spalte 1: Logo -->
+    <div class="flex justify-center md:justify-start">
+      <img src="../../public/images/logo_colored.png" alt="Einzigware Logo"
+        class="h-48 w-48 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105" />
+    </div>
 
-      <!-- Spalte 2 und 3 mit Slogan oben -->
-      <div class="text-center md:col-span-2 md:text-left">
-        <p class="mb-4 text-gray-400">Wir bringen Heimat nach Hause</p>
+    <!-- Spalte 2 und 3 mit Slogan oben -->
+    <div class="text-center md:col-span-2 md:text-left">
+      <p class="mb-4 text-gray-400">Wir bringen Heimat nach Hause</p>
 
-        <div class="grid grid-cols-2 gap-8">
-          <!-- Spalte 2: Hyperlinks -->
-          <div class="flex flex-col space-y-2">
-            <a href="#" class="hover:text-gray-400">Standorte</a>
-            <a href="#" class="hover:text-gray-400">Produkte</a>
-            <a href="#" class="hover:text-gray-400">Verkäufer werden</a>
-            <a href="#" class="hover:text-gray-400">Unsere Vision</a>
-          </div>
+      <div class="grid grid-cols-2 gap-8">
+        <!-- Spalte 2: Hyperlinks -->
+        <div class="flex flex-col space-y-2">
+          <a href="#" class="hover:text-gray-400">Standorte</a>
+          <a href="#" class="hover:text-gray-400">Produkte</a>
+          <a href="#" class="hover:text-gray-400">Verkäufer werden</a>
+          <a href="#" class="hover:text-gray-400">Unsere Vision</a>
+        </div>
 
-          <!-- Spalte 3: Hyperlinks -->
-          <div class="flex flex-col space-y-2">
-            <a href="#" class="hover:text-gray-400">Kontakt</a>
-            <a href="#" class="hover:text-gray-400">Versand</a>
-            <a href="#" class="hover:text-gray-400">Impressum</a>
-            <a href="#" class="hover:text-gray-400">Datenschutz</a>
-          </div>
+        <!-- Spalte 3: Hyperlinks -->
+        <div class="flex flex-col space-y-2">
+          <a href="#" class="hover:text-gray-400">Kontakt</a>
+          <a href="#" class="hover:text-gray-400">Versand</a>
+          <a href="#" class="hover:text-gray-400">Impressum</a>
+          <a href="#" class="hover:text-gray-400">Datenschutz</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Copyright -->
-    <div class="mt-8 text-center text-gray-500">
-      <p>&copy; 2024 Einzigware</p>
-    </div>
-  </footer>
+  <!-- Copyright -->
+  <div class="mt-8 text-center text-gray-500">
+    <p>&copy; 2024 Einzigware</p>
+  </div>
+</footer>
+
 </html>
