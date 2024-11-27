@@ -1,154 +1,221 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/output.css" />
-  <title>Document</title>
-</head>
-
-<header class="sticky top-0 bg-white z-50 shadow-md">
-  <div class="container px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
-      <div class="md:flex md:items-center md:gap-12">
-        <a href="/src/views/index.html">
-          <img src="../../public/images/logo.png" alt="Logo Einzigware"
-            class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105" />
-        </a>
-      </div>
-      <div class="hidden lg:block">
-        <nav>
-          <ul class="flex items-center gap-6">
-            <li>
-              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="products.html">
-                Produkte
-              </a>
-            </li>
-            <li>
-              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="sellers.html">
-                Verkäufer
-              </a>
-            </li>
-            <li>
-              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="about.html">
-                Über uns
-              </a>
-            </li>
-            <li>
-              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="contact.html">
-                Kontakt
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="flex items-center gap-4">
-        <div class="sm:flex sm:gap-4">
-          <a class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
-            href="login.html">
-            Anmelden
+  <header class="sticky top-0 bg-white z-50 shadow-md">
+    <div class="container px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="md:flex md:items-center md:gap-12">
+          <a href="/src/views/index.html">
+            <img
+              src="../../public/images/logo.png"
+              alt="Logo Einzigware"
+              class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+            />
           </a>
-          <div class="hidden sm:flex">
-            <a class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
-              href="registration.html">
-              Registrieren
+        </div>
+        <div class="hidden lg:block">
+          <nav>
+            <ul class="flex items-center gap-6">
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="products.html"
+                >
+                  Produkte
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="sellers.html"
+                >
+                  Verkäufer
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="about.html"
+                >
+                  Über uns
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="contact.html"
+                >
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
+              href="login.html"
+            >
+              Anmelden
             </a>
-          </div>
-          <div class="hidden sm:flex">
-            <a class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
-              href="become-seller.html">
-              Verkäufer werden
-            </a>
+            <div class="hidden sm:flex">
+              <a
+                class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
+                href="registration.html"
+              >
+                Registrieren
+              </a>
+            </div>
+            <div class="hidden sm:flex">
+              <a
+                class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
+                href="become-seller.html"
+              >
+                Verkäufer werden
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </header>
+
+
+  <div class="container max-w-3xl mx-auto mt-8 p-6 bg-gray-50 rounded-lg">
+    <!-- FAQ Item 1 -->
+    <details class="group border-b border-gray-200 py-4">
+      <summary
+        class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+      >
+        Was ist die Idee hinter dieser Plattform?
+      </summary>
+      <div
+        class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+      >
+        <p class="mt-2 text-gray-600">
+          Unsere Plattform verbindet unabhängige, lokale Lebensmittelproduzenten
+          mit Menschen, die Wert auf hochwertige, regionale und einzigartige
+          Produkte legen. Hier können Produzenten ihre besonderen Produkte und
+          Geschichten einem breiteren Publikum präsentieren.
+        </p>
+      </div>
+    </details>
+
+    <!-- FAQ Item 2 -->
+    <details class="group border-b border-gray-200 py-4">
+      <summary
+        class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+      >
+        Für wen ist die Plattform gedacht?
+      </summary>
+      <div
+        class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+      >
+        <p class="mt-2 text-gray-600">
+          Die Plattform richtet sich an Käufer, die Freude an einzigartigen
+          Lebensmitteln haben und regionale Produzenten unterstützen möchten,
+          sowie an Verkäufer, die ihre Produkte online präsentieren und ihre
+          Reichweite vergrößern wollen.
+        </p>
+      </div>
+    </details>
+
+    <!-- FAQ Item 3 -->
+    <details class="group border-b border-gray-200 py-4">
+      <summary
+        class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+      >
+        Was macht die Produkte auf der Plattform so besonders?
+      </summary>
+      <div
+        class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+      >
+        <p class="mt-2 text-gray-600">
+          Jedes Produkt ist ein Unikat mit einer Geschichte. Ob Tannenhonig aus
+          dem Schwarzwald oder historischer Senf – hier finden Sie Lebensmittel,
+          die mit Leidenschaft und lokalem Know-how hergestellt werden.
+        </p>
+      </div>
+    </details>
+
+    <!-- FAQ Item 4 -->
+    <details class="group border-b border-gray-200 py-4">
+      <summary
+        class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+      >
+        Warum sollte ich als Produzent meine Produkte hier verkaufen?
+      </summary>
+      <div
+        class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+      >
+        <p class="mt-2 text-gray-600">
+          Unsere Plattform bietet Ihnen eine einfache Möglichkeit, Kunden über
+          Ihre Region hinaus zu erreichen, Ihre Produkte sichtbar zu machen und
+          Ihre Reichweite zu vergrößern – ganz ohne technisches Vorwissen.
+        </p>
+      </div>
+    </details>
+
+    <!-- FAQ Item 5 -->
+    <details class="group border-b border-gray-200 py-4">
+      <summary
+        class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+      >
+        Welche Vorteile habe ich als Käufer?
+      </summary>
+      <div
+        class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+      >
+        <p class="mt-2 text-gray-600">
+          Sie erhalten Zugang zu exklusiven, regionalen Produkten, unterstützen
+          lokale Produzenten und können sich auf die Qualität und Herkunft der
+          Lebensmittel verlassen.
+        </p>
+      </div>
+    </details>
+
+    <!-- FAQ Item 6 -->
+    <details class="group border-b border-gray-200 py-4">
+      <summary
+        class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+      >
+        Wie funktioniert die Plattform?
+      </summary>
+      <div
+        class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+      >
+        <p class="mt-2 text-gray-600">
+          Käufer können einfach stöbern, auswählen und direkt beim Produzenten
+          bestellen. Verkäufer erstellen ein Profil, präsentieren ihre Produkte
+          und erreichen so neue Kunden.
+        </p>
+      </div>
+    </details>
+
+    <!-- FAQ Item 7 -->
+    <details class="group border-b border-gray-200 py-4">
+      <summary
+        class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+      >
+        Sind die Produkte nachhaltig?
+      </summary>
+      <div
+        class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+      >
+        <p class="mt-2 text-gray-600">
+          Ja, unsere Produzenten legen großen Wert auf Nachhaltigkeit und
+          Regionalität. Die Plattform fördert kurze Lieferketten und stärkt die
+          lokale Wertschöpfung.
+        </p>
+      </div>
+    </details>
   </div>
-</header>
-
-<section>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <h2>Contact</h2>
-  <p>This is another alternative content section.</p>
-</section>
-
+  
 </html>

@@ -1,378 +1,522 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Einzigware</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/output.css" />
-  <title>Einzigware</title>
-</head>
-
-<header class="sticky top-0 bg-white z-50 shadow-md">
-  <div class="container px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
-      <div class="md:flex md:items-center md:gap-12">
-        <a href="/src/views/index.html">
-          <img src="../../public/images/logo.png" alt="Logo Einzigware"
-            class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105" />
-        </a>
-      </div>
-      <div class="hidden lg:block">
-        <nav>
-          <ul class="flex items-center gap-6">
-            <li>
-              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="products.html">
-                Produkte
-              </a>
-            </li>
-            <li>
-              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="sellers.html">
-                Verkäufer
-              </a>
-            </li>
-            <li>
-              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="about.html">
-                Über uns
-              </a>
-            </li>
-            <li>
-              <a class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="contact.html">
-                Kontakt
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="flex items-center gap-4">
-        <div class="sm:flex sm:gap-4">
-          <a class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
-            href="login.html">
-            Anmelden
-          </a>
-          <div class="hidden sm:flex">
-            <a class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
-              href="registration.html">
-              Registrieren
+  <body>
+    <!-- Header -->
+    <header class="sticky top-0 bg-white z-50 shadow-md">
+      <div class="container">
+        <div class="flex h-16 items-center justify-between">
+          <div class="md:flex md:items-center md:gap-12">
+            <a href="/src/views/index.html">
+              <img
+                src="../../public/images/logo.png"
+                alt="Logo Einzigware"
+                class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+              />
             </a>
           </div>
-          <div class="hidden sm:flex">
-            <a class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
-              href="become-seller.html">
-              Verkäufer werden
-            </a>
+          <div class="hidden lg:block">
+            <nav>
+              <ul class="flex items-center gap-6">
+                <li>
+                  <a
+                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                    href="products.html"
+                  >
+                    Produkte
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                    href="sellers.html"
+                  >
+                    Verkäufer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                    href="about.html"
+                  >
+                    Über uns
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                    href="contact.html"
+                  >
+                    Kontakt
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="sm:flex sm:gap-4">
+              <a
+                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
+                href="login.html"
+              >
+                Anmelden
+              </a>
+              <div class="hidden sm:flex">
+                <a
+                  class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
+                  href="registration.html"
+                >
+                  Registrieren
+                </a>
+              </div>
+              <div class="hidden sm:flex">
+                <a
+                  class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
+                  href="become-seller.html"
+                >
+                  Verkäufer werden
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
-
-
-<!-- Hero Section -->
-<section id="hero-section" class="content-section">
-  <div class="w-full bg-wm-beige bg-cover bg-center"></div>
-</section>
-
-<!-- Main Content Area -->
-<main>
+    </header>
 
     <!-- Hero -->
     <section>
-      <div class="bg-wm-beige">
+      <div
+        class="relative bg-cover bg-center bg-no-repeat"
+        style="background-image: url('../../public/images/homepage/hero.png')"
+      >
+        <!-- Farbverlauf Overlay -->
         <div
-          class="container flex flex-col-reverse items-center gap-12 px-4 py-14 sm:px-6 lg:flex-row lg:px-8 lg:py-28"
+          class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"
+        ></div>
+
+        <!-- Content -->
+        <div
+          class="relative container flex flex-col items-start justify-center h-full px-4 py-14 sm:px-6 lg:px-8 lg:py-28"
         >
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h2
-              class="md:text-4 text-center font-serif text-3xl lg:text-left lg:text-5xl"
-            >
+          <div class="flex-1 lg:w-1/2">
+            <h1 class="text-3xl font-serif text-left lg:text-5xl text-white">
               Wir bringen Heimat nach Hause
-            </h2>
-            <p class="my-6 text-center font-serif text-lg lg:text-left">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+            </h1>
+            <p class="my-6 text-lg font-serif text-left text-white">
+              Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen
+              bringen. Tradition, Handwerk und moderne Eleganz vereint.
             </p>
-            <div class="flex flex-wrap justify-center gap-6">
-              <button
-                type="button"
-                class="box-border rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige"
-              >
-                Finde Einzigartiges
-              </button>
-            </div>
-          </div>
-          <div class="z-10 mb-10 flex flex-1 justify-center md:mb-16 lg:mb-0">
-            <img
-              class="h-5/6 w-5/6 rounded-lg sm:h-3/4 sm:w-3/4 md:h-full md:w-full"
-              src="../../public/images/homepage/hero.png"
-              alt=""
-            />
+            <button
+              type="button"
+              class="box-border rounded-full border-2 border-white bg-black px-4 py-2 text-white hover:bg-white hover:text-black transition"
+            >
+              Finde Einzigartiges
+            </button>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Produkte -->
+    <section>
+      <div class="container mx-auto">
+        <div class="pb-6 pt-8">
+          <h2 class="text-center font-serif text-3xl">
+            Aktuelle Produkte im Trend
+          </h2>
+        </div>
+
+        <!-- Grid -->
+        <div
+          class="mx-auto grid grid-cols-1 gap-4 overflow-x-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
+        >
+          <!-- Artikel 1 -->
+          <div>
+            <div>
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt=""
+                class="w-72 object-cover"
+              />
+            </div>
+            <div class="mt-2">
+              <p class="font-bold">Tannen-Honig</p>
+              <p>Tannenimkerei Schwarzwald</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </div>
+
+          <!-- Artikel 2 -->
+          <div>
+            <div>
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt=""
+                class="w-72 object-cover"
+              />
+            </div>
+            <div class="mt-2">
+              <p class="font-bold">Tannen-Honig</p>
+              <p>Tannenimkerei Schwarzwald</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </div>
+
+          <!-- Artikel 3 -->
+          <div>
+            <div>
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt=""
+                class="w-72 object-cover"
+              />
+            </div>
+            <div class="mt-2">
+              <p class="font-bold">Tannen-Honig</p>
+              <p>Tannenimkerei Schwarzwald</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </div>
+
+          <!-- Artikel 4 -->
+          <div>
+            <div>
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt=""
+                class="w-72 object-cover"
+              />
+            </div>
+            <div class="mt-2">
+              <p class="font-bold">Tannen-Honig</p>
+              <p>Tannenimkerei Schwarzwald</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </div>
+
+          <!-- Artikel 5 -->
+          <div>
+            <div>
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt=""
+                class="w-72 object-cover"
+              />
+            </div>
+            <div class="mt-2">
+              <p class="font-bold">Tannen-Honig</p>
+              <p>Tannenimkerei Schwarzwald</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </div>
+
+          <!-- Artikel 6 -->
+          <div>
+            <div>
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt=""
+                class="w-72 object-cover"
+              />
+            </div>
+            <div class="mt-2">
+              <p class="font-bold">Tannen-Honig</p>
+              <p>Tannenimkerei Schwarzwald</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regionen -->
+    <section>
+      <div class="container mx-auto">
+        <div class="text-center pb-6 pt-8">
+          <h2 class="font-serif text-3xl">Regionen im Fokus</h2>
+        </div>
+      </div>
+
+      <div class="container mx-auto">
+        <!-- Grid-Layout für Desktop und Flex-Anpassung für Mobilgeräte -->
+        <div
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
+        >
+          <!-- Box 1 -->
+          <div
+            class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+          >
+            <a href="">
+              <img
+                src="../../public/images/homepage/schwarzwald.png"
+                alt="Bild 1"
+                class="w-full object-contain"
+              />
+              <div class="mt-6">
+                <h3 class="font-bold">Bayern</h3>
+                <p class="text-gray-600">Allgäu-Region</p>
+              </div></a
+            >
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+          >
+            <a href="">
+              <img
+                src="../../public/images/homepage/schwarzwald.png"
+                alt="Bild 1"
+                class="w-full object-contain"
+              />
+              <div class="mt-6">
+                <h3 class="font-bold">Baden-Württemberg</h3>
+                <p class="text-gray-600">Schwarzwald</p>
+              </div></a
+            >
+          </div>
+
+          <!-- Box 3 -->
+          <div
+            class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+          >
+            <a href="">
+              <img
+                src="../../public/images/homepage/schwarzwald.png"
+                alt="Bild 1"
+                class="w-full object-contain"
+              />
+              <div class="mt-6">
+                <h3 class="font-bold">Nordrhein-Westfahlen</h3>
+                <p class="text-gray-600">Köln und Düsseldorf</p>
+              </div></a
+            >
+          </div>
+
+          <!-- Box 4 -->
+          <div
+            class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+          >
+            <a href="">
+              <img
+                src="../../public/images/homepage/schwarzwald.png"
+                alt="Bild 1"
+                class="w-full object-contain"
+              />
+              <div class="mt-6">
+                <h3 class="font-bold">Hamburg</h3>
+                <p class="text-gray-600">Hamburg-Winterhude</p>
+              </div></a
+            >
+          </div>
+
+          <!-- Box 5 -->
+          <div
+            class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+          >
+            <a href="">
+              <img
+                src="../../public/images/homepage/schwarzwald.png"
+                alt="Bild 1"
+                class="w-full object-contain"
+              />
+              <div class="mt-6">
+                <h3 class="font-bold">Sachsen</h3>
+                <p class="text-gray-600">Dresden und Erzgebirge</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+     <section>
+      <div class="container mx-auto">
+        <div class="text-center pb-6 pt-8">
+          <h2 class="font-serif text-3xl">Was ist Einzigware?</h2>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mx-auto px-6 mb-8 bg-gray-50 rounded-lg">
+        <!-- FAQ Item 1 -->
+        <details class="group border-b border-gray-200 py-4">
+          <summary
+            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+          >
+            Was ist die Idee hinter dieser Plattform?
+          </summary>
+          <div
+            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+          >
+            <p class="mt-2 text-gray-600">
+              Unsere Plattform verbindet unabhängige, lokale Lebensmittelproduzenten
+              mit Menschen, die Wert auf hochwertige, regionale und einzigartige
+              Produkte legen. Hier können Produzenten ihre besonderen Produkte und
+              Geschichten einem breiteren Publikum präsentieren.
+            </p>
+          </div>
+        </details>
+    
+        <!-- FAQ Item 2 -->
+        <details class="group border-b border-gray-200 py-4">
+          <summary
+            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+          >
+            Für wen ist die Plattform gedacht?
+          </summary>
+          <div
+            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+          >
+            <p class="mt-2 text-gray-600">
+              Die Plattform richtet sich an Käufer, die Freude an einzigartigen
+              Lebensmitteln haben und regionale Produzenten unterstützen möchten,
+              sowie an Verkäufer, die ihre Produkte online präsentieren und ihre
+              Reichweite vergrößern wollen.
+            </p>
+          </div>
+        </details>
+    
+        <!-- FAQ Item 3 -->
+        <details class="group border-b border-gray-200 py-4">
+          <summary
+            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+          >
+            Was macht die Produkte auf der Plattform so besonders?
+          </summary>
+          <div
+            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+          >
+            <p class="mt-2 text-gray-600">
+              Jedes Produkt ist ein Unikat mit einer Geschichte. Ob Tannenhonig aus
+              dem Schwarzwald oder historischer Senf – hier finden Sie Lebensmittel,
+              die mit Leidenschaft und lokalem Know-how hergestellt werden.
+            </p>
+          </div>
+        </details>
+    
+        <!-- FAQ Item 4 -->
+        <details class="group border-b border-gray-200 py-4">
+          <summary
+            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+          >
+            Warum sollte ich als Produzent meine Produkte hier verkaufen?
+          </summary>
+          <div
+            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+          >
+            <p class="mt-2 text-gray-600">
+              Unsere Plattform bietet Ihnen eine einfache Möglichkeit, Kunden über
+              Ihre Region hinaus zu erreichen, Ihre Produkte sichtbar zu machen und
+              Ihre Reichweite zu vergrößern – ganz ohne technisches Vorwissen.
+            </p>
+          </div>
+        </details>
+    
+        <!-- FAQ Item 5 -->
+        <details class="group border-b border-gray-200 py-4">
+          <summary
+            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+          >
+            Welche Vorteile habe ich als Käufer?
+          </summary>
+          <div
+            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+          >
+            <p class="mt-2 text-gray-600">
+              Sie erhalten Zugang zu exklusiven, regionalen Produkten, unterstützen
+              lokale Produzenten und können sich auf die Qualität und Herkunft der
+              Lebensmittel verlassen.
+            </p>
+          </div>
+        </details>
+    
+        <!-- FAQ Item 6 -->
+        <details class="group border-b border-gray-200 py-4">
+          <summary
+            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+          >
+            Wie funktioniert die Plattform?
+          </summary>
+          <div
+            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+          >
+            <p class="mt-2 text-gray-600">
+              Käufer können einfach stöbern, auswählen und direkt beim Produzenten
+              bestellen. Verkäufer erstellen ein Profil, präsentieren ihre Produkte
+              und erreichen so neue Kunden.
+            </p>
+          </div>
+        </details>
+    
+        <!-- FAQ Item 7 -->
+        <details class="group  py-4">
+          <summary
+            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+          >
+            Sind die Produkte nachhaltig?
+          </summary>
+          <div
+            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+          >
+            <p class="mt-2 text-gray-600">
+              Ja, unsere Produzenten legen großen Wert auf Nachhaltigkeit und
+              Regionalität. Die Plattform fördert kurze Lieferketten und stärkt die
+              lokale Wertschöpfung.
+            </p>
+          </div>
+        </details>
+      </div>
+     </section>
+
+    <!-- Footer -->
+    <footer class="bg-wm-black py-8 text-gray-200">
+      <div
+        class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
+      >
+        <!-- Spalte 1: Logo -->
+        <div class="flex justify-center md:justify-start">
+          <img
+            src="../../public/images/logo_colored.png"
+            alt="Einzigware Logo"
+            class="h-48 w-48 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+          />
+        </div>
+
+        <!-- Spalte 2 und 3 mit Slogan oben -->
+        <div class="text-center md:col-span-2 md:text-left">
+          <p class="mb-4 text-gray-400">Wir bringen Heimat nach Hause</p>
+
+          <div class="grid grid-cols-2 gap-8">
+            <!-- Spalte 2: Hyperlinks -->
+            <div class="flex flex-col space-y-2">
+              <a href="#" class="hover:text-gray-400">Standorte</a>
+              <a href="#" class="hover:text-gray-400">Produkte</a>
+              <a href="#" class="hover:text-gray-400">Verkäufer werden</a>
+              <a href="#" class="hover:text-gray-400">Unsere Vision</a>
+            </div>
+
+            <!-- Spalte 3: Hyperlinks -->
+            <div class="flex flex-col space-y-2">
+              <a href="#" class="hover:text-gray-400">Kontakt</a>
+              <a href="#" class="hover:text-gray-400">Versand</a>
+              <a href="#" class="hover:text-gray-400">Impressum</a>
+              <a href="#" class="hover:text-gray-400">Datenschutz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-8 text-center text-gray-500">
+        <p>&copy; 2024 Einzigware</p>
+      </div>
+    </footer>
   </body>
-
-  <!-- Standorte -->
-  <section>
-    <div class="container mx-auto pb-8 pt-12">
-      <div class="text-center">
-        <h2 class="font-serif text-3xl">Regionen im Fokus</h2>
-      </div>
-    </div>
-
-    <div class="container mx-auto px-4 pb-12">
-      <!-- Grid-Layout für Desktop und Flex-Anpassung für Mobilgeräte -->
-      <div
-        class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
-      >
-        <!-- Box 1 -->
-        <div
-          class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
-        >
-          <a href="">
-            <img
-              src="../../public/images/homepage/schwarzwald.png"
-              alt="Bild 1"
-              class="w-full object-contain"
-            />
-            <div class="mt-6">
-              <h3 class="font-bold">Bayern</h3>
-              <p class="text-gray-600">Allgäu-Region</p>
-            </div></a
-          >
-        </div>
-
-        <!-- Box 2 -->
-        <div
-          class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
-        >
-          <a href="">
-            <img
-              src="../../public/images/homepage/schwarzwald.png"
-              alt="Bild 1"
-              class="w-full object-contain"
-            />
-            <div class="mt-6">
-              <h3 class="font-bold">Baden-Württemberg</h3>
-              <p class="text-gray-600">Schwarzwald</p>
-            </div></a
-          >
-        </div>
-
-        <!-- Box 3 -->
-        <div
-          class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
-        >
-          <a href="">
-            <img
-              src="../../public/images/homepage/schwarzwald.png"
-              alt="Bild 1"
-              class="w-full object-contain"
-            />
-            <div class="mt-6">
-              <h3 class="font-bold">Nordrhein-Westfahlen</h3>
-              <p class="text-gray-600">Köln und Düsseldorf</p>
-            </div></a
-          >
-        </div>
-
-        <!-- Box 4 -->
-        <div
-          class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
-        >
-          <a href="">
-            <img
-              src="../../public/images/homepage/schwarzwald.png"
-              alt="Bild 1"
-              class="w-full object-contain"
-            />
-            <div class="mt-6">
-              <h3 class="font-bold">Hamburg</h3>
-              <p class="text-gray-600">Hamburg-Winterhude</p>
-            </div></a
-          >
-        </div>
-
-        <!-- Box 5 -->
-        <div
-          class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
-        >
-          <a href="">
-            <img
-              src="../../public/images/homepage/schwarzwald.png"
-              alt="Bild 1"
-              class="w-full object-contain"
-            />
-            <div class="mt-6">
-              <h3 class="font-bold">Sachsen</h3>
-              <p class="text-gray-600">Dresden und Erzgebirge</p>
-            </div></a
-          >
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Produkte -->
-  <section>
-    <div class="container mx-auto pb-12">
-      <div>
-        <h2 class="text-center font-serif text-3xl">
-          Aktuelle Produkte im Trend
-        </h2>
-      </div>
-
-      <!-- Grid -->
-      <div
-        class="mx-auto grid grid-cols-1 gap-8 overflow-x-auto p-8 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
-      >
-        <!-- Artikel 1 -->
-        <div>
-          <div>
-            <img
-              src="../../public/images/homepage/senf.jpg"
-              alt=""
-              class="w-72 object-cover"
-            />
-          </div>
-          <div>
-            <p class="font-bold">Tannen-Honig</p>
-            <p>Tannenimkerei Schwarzwald</p>
-            <p class="mt-4 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-        <!-- Artikel 1 -->
-        <div>
-          <div>
-            <img
-              src="../../public/images/homepage/senf.jpg"
-              alt=""
-              class="w-72 object-cover"
-            />
-          </div>
-          <div>
-            <p class="font-bold">Tannen-Honig</p>
-            <p>Tannenimkerei Schwarzwald</p>
-            <p class="mt-4 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-        <!-- Artikel 1 -->
-        <div>
-          <div>
-            <img
-              src="../../public/images/homepage/senf.jpg"
-              alt=""
-              class="w-72 object-cover"
-            />
-          </div>
-          <div>
-            <p class="font-bold">Tannen-Honig</p>
-            <p>Tannenimkerei Schwarzwald</p>
-            <p class="mt-4 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-        <!-- Artikel 1 -->
-        <div>
-          <div>
-            <img
-              src="../../public/images/homepage/senf.jpg"
-              alt=""
-              class="w-72 object-cover"
-            />
-          </div>
-          <div>
-            <p class="font-bold">Tannen-Honig</p>
-            <p>Tannenimkerei Schwarzwald</p>
-            <p class="mt-4 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <!-- Artikel 1 -->
-        <div>
-          <div>
-            <img
-              src="../../public/images/homepage/senf.jpg"
-              alt=""
-              class="w-72 object-cover"
-            />
-          </div>
-          <div>
-            <p class="font-bold">Tannen-Honig</p>
-            <p>Tannenimkerei Schwarzwald</p>
-            <p class="mt-4 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <!-- Artikel 1 -->
-        <div>
-          <div>
-            <img
-              src="../../public/images/homepage/senf.jpg"
-              alt=""
-              class="w-72 object-cover"
-            />
-          </div>
-          <div>
-            <p class="font-bold">Tannen-Honig</p>
-            <p>Tannenimkerei Schwarzwald</p>
-            <p class="mt-4 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer class="bg-wm-black py-8 text-gray-200">
-  <div class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
-    <!-- Spalte 1: Logo -->
-    <div class="flex justify-center md:justify-start">
-      <img src="../../public/images/logo_colored.png" alt="Einzigware Logo"
-        class="h-48 w-48 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105" />
-    </div>
-
-    <!-- Spalte 2 und 3 mit Slogan oben -->
-    <div class="text-center md:col-span-2 md:text-left">
-      <p class="mb-4 text-gray-400">Wir bringen Heimat nach Hause</p>
-
-      <div class="grid grid-cols-2 gap-8">
-        <!-- Spalte 2: Hyperlinks -->
-        <div class="flex flex-col space-y-2">
-          <a href="#" class="hover:text-gray-400">Standorte</a>
-          <a href="#" class="hover:text-gray-400">Produkte</a>
-          <a href="#" class="hover:text-gray-400">Verkäufer werden</a>
-          <a href="#" class="hover:text-gray-400">Unsere Vision</a>
-        </div>
-
-        <!-- Spalte 3: Hyperlinks -->
-        <div class="flex flex-col space-y-2">
-          <a href="#" class="hover:text-gray-400">Kontakt</a>
-          <a href="#" class="hover:text-gray-400">Versand</a>
-          <a href="#" class="hover:text-gray-400">Impressum</a>
-          <a href="#" class="hover:text-gray-400">Datenschutz</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Copyright -->
-  <div class="mt-8 text-center text-gray-500">
-    <p>&copy; 2024 Einzigware</p>
-  </div>
-</footer>
-
 </html>
