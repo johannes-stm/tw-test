@@ -20,6 +20,9 @@ module.exports = {
           '2xl': '1300px', // Breakpoint 1280px wird auf 1300px geändert
         },
       },
+      scale: {
+        '103': '1.03',
+      },
     },
     
     fontFamily: {
