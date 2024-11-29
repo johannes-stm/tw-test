@@ -9,9 +9,8 @@
       href="../../public/images/favicon.ico"
       type="image/x-icon"
     />
-    <title>Unsere Regionen</title>
+    <title>Produkt</title>
   </head>
-
   <body>
     <!-- Header v1.2 -->
     <header class="sticky top-0 bg-white z-50 shadow-md">
@@ -125,84 +124,153 @@
       </div>
     </div>
 
-    <!-- Text -->
-    <div class="container font-serif">
-      <h1 class="mb-2 text-3xl">Unsere Regionen</h1>
-      <p class="mb-4">
-        Entdecke unsere Herkunftsregionen auf der Karte und finde die Adresse,
-        die zu dir passt.
-      </p>
-    </div>
+    <!-- Product General Section -->
+    <section>
+      <div class="container mx-auto py-6">
+        <!-- Produkt-Container -->
+        <div
+          class="bg-white rounded-lg overflow-hidden flex lg:flex-row h-full"
+        >
+          <!-- Linke Seite: Bildbereich -->
+          <div class="lg:w-2/3 p-4 flex justify-center items-center">
+            <img
+              src="../../public/images/homepage/senf.jpg"
+              alt="Produktbild"
+              class="max-h-[460px] rounded-lg shadow-sm"
+            />
+          </div>
 
-    <!-- Map Section -->
-    <div
-      class="container mx-auto my-8 flex min-h-[400px] max-h-[450px] overflow-y-auto"
-    >
-      <!-- Left Section (1/3) -->
-      <div class="w-1/3 mr-3 bg-white overflow-y-auto">
-        <div>
-          <a href="regions_schwarzwald.html">
-            <div class="p-4 cursor-pointer rounded bg-white border-b">
-              <h3 class="font-bold hover:text-wm-darkbrown">Schwarzwald</h3>
-              <p>Bayern</p>
-              <p class="text-sm text-wm-black"><b>7</b> aktive Verkäufer</p>
-              <p class="text-sm text-wm-black"><b>16</b> verfügbare Produkte</p>
-            </div></a
-          >
-          <a href="index.html">
-            <div class="p-4 cursor-pointer rounded bg-white border-b">
-              <h3 class="font-bold hover:text-wm-darkbrown">Allgäu-Region</h3>
-              <p>Bayern</p>
-              <p class="text-sm text-wm-black"><b>7</b> aktive Verkäufer</p>
-              <p class="text-sm text-wm-black"><b>16</b> verfügbare Produkte</p>
-            </div></a
-          >
-          <a href="index.html">
-            <div class="p-4 cursor-pointer rounded bg-white border-b">
-              <h3 class="font-bold hover:text-wm-darkbrown">Allgäu-Region</h3>
-              <p>Bayern</p>
-              <p class="text-sm text-wm-black"><b>7</b> aktive Verkäufer</p>
-              <p class="text-sm text-wm-black"><b>16</b> verfügbare Produkte</p>
-            </div></a
-          >
-          <a href="index.html">
-            <div class="p-4 cursor-pointer rounded bg-white border-b">
-              <h3 class="font-bold hover:text-wm-darkbrown">Allgäu-Region</h3>
-              <p>Bayern</p>
-              <p class="text-sm text-wm-black"><b>7</b> aktive Verkäufer</p>
-              <p class="text-sm text-wm-black"><b>16</b> verfügbare Produkte</p>
-            </div></a
-          >
-          <a href="index.html">
-            <div class="p-4 cursor-pointer rounded bg-white border-b">
-              <h3 class="font-bold hover:text-wm-darkbrown">Allgäu-Region</h3>
-              <p>Bayern</p>
-              <p class="text-sm text-wm-black"><b>7</b> aktive Verkäufer</p>
-              <p class="text-sm text-wm-black"><b>16</b> verfügbare Produkte</p>
-            </div></a
-          >
-          <a href="index.html">
-            <div class="p-4 cursor-pointer rounded bg-white border-b">
-              <h3 class="font-bold hover:text-wm-darkbrown">Allgäu-Region</h3>
-              <p>Bayern</p>
-              <p class="text-sm text-wm-black"><b>7</b> aktive Verkäufer</p>
-              <p class="text-sm text-wm-black"><b>16</b> verfügbare Produkte</p>
-            </div></a
-          >
+          <!-- Rechte Seite: Produktdetails -->
+          <div class="lg:w-1/3 p-4 flex flex-col justify-between">
+            <!-- Oberer Bereich: Titel, Preis, Eigenschaften -->
+            <div>
+              <h1 class="text-3xl font-bold text-wm-black font-serif">
+                Historischer Senf
+              </h1>
+              <div class="mt-4 flex items-baseline space-x-2">
+                <p class="text-xl font-semibold text-wm-black">11,99 €</p>
+                <span class="text-sm text-gray-600">(inkl. MwSt.)</span>
+              </div>
+              <!-- Bewertungen -->
+              <div class="mt-2 flex items-center space-x-2 text-gray-600">
+                <span class="text-yellow-500">★★★★☆</span>
+                <p>4.5 von 5 Sternen</p>
+              </div>
+            </div>
+
+            <!-- Mittlerer Bereich: Verkäuferprofil -->
+            <div
+              class="flex items-center space-x-4 border-t border-b border-gray-300 py-4"
+            >
+              <!-- Profilbild -->
+              <img
+                src="../../public/images/products/pp_template.png"
+                alt="Profilbild des Verkäufers"
+                class="w-20 h-20 rounded-full border-2 border-wm-brown"
+              />
+              <!-- Verkäuferinformationen -->
+              <div>
+                <p class="text-lg font-semibold text-wm-black">Bernd Müller</p>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+              </div>
+            </div>
+
+            <!-- Unterer Bereich: Buttons -->
+            <div class="flex flex-col space-y-2">
+              <!-- Menge und Verfügbarkeit -->
+              <div class="mt-4 flex items-center space-x-4">
+                <label for="quantity" class="text-gray-600">Menge:</label>
+                <input
+                  id="quantity"
+                  type="number"
+                  value="1"
+                  min="1"
+                  class="w-16 border border-gray-300 rounded text-center"
+                />
+              </div>
+
+              <a
+                href="registration.html"
+                class="w-full box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105 text-center block"
+              >
+                In den Warenkorb
+              </a>
+              <a
+                href="registration.html"
+                class="w-full box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105 text-center block"
+              >
+                Jetzt Kaufen
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Right Section (2/3) -->
-      <div class="w-2/3 px-4 border-l border-gray-300">
-        <iframe
-          src="https://umap.openstreetmap.de/de/map/einzigware-regionenubersicht_75485?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=null&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=true&fullscreenControl=false&captionControl=false&locateControl=null#18/48.68210/10.15443"
-          class="w-full h-full"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+    <!-- Product Detail Section -->
+    <section>
+      <!-- Navigation oben -->
+      <div class="container mx-auto">
+        <nav class="text-center py-4">
+          <ul class="flex justify-start space-x-6 text-lg">
+            <li>
+              <a
+                href="#artikel"
+                class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+              >
+                <h3>Beschreibung</h3>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#herkunft"
+                class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+              >
+                <h3>Bewertungen</h3>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#herkunft"
+                class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+              >
+                <h3>Versand</h3>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+
+      <!-- Hauptbereich mit 1/4 - 3/4 Aufteilung -->
+      <div class="container mx-auto py-6">
+        <div class="flex flex-col lg:flex-row">
+          <!-- Linker Bereich (1/4) -->
+          <div class="lg:w-1/4 py-4">
+            <h2 class="text-xl font-semibold text-gray-800">Linker Bereich</h2>
+            <p class="mt-2 text-gray-600">
+              Dies ist der Text für den linken Bereich. Perfekt für
+              Navigationen, zusätzliche Informationen oder kleinere Inhalte.
+            </p>
+          </div>
+
+          <!-- Rechter Bereich (3/4) -->
+          <div class="lg:w-3/4 py-4 bg-white">
+            <h2 class="text-xl font-semibold text-gray-800">Rechter Bereich</h2>
+            <p class="mt-2 text-gray-600">
+              Der rechte Bereich ist größer und eignet sich für Hauptinhalte wie
+              Artikel, Bilder oder längere Texte. Nutzen Sie diesen Bereich, um
+              Ihre Botschaft klar zu präsentieren.
+            </p>
+            <p class="mt-4 text-gray-600">
+              Dank der flexiblen Struktur von Tailwind CSS passt sich die
+              Aufteilung auch an kleinere Bildschirme an. Auf mobilen Geräten
+              wird der Inhalt gestapelt, um Platz zu sparen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer v1.2 -->
     <footer class="bg-wm-black py-8 text-gray-200">
