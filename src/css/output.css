@@ -670,6 +670,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -704,6 +708,18 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-44 {
+  height: 11rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .max-h-0 {
