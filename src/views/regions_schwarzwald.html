@@ -95,53 +95,69 @@
     </header>
 
     <!-- Breadcrumb Section -->
-    <div class="bg-white">
-      <div class="container">
-        <div class="max-w-7xl text-sm py-4">
-          <nav>
-            <ul class="flex space-x-2 text-wm-black">
-              <li>
-                <a href="index.html" class="underline hover:no-underline"
-                  >Startseite</a
-                >
-              </li>
-              <li>/</li>
-              <li>
-                <a href="regions.html" class="underline hover:no-underline"
-                  >Regionen</a
-                >
-              </li>
-              <li>/</li>
-              <li>
-                <a href="regions.html" class="underline hover:no-underline"
-                  >Schwarzwald</a
-                >
-              </li>
-            </ul>
-          </nav>
+    <section>
+      <div class="bg-white">
+        <div class="container">
+          <div class="max-w-7xl text-sm py-4">
+            <nav>
+              <ul class="flex space-x-2 text-wm-black">
+                <li>
+                  <a href="index.html" class="underline hover:no-underline"
+                    >Startseite</a
+                  >
+                </li>
+                <li>/</li>
+                <li>
+                  <a href="regions.html" class="underline hover:no-underline"
+                    >Regionen</a
+                  >
+                </li>
+                <li>/</li>
+                <li>
+                  <a href="regions.html" class="underline hover:no-underline"
+                    >Schwarzwald</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="p-4">
-      <h2 class="text-center font-serif text-3xl">
-        Region: Schwarzwald - Baden-Württemberg
-      </h2>
-    </div>
-
-    <!-- Region Einführung -->
+    <!-- Headline Section -->
     <section
-      class="container mx-auto my-6 p-6 bg-wm-beige rounded-lg shadow-md"
+      class="relative bg-cover bg-center shadow"
+      style="background-image: url('../../public/images/regions/schwarzwald_bg.jpg')"
     >
-      <h2 class="text-2xl font-semibold text-gray-800">Über die Region</h2>
-      <p class="mt-4 text-gray-700">
-        Der Schwarzwald in Baden-Württemberg – eine Region voller Tradition,
-        natürlicher Schönheit und kulinarischer Vielfalt. Hier entstehen
-        einzigartige Lebensmittel, geprägt von frischer Bergluft, klaren Quellen
-        und regionalem Handwerk. Ob aromatischer Tannenhonig, traditioneller
-        Schinken oder feine Destillate – jedes Produkt erzählt die Geschichte
-        von Leidenschaft und Verbundenheit zur Natur.
-      </p>
+      <!-- Farbverlauf Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-wm-black via-transparent to-transparent"
+      ></div>
+
+      <!-- Inhalt -->
+      <div class="relative p-4 pt-8 container">
+        <h2 class="text-center font-serif text-3xl text-white drop-shadow-md">
+          Region: Schwarzwald - Baden-Württemberg
+        </h2>
+      </div>
+
+      <!-- Region Einführung -->
+      <div class="relative p-6">
+        <section
+          class="container mx-auto my-6 p-6 bg-wm-beige rounded-lg shadow-md"
+        >
+          <h2 class="text-2xl font-semibold text-gray-800">Über die Region</h2>
+          <p class="mt-4 text-gray-700">
+            Der Schwarzwald in Baden-Württemberg – eine Region voller Tradition,
+            natürlicher Schönheit und kulinarischer Vielfalt. Hier entstehen
+            einzigartige Lebensmittel, geprägt von frischer Bergluft, klaren
+            Quellen und regionalem Handwerk. Ob aromatischer Tannenhonig,
+            traditioneller Schinken oder feine Destillate – jedes Produkt
+            erzählt die Geschichte von Leidenschaft und Verbundenheit zur Natur.
+          </p>
+        </section>
+      </div>
     </section>
 
     <!-- Produkte aus der Region -->
