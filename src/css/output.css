@@ -624,11 +624,6 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -659,6 +654,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -679,12 +678,20 @@ video {
   margin-top: 2rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -1018,6 +1025,11 @@ video {
   background-color: rgb(176 113 65 / var(--tw-bg-opacity, 1));
 }
 
+.bg-wm-darkbrown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(80 33 29 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1218,6 +1230,11 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity, 1));
@@ -1341,6 +1358,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-wm-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 30 30 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-wm-brown:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(176 113 65 / var(--tw-bg-opacity, 1));
@@ -1356,6 +1378,11 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-wm-beige:hover {
+  --tw-text-opacity: 1;
+  color: rgb(247 237 226 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-wm-darkbrown:hover {
   --tw-text-opacity: 1;
   color: rgb(80 33 29 / var(--tw-text-opacity, 1));
@@ -1367,10 +1394,6 @@ video {
 
 .hover\:no-underline:hover {
   text-decoration-line: none;
-}
-
-.hover\:decoration-wm-darkbrown:hover {
-  text-decoration-color: #50211d;
 }
 
 .focus\:border-wm-brown:focus {
@@ -1502,6 +1525,10 @@ video {
 
   .lg\:w-3\/4 {
     width: 75%;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {
