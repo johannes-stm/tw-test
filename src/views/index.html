@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <!-- Meta-Informationen -->
@@ -38,14 +38,17 @@
       content="Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen bringen. Unterstützen Sie lokale Produzenten und genießen Sie handgefertigte Qualität."
     />
     <meta property="og:image" content="../../public/images/logo_colored.png" />
-    <meta property="og:url" content="https://www.einzigware.projekt.dhbw-heidenheim.de" />
+    <meta
+      property="og:url"
+      content="https://www.einzigware.projekt.dhbw-heidenheim.de"
+    />
     <meta property="og:type" content="website" />
   </head>
 
   <body>
     <!-- Header v1.4 -->
     <header
-      class="sticky top-0 bg-white z-50 shadow-md"
+      class="sticky top-0 z-50 bg-white shadow-md"
       aria-label="Main Header"
     >
       <div class="container">
@@ -136,7 +139,9 @@
     <section aria-label="Hero Section">
       <div
         class="relative bg-cover bg-center bg-no-repeat"
-        style="background-image: url('../../public/images/homepage/hero.png')"
+        style="
+          background-image: url(&quot;../../public/images/homepage/hero.png&quot;);
+        "
       >
         <!-- Farbverlauf Overlay -->
         <div
@@ -146,20 +151,20 @@
 
         <!-- Content -->
         <div
-          class="relative container flex flex-col items-start justify-center h-full px-4 py-14 sm:px-6 lg:px-8 lg:py-28"
+          class="container relative flex h-full flex-col items-start justify-center px-4 py-14 sm:px-6 lg:px-8 lg:py-28"
         >
           <article class="flex-1 lg:w-1/2" aria-label="Hero Content">
-            <h1 class="text-3xl font-serif text-left lg:text-5xl text-white">
+            <h1 class="text-left font-serif text-3xl text-white lg:text-5xl">
               Wir bringen Heimat nach Hause
             </h1>
-            <p class="my-6 text-lg font-serif text-left text-white">
+            <p class="my-6 text-left font-serif text-lg text-white">
               Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen
               bringen. Tradition, Handwerk und moderne Eleganz vereint.
             </p>
             <a href="products.html" aria-label="Zur Produkte-Seite">
               <button
                 type="button"
-                class="box-border rounded-full border-2 border-white bg-black px-4 py-2 text-white hover:bg-white hover:text-black transition"
+                class="box-border rounded-full border-2 border-white bg-black px-4 py-2 text-white transition hover:bg-white hover:text-black"
                 aria-label="Finde Einzigartiges"
               >
                 Finde Einzigartiges
@@ -182,12 +187,12 @@
 
         <!-- Produktkarten -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+          class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4"
           aria-label="Produktliste"
         >
           <!-- Produktkarte -->
           <article
-            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
@@ -197,7 +202,7 @@
               <img
                 src="../../public/images/homepage/senf.jpg"
                 alt="Bild von Historischem Senf"
-                class="w-full h-48 object-cover"
+                class="h-48 w-full object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
@@ -209,7 +214,7 @@
           </article>
 
           <article
-            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
@@ -219,7 +224,7 @@
               <img
                 src="../../public/images/homepage/senf.jpg"
                 alt="Bild von Historischem Senf"
-                class="w-full h-48 object-cover"
+                class="h-48 w-full object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
@@ -231,7 +236,7 @@
           </article>
 
           <article
-            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
@@ -241,7 +246,7 @@
               <img
                 src="../../public/images/homepage/senf.jpg"
                 alt="Bild von Historischem Senf"
-                class="w-full h-48 object-cover"
+                class="h-48 w-full object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
@@ -252,7 +257,7 @@
             </a>
           </article>
           <article
-            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
@@ -262,7 +267,7 @@
               <img
                 src="../../public/images/homepage/senf.jpg"
                 alt="Bild von Historischem Senf"
-                class="w-full h-48 object-cover"
+                class="h-48 w-full object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
@@ -273,7 +278,7 @@
             </a>
           </article>
           <article
-            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
@@ -283,7 +288,7 @@
               <img
                 src="../../public/images/homepage/senf.jpg"
                 alt="Bild von Historischem Senf"
-                class="w-full h-48 object-cover"
+                class="h-48 w-full object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
@@ -294,7 +299,7 @@
             </a>
           </article>
           <article
-            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
@@ -304,7 +309,7 @@
               <img
                 src="../../public/images/homepage/senf.jpg"
                 alt="Bild von Historischem Senf"
-                class="w-full h-48 object-cover"
+                class="h-48 w-full object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
@@ -315,7 +320,7 @@
             </a>
           </article>
           <article
-            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
@@ -325,7 +330,7 @@
               <img
                 src="../../public/images/homepage/senf.jpg"
                 alt="Bild von Historischem Senf"
-                class="w-full h-48 object-cover"
+                class="h-48 w-full object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
@@ -336,7 +341,7 @@
             </a>
           </article>
           <article
-            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
@@ -346,7 +351,7 @@
               <img
                 src="../../public/images/homepage/senf.jpg"
                 alt="Bild von Historischem Senf"
-                class="w-full h-48 object-cover"
+                class="h-48 w-full object-cover"
               />
               <div class="p-4">
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
@@ -363,7 +368,7 @@
     <!-- Regionen -->
     <section aria-label="Regionen im Fokus">
       <div class="container mx-auto">
-        <header class="text-center pb-6 pt-8">
+        <header class="pb-6 pt-8 text-center">
           <h2 class="font-serif text-3xl" aria-label="Überschrift Regionen">
             Regionen im Fokus
           </h2>
@@ -487,7 +492,7 @@
     <!-- FAQ -->
     <section aria-label="Was ist Einzigware?">
       <div class="container mx-auto">
-        <header class="text-center pb-6 pt-8">
+        <header class="pb-6 pt-8 text-center">
           <h2
             class="font-serif text-3xl"
             aria-label="Überschrift: Was ist Einzigware?"
@@ -497,7 +502,7 @@
         </header>
       </div>
 
-      <div class="container mx-auto px-6 mb-8 bg-gray-50 rounded-lg">
+      <div class="container mx-auto mb-8 rounded-lg bg-gray-50 px-6">
         <!-- FAQ-Liste -->
         <div aria-label="Häufig gestellte Fragen">
           <!-- FAQ Item 1 -->
@@ -512,7 +517,7 @@
               Was ist die Idee hinter dieser Plattform?
             </summary>
             <div
-              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+              class="max-h-0 overflow-hidden transition-all duration-500 group-open:max-h-96"
             >
               <p class="mt-2 text-gray-600">
                 Unsere Plattform verbindet unabhängige, lokale
@@ -536,7 +541,7 @@
               Für wen ist die Plattform gedacht?
             </summary>
             <div
-              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+              class="max-h-0 overflow-hidden transition-all duration-500 group-open:max-h-96"
             >
               <p class="mt-2 text-gray-600">
                 Die Plattform richtet sich an Käufer, die Freude an
@@ -559,7 +564,7 @@
               Was macht die Produkte auf der Plattform so besonders?
             </summary>
             <div
-              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+              class="max-h-0 overflow-hidden transition-all duration-500 group-open:max-h-96"
             >
               <p class="mt-2 text-gray-600">
                 Jedes Produkt ist ein Unikat mit einer Geschichte. Ob
@@ -582,7 +587,7 @@
               Warum sollte ich als Produzent meine Produkte hier verkaufen?
             </summary>
             <div
-              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+              class="max-h-0 overflow-hidden transition-all duration-500 group-open:max-h-96"
             >
               <p class="mt-2 text-gray-600">
                 Unsere Plattform bietet Ihnen eine einfache Möglichkeit, Kunden
@@ -605,7 +610,7 @@
               Welche Vorteile habe ich als Käufer?
             </summary>
             <div
-              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+              class="max-h-0 overflow-hidden transition-all duration-500 group-open:max-h-96"
             >
               <p class="mt-2 text-gray-600">
                 Sie erhalten Zugang zu exklusiven, regionalen Produkten,
@@ -627,7 +632,7 @@
               Wie funktioniert die Plattform?
             </summary>
             <div
-              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+              class="max-h-0 overflow-hidden transition-all duration-500 group-open:max-h-96"
             >
               <p class="mt-2 text-gray-600">
                 Käufer können einfach stöbern, auswählen und direkt beim
@@ -646,7 +651,7 @@
               Sind die Produkte nachhaltig?
             </summary>
             <div
-              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+              class="max-h-0 overflow-hidden transition-all duration-500 group-open:max-h-96"
             >
               <p class="mt-2 text-gray-600">
                 Ja, unsere Produzenten legen großen Wert auf Nachhaltigkeit und
