@@ -13,12 +13,15 @@
   </head>
 
   <body>
-    <!-- Header v1.3 -->
-    <header class="sticky top-0 bg-white z-50 shadow-md">
+    <!-- Header v1.4 -->
+    <header
+      class="sticky top-0 bg-white z-50 shadow-md"
+      aria-label="Main Header"
+    >
       <div class="container">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
-            <a href="/src/views/index.html">
+            <a href="/src/views/index.html" aria-label="Zur Startseite">
               <img
                 src="../../public/images/logo.png"
                 alt="Logo Einzigware"
@@ -26,67 +29,72 @@
               />
             </a>
           </div>
-          <div class="hidden lg:block">
-            <nav>
-              <ul class="flex items-center gap-6">
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="products.html"
-                  >
-                    Produkte
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="regions.html"
-                  >
-                    Regionen
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="about.html"
-                  >
-                    Unsere Vision
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="contact.html"
-                  >
-                    Kontakt
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="hidden lg:block" aria-label="Hauptnavigation">
+            <ul class="flex items-center gap-6">
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="products.html"
+                  aria-label="Produkte"
+                >
+                  Produkte
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="regions.html"
+                  aria-label="Regionen"
+                >
+                  Regionen
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="about.html"
+                  aria-label="Unsere Vision"
+                >
+                  Unsere Vision
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="contact.html"
+                  aria-label="Kontakt"
+                >
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
           <div class="flex items-center gap-4">
             <div class="sm:flex sm:gap-4">
-              <a
+              <button
                 class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
-                href="login.html"
+                onclick="location.href='login.html'"
+                aria-label="Anmelden"
               >
                 Anmelden
-              </a>
+              </button>
               <div class="hidden sm:flex">
-                <a
+                <button
                   class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
-                  href="registration.html"
+                  onclick="location.href='registration.html'"
+                  aria-label="Registrieren"
                 >
                   Registrieren
-                </a>
+                </button>
               </div>
               <div class="hidden sm:flex">
-                <a
+                <button
                   class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
-                  href="become-seller.html"
+                  onclick="location.href='become-seller.html'"
+                  aria-label="Verkäufer werden"
                 >
                   Verkäufer werden
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -95,7 +103,7 @@
     </header>
 
     <!-- Hero -->
-    <section>
+    <section aria-label="Hero Section">
       <div
         class="relative bg-cover bg-center bg-no-repeat"
         style="background-image: url('../../public/images/homepage/hero.png')"
@@ -103,13 +111,14 @@
         <!-- Farbverlauf Overlay -->
         <div
           class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"
+          aria-hidden="true"
         ></div>
 
         <!-- Content -->
         <div
           class="relative container flex flex-col items-start justify-center h-full px-4 py-14 sm:px-6 lg:px-8 lg:py-28"
         >
-          <div class="flex-1 lg:w-1/2">
+          <article class="flex-1 lg:w-1/2" aria-label="Hero Content">
             <h1 class="text-3xl font-serif text-left lg:text-5xl text-white">
               Wir bringen Heimat nach Hause
             </h1>
@@ -117,450 +126,530 @@
               Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen
               bringen. Tradition, Handwerk und moderne Eleganz vereint.
             </p>
-            <a href="products.html">
+            <a href="products.html" aria-label="Zur Produkte-Seite">
               <button
                 type="button"
                 class="box-border rounded-full border-2 border-white bg-black px-4 py-2 text-white hover:bg-white hover:text-black transition"
+                aria-label="Finde Einzigartiges"
               >
                 Finde Einzigartiges
               </button>
             </a>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Produkte  -->
-    <div class="container mx-auto">
-      <!-- Überschrift Produkte -->
-      <div class="pb-6 pt-8">
-        <h2 class="text-center font-serif text-3xl">
-          Aktuelle Produkte im Trend
-        </h2>
-      </div>
+    <section aria-label="Trendprodukte">
+      <div class="container mx-auto">
+        <!-- Überschrift Produkte -->
+        <header class="pb-6 pt-8 text-center">
+          <h2 class="font-serif text-3xl" aria-label="Überschrift Produkte">
+            Aktuelle Produkte im Trend
+          </h2>
+        </header>
 
-      <!-- Produktkarten -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        <!-- Produktkarte -->
-        <a href="products_template.html">
-          <div
+        <!-- Produktkarten -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+          aria-label="Produktliste"
+        >
+          <!-- Produktkarte -->
+          <article
             class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            aria-label="Produktkarte: Historischer Senf"
           >
-            <img
-              src="../../public/images/homepage/senf.jpg"
-              alt="Produktbild"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h2 class="text-lg font-semibold">Historischer Senf</h2>
-              <p>Senfmühle Köln / Cochem</p>
-              <p class="text-gray-600">Nordrhein-Westfahlen</p>
-              <p class="mt-2 font-bold">ab 4,99€</p>
-            </div>
-          </div></a
-        >
+            <a
+              href="products_template.html"
+              aria-label="Historischer Senf Details"
+            >
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt="Bild von Historischem Senf"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+                <p class="mt-2 font-bold">ab 4,99€</p>
+              </div>
+            </a>
+          </article>
 
-        <div
-          class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
-        >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
+          <article
+            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            aria-label="Produktkarte: Historischer Senf"
+          >
+            <a
+              href="products_template.html"
+              aria-label="Historischer Senf Details"
+            >
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt="Bild von Historischem Senf"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+                <p class="mt-2 font-bold">ab 4,99€</p>
+              </div>
+            </a>
+          </article>
 
-        <div
-          class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
-        >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
-          class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
-        >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
-          class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
-        >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
-          class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
-        >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
-          class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
-        >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
-          class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
-        >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
+          <article
+            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            aria-label="Produktkarte: Historischer Senf"
+          >
+            <a
+              href="products_template.html"
+              aria-label="Historischer Senf Details"
+            >
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt="Bild von Historischem Senf"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+                <p class="mt-2 font-bold">ab 4,99€</p>
+              </div>
+            </a>
+          </article>
+          <article
+            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            aria-label="Produktkarte: Historischer Senf"
+          >
+            <a
+              href="products_template.html"
+              aria-label="Historischer Senf Details"
+            >
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt="Bild von Historischem Senf"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+                <p class="mt-2 font-bold">ab 4,99€</p>
+              </div>
+            </a>
+          </article>
+          <article
+            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            aria-label="Produktkarte: Historischer Senf"
+          >
+            <a
+              href="products_template.html"
+              aria-label="Historischer Senf Details"
+            >
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt="Bild von Historischem Senf"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+                <p class="mt-2 font-bold">ab 4,99€</p>
+              </div>
+            </a>
+          </article>
+          <article
+            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            aria-label="Produktkarte: Historischer Senf"
+          >
+            <a
+              href="products_template.html"
+              aria-label="Historischer Senf Details"
+            >
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt="Bild von Historischem Senf"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+                <p class="mt-2 font-bold">ab 4,99€</p>
+              </div>
+            </a>
+          </article>
+          <article
+            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            aria-label="Produktkarte: Historischer Senf"
+          >
+            <a
+              href="products_template.html"
+              aria-label="Historischer Senf Details"
+            >
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt="Bild von Historischem Senf"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+                <p class="mt-2 font-bold">ab 4,99€</p>
+              </div>
+            </a>
+          </article>
+          <article
+            class="bg-white shadow rounded-lg overflow-hidden transform transition duration-200 hover:scale-103 cursor-pointer"
+            aria-label="Produktkarte: Historischer Senf"
+          >
+            <a
+              href="products_template.html"
+              aria-label="Historischer Senf Details"
+            >
+              <img
+                src="../../public/images/homepage/senf.jpg"
+                alt="Bild von Historischem Senf"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                <p>Senfmühle Köln / Cochem</p>
+                <p class="text-gray-600">Nordrhein-Westfahlen</p>
+                <p class="mt-2 font-bold">ab 4,99€</p>
+              </div>
+            </a>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Regionen -->
-    <section>
+    <section aria-label="Regionen im Fokus">
       <div class="container mx-auto">
-        <div class="text-center pb-6 pt-8">
-          <h2 class="font-serif text-3xl">Regionen im Fokus</h2>
-        </div>
+        <header class="text-center pb-6 pt-8">
+          <h2 class="font-serif text-3xl" aria-label="Überschrift Regionen">
+            Regionen im Fokus
+          </h2>
+        </header>
       </div>
-
+    
       <div class="container mx-auto">
         <!-- Grid-Layout für Desktop und Flex-Anpassung für Mobilgeräte -->
         <div
           class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
+          aria-label="Regionenliste"
         >
           <!-- Box 1 -->
-          <div
+          <article
             class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+            aria-label="Region Bayern"
           >
-            <a href="regions.html">
+            <a href="regions.html" aria-label="Mehr Informationen zur Region Bayern">
               <img
                 src="../../public/images/homepage/schwarzwald.png"
-                alt="Bild 1"
+                alt="Bild von Bayern"
                 class="w-full object-contain"
               />
               <div class="mt-6">
                 <h3 class="font-bold">Bayern</h3>
                 <p class="text-gray-600">Allgäu-Region</p>
-              </div></a
-            >
-          </div>
-
+              </div>
+            </a>
+          </article>
+    
           <!-- Box 2 -->
-          <div
+          <article
             class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+            aria-label="Region Baden-Württemberg"
           >
-            <a href="regions.html">
+            <a
+              href="regions.html"
+              aria-label="Mehr Informationen zur Region Baden-Württemberg"
+            >
               <img
                 src="../../public/images/homepage/schwarzwald.png"
-                alt="Bild 1"
+                alt="Bild von Baden-Württemberg"
                 class="w-full object-contain"
               />
               <div class="mt-6">
                 <h3 class="font-bold">Baden-Württemberg</h3>
                 <p class="text-gray-600">Schwarzwald</p>
-              </div></a
-            >
-          </div>
-
+              </div>
+            </a>
+          </article>
+    
           <!-- Box 3 -->
-          <div
+          <article
             class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+            aria-label="Region Nordrhein-Westfalen"
           >
-            <a href="regions.html">
+            <a
+              href="regions.html"
+              aria-label="Mehr Informationen zur Region Nordrhein-Westfalen"
+            >
               <img
                 src="../../public/images/homepage/schwarzwald.png"
-                alt="Bild 1"
+                alt="Bild von Nordrhein-Westfalen"
                 class="w-full object-contain"
               />
               <div class="mt-6">
-                <h3 class="font-bold">Nordrhein-Westfahlen</h3>
+                <h3 class="font-bold">Nordrhein-Westfalen</h3>
                 <p class="text-gray-600">Köln und Düsseldorf</p>
-              </div></a
-            >
-          </div>
-
+              </div>
+            </a>
+          </article>
+    
           <!-- Box 4 -->
-          <div
+          <article
             class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+            aria-label="Region Hamburg"
           >
-            <a href="regions.html">
+            <a href="regions.html" aria-label="Mehr Informationen zur Region Hamburg">
               <img
                 src="../../public/images/homepage/schwarzwald.png"
-                alt="Bild 1"
+                alt="Bild von Hamburg"
                 class="w-full object-contain"
               />
               <div class="mt-6">
                 <h3 class="font-bold">Hamburg</h3>
                 <p class="text-gray-600">Hamburg-Winterhude</p>
-              </div></a
-            >
-          </div>
-
+              </div>
+            </a>
+          </article>
+    
           <!-- Box 5 -->
-          <div
+          <article
             class="transform rounded-lg bg-wm-beige p-6 text-center transition duration-300 hover:scale-105"
+            aria-label="Region Sachsen"
           >
-            <a href="regions.html">
+            <a href="regions.html" aria-label="Mehr Informationen zur Region Sachsen">
               <img
                 src="../../public/images/homepage/schwarzwald.png"
-                alt="Bild 1"
+                alt="Bild von Sachsen"
                 class="w-full object-contain"
               />
               <div class="mt-6">
                 <h3 class="font-bold">Sachsen</h3>
                 <p class="text-gray-600">Dresden und Erzgebirge</p>
-              </div></a
-            >
-          </div>
+              </div>
+            </a>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section>
+    <section aria-label="Was ist Einzigware?">
       <div class="container mx-auto">
-        <div class="text-center pb-6 pt-8">
-          <h2 class="font-serif text-3xl">Was ist Einzigware?</h2>
+        <header class="text-center pb-6 pt-8">
+          <h2 class="font-serif text-3xl" aria-label="Überschrift: Was ist Einzigware?">
+            Was ist Einzigware?
+          </h2>
+        </header>
+      </div>
+    
+      <div class="container mx-auto px-6 mb-8 bg-gray-50 rounded-lg">
+        <!-- FAQ-Liste -->
+        <div aria-label="Häufig gestellte Fragen">
+          <!-- FAQ Item 1 -->
+          <details class="group border-b border-gray-200 py-4" aria-labelledby="faq1">
+            <summary
+              id="faq1"
+              class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+            >
+              Was ist die Idee hinter dieser Plattform?
+            </summary>
+            <div
+              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+            >
+              <p class="mt-2 text-gray-600">
+                Unsere Plattform verbindet unabhängige, lokale
+                Lebensmittelproduzenten mit Menschen, die Wert auf hochwertige,
+                regionale und einzigartige Produkte legen. Hier können Produzenten
+                ihre besonderen Produkte und Geschichten einem breiteren Publikum
+                präsentieren.
+              </p>
+            </div>
+          </details>
+    
+          <!-- FAQ Item 2 -->
+          <details class="group border-b border-gray-200 py-4" aria-labelledby="faq2">
+            <summary
+              id="faq2"
+              class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+            >
+              Für wen ist die Plattform gedacht?
+            </summary>
+            <div
+              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+            >
+              <p class="mt-2 text-gray-600">
+                Die Plattform richtet sich an Käufer, die Freude an einzigartigen
+                Lebensmitteln haben und regionale Produzenten unterstützen
+                möchten, sowie an Verkäufer, die ihre Produkte online präsentieren
+                und ihre Reichweite vergrößern wollen.
+              </p>
+            </div>
+          </details>
+    
+          <!-- FAQ Item 3 -->
+          <details class="group border-b border-gray-200 py-4" aria-labelledby="faq3">
+            <summary
+              id="faq3"
+              class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+            >
+              Was macht die Produkte auf der Plattform so besonders?
+            </summary>
+            <div
+              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+            >
+              <p class="mt-2 text-gray-600">
+                Jedes Produkt ist ein Unikat mit einer Geschichte. Ob Tannenhonig
+                aus dem Schwarzwald oder historischer Senf – hier finden Sie
+                Lebensmittel, die mit Leidenschaft und lokalem Know-how
+                hergestellt werden.
+              </p>
+            </div>
+          </details>
+    
+          <!-- FAQ Item 4 -->
+          <details class="group border-b border-gray-200 py-4" aria-labelledby="faq4">
+            <summary
+              id="faq4"
+              class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+            >
+              Warum sollte ich als Produzent meine Produkte hier verkaufen?
+            </summary>
+            <div
+              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+            >
+              <p class="mt-2 text-gray-600">
+                Unsere Plattform bietet Ihnen eine einfache Möglichkeit, Kunden
+                über Ihre Region hinaus zu erreichen, Ihre Produkte sichtbar zu
+                machen und Ihre Reichweite zu vergrößern – ganz ohne technisches
+                Vorwissen.
+              </p>
+            </div>
+          </details>
+    
+          <!-- FAQ Item 5 -->
+          <details class="group border-b border-gray-200 py-4" aria-labelledby="faq5">
+            <summary
+              id="faq5"
+              class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+            >
+              Welche Vorteile habe ich als Käufer?
+            </summary>
+            <div
+              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+            >
+              <p class="mt-2 text-gray-600">
+                Sie erhalten Zugang zu exklusiven, regionalen Produkten,
+                unterstützen lokale Produzenten und können sich auf die Qualität
+                und Herkunft der Lebensmittel verlassen.
+              </p>
+            </div>
+          </details>
+    
+          <!-- FAQ Item 6 -->
+          <details class="group border-b border-gray-200 py-4" aria-labelledby="faq6">
+            <summary
+              id="faq6"
+              class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+            >
+              Wie funktioniert die Plattform?
+            </summary>
+            <div
+              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+            >
+              <p class="mt-2 text-gray-600">
+                Käufer können einfach stöbern, auswählen und direkt beim
+                Produzenten bestellen. Verkäufer erstellen ein Profil,
+                präsentieren ihre Produkte und erreichen so neue Kunden.
+              </p>
+            </div>
+          </details>
+    
+          <!-- FAQ Item 7 -->
+          <details class="group py-4" aria-labelledby="faq7">
+            <summary
+              id="faq7"
+              class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
+            >
+              Sind die Produkte nachhaltig?
+            </summary>
+            <div
+              class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
+            >
+              <p class="mt-2 text-gray-600">
+                Ja, unsere Produzenten legen großen Wert auf Nachhaltigkeit und
+                Regionalität. Die Plattform fördert kurze Lieferketten und stärkt
+                die lokale Wertschöpfung.
+              </p>
+            </div>
+          </details>
         </div>
       </div>
-
-      <div class="container mx-auto px-6 mb-8 bg-gray-50 rounded-lg">
-        <!-- FAQ Item 1 -->
-        <details class="group border-b border-gray-200 py-4">
-          <summary
-            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
-          >
-            Was ist die Idee hinter dieser Plattform?
-          </summary>
-          <div
-            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
-          >
-            <p class="mt-2 text-gray-600">
-              Unsere Plattform verbindet unabhängige, lokale
-              Lebensmittelproduzenten mit Menschen, die Wert auf hochwertige,
-              regionale und einzigartige Produkte legen. Hier können Produzenten
-              ihre besonderen Produkte und Geschichten einem breiteren Publikum
-              präsentieren.
-            </p>
-          </div>
-        </details>
-
-        <!-- FAQ Item 2 -->
-        <details class="group border-b border-gray-200 py-4">
-          <summary
-            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
-          >
-            Für wen ist die Plattform gedacht?
-          </summary>
-          <div
-            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
-          >
-            <p class="mt-2 text-gray-600">
-              Die Plattform richtet sich an Käufer, die Freude an einzigartigen
-              Lebensmitteln haben und regionale Produzenten unterstützen
-              möchten, sowie an Verkäufer, die ihre Produkte online präsentieren
-              und ihre Reichweite vergrößern wollen.
-            </p>
-          </div>
-        </details>
-
-        <!-- FAQ Item 3 -->
-        <details class="group border-b border-gray-200 py-4">
-          <summary
-            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
-          >
-            Was macht die Produkte auf der Plattform so besonders?
-          </summary>
-          <div
-            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
-          >
-            <p class="mt-2 text-gray-600">
-              Jedes Produkt ist ein Unikat mit einer Geschichte. Ob Tannenhonig
-              aus dem Schwarzwald oder historischer Senf – hier finden Sie
-              Lebensmittel, die mit Leidenschaft und lokalem Know-how
-              hergestellt werden.
-            </p>
-          </div>
-        </details>
-
-        <!-- FAQ Item 4 -->
-        <details class="group border-b border-gray-200 py-4">
-          <summary
-            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
-          >
-            Warum sollte ich als Produzent meine Produkte hier verkaufen?
-          </summary>
-          <div
-            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
-          >
-            <p class="mt-2 text-gray-600">
-              Unsere Plattform bietet Ihnen eine einfache Möglichkeit, Kunden
-              über Ihre Region hinaus zu erreichen, Ihre Produkte sichtbar zu
-              machen und Ihre Reichweite zu vergrößern – ganz ohne technisches
-              Vorwissen.
-            </p>
-          </div>
-        </details>
-
-        <!-- FAQ Item 5 -->
-        <details class="group border-b border-gray-200 py-4">
-          <summary
-            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
-          >
-            Welche Vorteile habe ich als Käufer?
-          </summary>
-          <div
-            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
-          >
-            <p class="mt-2 text-gray-600">
-              Sie erhalten Zugang zu exklusiven, regionalen Produkten,
-              unterstützen lokale Produzenten und können sich auf die Qualität
-              und Herkunft der Lebensmittel verlassen.
-            </p>
-          </div>
-        </details>
-
-        <!-- FAQ Item 6 -->
-        <details class="group border-b border-gray-200 py-4">
-          <summary
-            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
-          >
-            Wie funktioniert die Plattform?
-          </summary>
-          <div
-            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
-          >
-            <p class="mt-2 text-gray-600">
-              Käufer können einfach stöbern, auswählen und direkt beim
-              Produzenten bestellen. Verkäufer erstellen ein Profil,
-              präsentieren ihre Produkte und erreichen so neue Kunden.
-            </p>
-          </div>
-        </details>
-
-        <!-- FAQ Item 7 -->
-        <details class="group py-4">
-          <summary
-            class="cursor-pointer text-lg font-semibold text-wm-black focus:outline-none"
-          >
-            Sind die Produkte nachhaltig?
-          </summary>
-          <div
-            class="overflow-hidden max-h-0 transition-all duration-500 group-open:max-h-96"
-          >
-            <p class="mt-2 text-gray-600">
-              Ja, unsere Produzenten legen großen Wert auf Nachhaltigkeit und
-              Regionalität. Die Plattform fördert kurze Lieferketten und stärkt
-              die lokale Wertschöpfung.
-            </p>
-          </div>
-        </details>
-      </div>
     </section>
-
-    <!-- Footer v1.2 -->
-    <footer class="bg-wm-black py-8 text-gray-200">
+    
+    <!-- Footer v1.3 -->
+    <footer class="bg-wm-black py-8 text-gray-200" aria-label="Einzigware Footer">
       <div
         class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
       >
         <!-- Spalte 1: Logo -->
-        <a href="index.html">
-          <div class="flex justify-center md:justify-start">
-            <img
-              src="../../public/images/logo_colored.png"
-              alt="Einzigware Logo"
-              class="h-44 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
-            />
-          </div>
-        </a>
-
+        <div aria-label="Logo und Startseite Link">
+          <a href="index.html" aria-label="Zur Startseite">
+            <div class="flex justify-center md:justify-start">
+              <img
+                src="../../public/images/logo_colored.png"
+                alt="Einzigware Logo"
+                class="h-44 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+              />
+            </div>
+          </a>
+        </div>
+    
         <!-- Spalte 2 und 3 mit Slogan oben -->
         <div class="text-center md:col-span-2 md:text-left">
-          <p class="mb-4 text-gray-400">Wir bringen Heimat nach Hause</p>
-
-          <div class="grid grid-cols-2 gap-8">
+          <p class="mb-4 text-gray-400" aria-label="Slogan">
+            Wir bringen Heimat nach Hause
+          </p>
+    
+          <div class="grid grid-cols-2 gap-8" aria-label="Footer-Navigation">
             <!-- Spalte 2: Hyperlinks -->
-            <div class="flex flex-col space-y-2">
-              <a href="#" class="hover:text-gray-400">Standorte</a>
-              <a href="#" class="hover:text-gray-400">Produkte</a>
-              <a href="#" class="hover:text-gray-400">Verkäufer werden</a>
-              <a href="#" class="hover:text-gray-400">Unsere Vision</a>
-            </div>
-
+            <nav aria-label="Erste Spalte Links">
+              <ul class="flex flex-col space-y-2">
+                <li><a href="products.html" class="hover:text-gray-400">Produkte</a></li>
+                <li><a href="regions.html" class="hover:text-gray-400">Regionen</a></li>
+                <li><a href="about.html" class="hover:text-gray-400">Unsere Vision</a></li>
+                <li><a href="become-seller.html" class="hover:text-gray-400">Werde Verkäufer</a></li>
+              </ul>
+            </nav>
+    
             <!-- Spalte 3: Hyperlinks -->
-            <div class="flex flex-col space-y-2">
-              <a href="#" class="hover:text-gray-400">Kontakt</a>
-              <a href="#" class="hover:text-gray-400">Versand</a>
-              <a href="#" class="hover:text-gray-400">Impressum</a>
-              <a href="#" class="hover:text-gray-400">Datenschutz</a>
-            </div>
+            <nav aria-label="Zweite Spalte Links">
+              <ul class="flex flex-col space-y-2">
+                <li><a href="contact.html" class="hover:text-gray-400">Kontakt</a></li>
+                <li><a href="legal-notice.html" class="hover:text-gray-400">Impressum</a></li>
+                <li><a href="privacy.html" class="hover:text-gray-400">Datenschutz</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
-
+    
       <!-- Copyright -->
-      <div class="mt-8 text-center text-gray-500">
+      <div class="mt-8 text-center text-gray-500" aria-label="Copyright-Hinweis">
         <p>&copy; 2024 Einzigware</p>
       </div>
-    </footer>
+    </footer>    
   </body>
 </html>

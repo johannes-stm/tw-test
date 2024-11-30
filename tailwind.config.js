@@ -9,6 +9,8 @@ module.exports = {
         "wm-beige": "#f7ede2",
         "wm-darkbrown": "#50211d",
         "wm-blue": "#00CED1",
+        "wm-lightgray": "#e5e7eb",
+        "wm-darkgray": "#1f2937",
       },
       container: {
         center: true, // Optional: Container wird zentriert
