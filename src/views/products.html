@@ -1,24 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
   <head>
+    <!-- Meta-Informationen -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Einzigware - Entdecken Sie einzigartige, regionale Produkte. Tradition trifft auf moderne Eleganz."
+    />
+    <meta
+      name="keywords"
+      content="Einzigware, regionale Produkte, Heimat, Tradition, Handwerk"
+    />
+    <meta name="author" content="Einzigware Team" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/output.css" />
+
+    <!-- Favicon -->
     <link
       rel="icon"
       href="../../public/images/favicon.ico"
       type="image/x-icon"
     />
-    <title>Produktübersicht</title>
+
+    <!-- Titel -->
+    <title>Einzigware - Produktübersicht</title>
+
+    <!-- Open Graph für Social Media -->
+    <meta
+      property="og:title"
+      content="Einzigware - Regionale Produkte neu entdecken"
+    />
+    <meta
+      property="og:description"
+      content="Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen bringen. Unterstützen Sie lokale Produzenten und genießen Sie handgefertigte Qualität."
+    />
+    <meta property="og:image" content="../../public/images/logo_colored.png" />
+    <meta
+      property="og:url"
+      content="https://www.einzigware.projekt.dhbw-heidenheim.de"
+    />
+    <meta property="og:type" content="website" />
   </head>
 
   <body>
-    <!-- Header v1.3 -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
+    <!-- Header v1.4 -->
+    <header
+      class="sticky top-0 z-50 bg-white px-4 shadow-md sm:px-0"
+      aria-label="Main Header"
+    >
       <div class="container">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
-            <a href="/src/views/index.html">
+            <a href="/src/views/index.html" aria-label="Zur Startseite">
               <img
                 src="../../public/images/logo.png"
                 alt="Logo Einzigware"
@@ -26,67 +62,72 @@
               />
             </a>
           </div>
-          <div class="hidden lg:block">
-            <nav>
-              <ul class="flex items-center gap-6">
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="products.html"
-                  >
-                    Produkte
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="regions.html"
-                  >
-                    Regionen
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="about.html"
-                  >
-                    Unsere Vision
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="contact.html"
-                  >
-                    Kontakt
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="hidden lg:block" aria-label="Hauptnavigation">
+            <ul class="flex items-center gap-6">
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="products.html"
+                  aria-label="Produkte"
+                >
+                  Produkte
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="regions.html"
+                  aria-label="Regionen"
+                >
+                  Regionen
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="about.html"
+                  aria-label="Unsere Vision"
+                >
+                  Unsere Vision
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="contact.html"
+                  aria-label="Kontakt"
+                >
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
           <div class="flex items-center gap-4">
             <div class="sm:flex sm:gap-4">
-              <a
+              <button
                 class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
-                href="login.html"
+                onclick="location.href='login.html'"
+                aria-label="Anmelden"
               >
                 Anmelden
-              </a>
+              </button>
               <div class="hidden sm:flex">
-                <a
+                <button
                   class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
-                  href="registration.html"
+                  onclick="location.href='registration.html'"
+                  aria-label="Registrieren"
                 >
                   Registrieren
-                </a>
+                </button>
               </div>
               <div class="hidden sm:flex">
-                <a
+                <button
                   class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
-                  href="become-seller.html"
+                  onclick="location.href='become-seller.html'"
+                  aria-label="Verkäufer werden"
                 >
                   Verkäufer werden
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -95,19 +136,25 @@
     </header>
 
     <!-- Breadcrumb Section -->
-    <div class="bg-white px-4 sm:px-0">
+    <div class="bg-white" aria-label="Breadcrumb-Navigation">
       <div class="container">
         <div class="max-w-7xl py-4 text-sm">
-          <nav>
+          <nav aria-label="Navigationspfad">
             <ul class="flex space-x-2 text-wm-black">
               <li>
-                <a href="index.html" class="underline hover:no-underline"
+                <a
+                  href="index.html"
+                  class="underline hover:no-underline"
+                  aria-label="Zurück zur Startseite"
                   >Startseite</a
                 >
               </li>
-              <li>/</li>
+              <li aria-hidden="true">/</li>
               <li>
-                <a href="products.html" class="underline hover:no-underline"
+                <a
+                  href="products.html"
+                  class="underline hover:no-underline"
+                  aria-label="Produktübersicht öffnen"
                   >Produkte</a
                 >
               </li>
@@ -117,194 +164,281 @@
       </div>
     </div>
 
-    <!-- Text -->
-    <div class="container px-4 font-serif sm:px-0">
-      <h1 class="mb-2 text-3xl">Unsere Produkte</h1>
-      <p class="mb-4">
+    <!-- Headline Section -->
+    <div class="container font-serif" aria-label="Kontaktbereich">
+      <h1 class="mb-2 text-3xl" aria-label="Überschrift: Kontaktiere uns">
+        Unsere Produkte
+      </h1>
+      <p
+        aria-label="Beschreibung: Schreib uns – wir sind für dich da und beantworten gerne deine Fragen!"
+      >
         Entdecke regionale Spezialitäten, handgemacht und mit Liebe zur
         Qualität.
       </p>
     </div>
 
-    <!-- Produkte -->
+    <!-- Products Section -->
     <div class="container mx-auto my-8 px-4 sm:px-0">
-      <!-- Produktkarten -->
-      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
-        <!-- Produktkarte -->
-        <a href="products_template.html">
-          <div
-            class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+      <!-- Product Cards -->
+      <div
+        class="grid grid-cols-1 gap-5 px-4 sm:px-0 md:grid-cols-2 lg:grid-cols-4"
+        aria-label="Produktliste"
+      >
+        <!-- Single Product Card -->
+        <article
+          class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
+        >
+          <a
+            href="products_template.html"
+            aria-label="Historischer Senf Details"
           >
             <img
               src="../../public/images/homepage/senf.jpg"
-              alt="Produktbild"
+              alt="Bild von Historischem Senf"
               class="h-48 w-full object-cover"
             />
             <div class="p-4">
-              <h2 class="text-lg font-semibold">Historischer Senf</h2>
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
               <p>Senfmühle Köln / Cochem</p>
               <p class="text-gray-600">Nordrhein-Westfahlen</p>
               <p class="mt-2 font-bold">ab 4,99€</p>
             </div>
-          </div>
-        </a>
+          </a>
+        </article>
 
-        <div
+        <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
         >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="h-48 w-full object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
+          <a
+            href="products_template.html"
+            aria-label="Historischer Senf Details"
+          >
+            <img
+              src="../../public/images/homepage/senf.jpg"
+              alt="Bild von Historischem Senf"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
+              <p>Senfmühle Köln / Cochem</p>
+              <p class="text-gray-600">Nordrhein-Westfahlen</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </a>
+        </article>
 
-        <div
+        <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
         >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="h-48 w-full object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
+          <a
+            href="products_template.html"
+            aria-label="Historischer Senf Details"
+          >
+            <img
+              src="../../public/images/homepage/senf.jpg"
+              alt="Bild von Historischem Senf"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
+              <p>Senfmühle Köln / Cochem</p>
+              <p class="text-gray-600">Nordrhein-Westfahlen</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </a>
+        </article>
+        <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
         >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="h-48 w-full object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
+          <a
+            href="products_template.html"
+            aria-label="Historischer Senf Details"
+          >
+            <img
+              src="../../public/images/homepage/senf.jpg"
+              alt="Bild von Historischem Senf"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
+              <p>Senfmühle Köln / Cochem</p>
+              <p class="text-gray-600">Nordrhein-Westfahlen</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </a>
+        </article>
+        <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
         >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="h-48 w-full object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
+          <a
+            href="products_template.html"
+            aria-label="Historischer Senf Details"
+          >
+            <img
+              src="../../public/images/homepage/senf.jpg"
+              alt="Bild von Historischem Senf"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
+              <p>Senfmühle Köln / Cochem</p>
+              <p class="text-gray-600">Nordrhein-Westfahlen</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </a>
+        </article>
+        <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
         >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="h-48 w-full object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
+          <a
+            href="products_template.html"
+            aria-label="Historischer Senf Details"
+          >
+            <img
+              src="../../public/images/homepage/senf.jpg"
+              alt="Bild von Historischem Senf"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
+              <p>Senfmühle Köln / Cochem</p>
+              <p class="text-gray-600">Nordrhein-Westfahlen</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </a>
+        </article>
+        <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
         >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="h-48 w-full object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
-
-        <div
+          <a
+            href="products_template.html"
+            aria-label="Historischer Senf Details"
+          >
+            <img
+              src="../../public/images/homepage/senf.jpg"
+              alt="Bild von Historischem Senf"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
+              <p>Senfmühle Köln / Cochem</p>
+              <p class="text-gray-600">Nordrhein-Westfahlen</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </a>
+        </article>
+        <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
         >
-          <img
-            src="../../public/images/homepage/senf.jpg"
-            alt="Produktbild"
-            class="h-48 w-full object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-lg font-semibold">Historischer Senf</h2>
-            <p>Senfmühle Köln / Cochem</p>
-            <p class="text-gray-600">Nordrhein-Westfahlen</p>
-            <p class="mt-2 font-bold">ab 4,99€</p>
-          </div>
-        </div>
+          <a
+            href="products_template.html"
+            aria-label="Historischer Senf Details"
+          >
+            <img
+              src="../../public/images/homepage/senf.jpg"
+              alt="Bild von Historischem Senf"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
+              <p>Senfmühle Köln / Cochem</p>
+              <p class="text-gray-600">Nordrhein-Westfahlen</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </a>
+        </article>
       </div>
     </div>
 
-    <!-- Footer v1.2 -->
-    <footer class="bg-wm-black py-8 text-gray-200">
+    <!-- Footer v1.3 -->
+    <footer
+      class="bg-wm-black py-8 text-gray-200"
+      aria-label="Einzigware Footer"
+    >
       <div
         class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
       >
         <!-- Spalte 1: Logo -->
-        <a href="index.html">
-          <div class="flex justify-center md:justify-start">
-            <img
-              src="../../public/images/logo_colored.png"
-              alt="Einzigware Logo"
-              class="h-44 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
-            />
-          </div>
-        </a>
+        <div aria-label="Logo und Startseite Link">
+          <a href="index.html" aria-label="Zur Startseite">
+            <div class="flex justify-center md:justify-start">
+              <img
+                src="../../public/images/logo_colored.png"
+                alt="Einzigware Logo"
+                class="h-44 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+              />
+            </div>
+          </a>
+        </div>
 
         <!-- Spalte 2 und 3 mit Slogan oben -->
         <div class="text-center md:col-span-2 md:text-left">
-          <p class="mb-4 text-gray-400">Wir bringen Heimat nach Hause</p>
+          <p class="mb-4 text-gray-400" aria-label="Slogan">
+            Wir bringen Heimat nach Hause
+          </p>
 
-          <div class="grid grid-cols-2 gap-8">
+          <div class="grid grid-cols-2 gap-8" aria-label="Footer-Navigation">
             <!-- Spalte 2: Hyperlinks -->
-            <div class="flex flex-col space-y-2">
-              <a href="#" class="hover:text-gray-400">Standorte</a>
-              <a href="#" class="hover:text-gray-400">Produkte</a>
-              <a href="#" class="hover:text-gray-400">Verkäufer werden</a>
-              <a href="#" class="hover:text-gray-400">Unsere Vision</a>
-            </div>
+            <nav aria-label="Erste Spalte Links">
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a href="products.html" class="hover:text-gray-400"
+                    >Produkte</a
+                  >
+                </li>
+                <li>
+                  <a href="regions.html" class="hover:text-gray-400"
+                    >Regionen</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" class="hover:text-gray-400"
+                    >Unsere Vision</a
+                  >
+                </li>
+                <li>
+                  <a href="become-seller.html" class="hover:text-gray-400"
+                    >Werde Verkäufer</a
+                  >
+                </li>
+              </ul>
+            </nav>
 
             <!-- Spalte 3: Hyperlinks -->
-            <div class="flex flex-col space-y-2">
-              <a href="#" class="hover:text-gray-400">Kontakt</a>
-              <a href="#" class="hover:text-gray-400">Versand</a>
-              <a href="#" class="hover:text-gray-400">Impressum</a>
-              <a href="#" class="hover:text-gray-400">Datenschutz</a>
-            </div>
+            <nav aria-label="Zweite Spalte Links">
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a href="contact.html" class="hover:text-gray-400">Kontakt</a>
+                </li>
+                <li>
+                  <a href="legal-notice.html" class="hover:text-gray-400"
+                    >Impressum</a
+                  >
+                </li>
+                <li>
+                  <a href="privacy.html" class="hover:text-gray-400"
+                    >Datenschutz</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
 
       <!-- Copyright -->
-      <div class="mt-8 text-center text-gray-500">
+      <div
+        class="mt-8 text-center text-gray-500"
+        aria-label="Copyright-Hinweis"
+      >
         <p>&copy; 2024 Einzigware</p>
       </div>
     </footer>
