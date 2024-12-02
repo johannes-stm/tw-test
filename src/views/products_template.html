@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <!-- Meta-Informationen -->
+    <!-- Meta-information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -25,11 +25,14 @@
       type="image/x-icon"
     />
 
-    <!-- Titel -->
-    <title>Einzigware - Produktübersicht</title>
+    <!-- Title -->
+    <title>Einzigware - Produkt XY</title>
 
-    <!-- Open Graph für Social Media -->
-    <meta property="og:title" content="Einzigware - Produkt XY" />
+    <!-- Open Graph for Social Media -->
+    <meta
+      property="og:title"
+      content="Einzigware - Regionale Produkte neu entdecken"
+    />
     <meta
       property="og:description"
       content="Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen bringen. Unterstützen Sie lokale Produzenten und genießen Sie handgefertigte Qualität."
@@ -311,7 +314,7 @@
     </section>
 
     <!-- Product Detail Section -->
-    <section>
+    <section aria-label="Produktdetails">
       <!-- Navigation -->
       <nav
         class="container mx-auto py-4 mb-4 text-center"
@@ -366,11 +369,14 @@
       >
         <div class="flex flex-col lg:flex-row">
           <!-- Left column -->
-          <aside class="py-4 lg:w-1/4">
+          <aside class="py-4 lg:w-1/4" aria-label="Abschnitt Beschreibung">
             <h2 class="text-xl font-semibold text-wm-darkgray">Beschreibung</h2>
           </aside>
           <!-- Right column -->
-          <section class="bg-white py-4 lg:w-3/4">
+          <section
+            class="bg-white py-4 lg:w-3/4"
+            aria-label="Details zur Produktbeschreibung"
+          >
             <p class="text-wm-black">
               Entdecken Sie ein Stück Tradition und Genuss mit dem Historischen
               Delikatess-Senf aus der Senfmühle anno 1810. Dieser fein
@@ -385,7 +391,7 @@
               einem Highlight für Feinschmecker und Liebhaber authentischer,
               regionaler Spezialitäten.
             </p>
-            <p class="mt-4 text-wm-black"><b>Inhalt:</b> 250 ml <br /></p>
+            <p class="mt-4 text-wm-black"><b>Inhalt:</b> 250 ml</p>
           </section>
         </div>
       </article>
@@ -398,16 +404,19 @@
       >
         <div class="flex flex-row">
           <!-- Left column -->
-          <aside class="py-4 basis-1/4 flex-grow-0">
+          <aside
+            class="py-4 basis-1/4 flex-grow-0"
+            aria-label="Information zur Herkunftsregion"
+          >
             <h2 class="text-xl font-semibold text-wm-darkgray mb-4">
               Herkunftsregion
             </h2>
-            <a href="">
+            <a href="#">
               <p aria-label="Standort des Verkäufers: Senfmühle Köln / Cochem">
                 Senfmühle Köln / Cochem
               </p>
             </a>
-            <a href="">
+            <a href="#">
               <p
                 class="text-wm-lightgray"
                 aria-label="Region: Nordrhein-Westfahlen"
@@ -417,7 +426,10 @@
             </a>
           </aside>
           <!-- Right column -->
-          <section class="bg-white py-4 basis-3/4 flex-grow-0">
+          <section
+            class="bg-white py-4 basis-3/4 flex-grow-0"
+            aria-label="Bild der Herkunftsregion"
+          >
             <div class="w-full h-full flex items-center justify-center">
               <img
                 src="../../public/images/products/senf/product_region_cologne.png"
@@ -437,9 +449,14 @@
       >
         <div class="flex flex-row">
           <!-- Left column -->
-          <aside class="py-4 basis-1/4 flex-grow-0">
-            <h2 class="text-xl font-semibold text-wm-darkgray mb-4">Bewertung</h2>
-            <div class="text-wm-lightgray" aria-label="Kundenbewertungen">
+          <aside
+            class="py-4 basis-1/4 flex-grow-0"
+            aria-label="Bewertungen-Übersicht"
+          >
+            <h2 class="text-xl font-semibold text-wm-darkgray mb-4">
+              Bewertung
+            </h2>
+            <div class="text-wm-lightgray" aria-label="Kundenbewertung">
               <span
                 class="text-yellow-500"
                 aria-label="Bewertung: 4 von 5 Sternen"
@@ -449,23 +466,27 @@
             </div>
           </aside>
           <!-- Right column -->
-          <section class="bg-white py-4 basis-3/4 flex-grow-0 space-y-8">
+          <section
+            class="bg-white py-4 basis-3/4 flex-grow-0 space-y-8"
+            aria-label="Bewertungen"
+          >
             <!-- Review 1 -->
-            <div
+            <article
               class="border-b pb-6 flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4"
-              aria-label="Bewertung von User"
+              aria-label="Einzelbewertung"
             >
-              <!-- Avatar -->
-              <figure class="flex-shrink-0">
+              <figure class="flex-shrink-0" aria-label="Profilbild des Nutzers">
                 <img
                   src="../../public/images/sellers/pp_template.png"
                   alt="Profilbild von User"
                   class="w-12 h-12 rounded-full border"
                 />
               </figure>
-              <!-- Review Content -->
               <div class="flex-1">
-                <header class="flex items-center justify-between">
+                <header
+                  class="flex items-center justify-between"
+                  aria-label="Bewertungskopf"
+                >
                   <a
                     href="#"
                     class="font-semibold text-wm-black hover:underline"
@@ -473,10 +494,10 @@
                   >
                     Bernd Müller
                   </a>
-                  <!-- Date alligned right -->
                   <time
                     datetime="2024-11-27"
                     class="text-sm text-wm-lightgray text-right"
+                    aria-label="Datum der Bewertung"
                   >
                     am 27. Nov. 2024
                   </time>
@@ -492,58 +513,9 @@
                   absolutes Highlight für jeden Senfliebhaber! Sein fein
                   abgestimmter Geschmack und die cremige Konsistenz machen ihn
                   perfekt für Fleisch, Würstchen oder als Basis für Dressings.
-                  Die hohe Qualität der Zutaten ist deutlich zu schmecken, und
-                  die traditionelle Herstellung verleiht ihm eine besondere
-                  Note. Absolut empfehlenswert für alle, die Wert auf echten
-                  Genuss legen!
                 </p>
               </div>
-            </div>
-
-            <!-- Review 2 -->
-            <div
-              class="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4"
-              aria-label="Bewertung von User"
-            >
-              <!-- Avatar -->
-              <figure class="flex-shrink-0">
-                <img
-                  src="../../public/images/sellers/pp_template.png"
-                  alt="Profilbild von User"
-                  class="w-12 h-12 rounded-full border"
-                />
-              </figure>
-              <!-- Review Content -->
-              <div class="flex-1">
-                <header class="flex items-center justify-between">
-                  <a
-                    href="#"
-                    class="font-semibold text-wm-black hover:underline"
-                    aria-label="Profil von User anzeigen"
-                  >
-                    Bernd Müller
-                  </a>
-                  <!-- Date alligned right -->
-                  <time
-                    datetime="2024-11-27"
-                    class="text-sm text-wm-lightgray text-right"
-                  >
-                    am 27. Nov. 2024
-                  </time>
-                </header>
-                <div
-                  class="flex items-center space-x-1 mt-2 text-yellow-500"
-                  aria-label="Bewertung: 5 Sterne"
-                >
-                  <span>★★★★★</span>
-                </div>
-                <p class="mt-2 text-wm-black">
-                  Ein außergewöhnlich aromatischer Senf mit perfekter Balance
-                  aus Würze und Cremigkeit. Ideal für Feinschmecker und ein
-                  Must-have für jede Küche!
-                </p>
-              </div>
-            </div>
+            </article>
           </section>
         </div>
       </section>
@@ -555,10 +527,10 @@
         aria-label="Allgemeine Geschäftsbedingungen"
       >
         <div class="flex flex-col lg:flex-row">
-          <aside class="py-4 lg:w-1/4">
+          <aside class="py-4 lg:w-1/4" aria-label="Abschnitt AGB">
             <h2 class="text-xl font-semibold text-wm-darkgray">AGB</h2>
           </aside>
-          <section class="bg-white py-4 lg:w-3/4">
+          <section class="bg-white py-4 lg:w-3/4" aria-label="Details der AGB">
             <p>
               Der Versand erfolgt nach Zahlungseingang. Die Lieferzeiten sind im
               jeweiligen Angebot angegeben.
@@ -588,7 +560,7 @@
         <header class="pb-6 pt-8 text-center">
           <h2
             class="font-serif text-2xl sm:text-3xl"
-            aria-label="Überschrift Produkte"
+            aria-label="Überschrift empfohlene Produkte"
           >
             Das könnte dir auch gefallen
           </h2>

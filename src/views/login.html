@@ -1,24 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
   <head>
+    <!-- Meta-information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Einzigware - Entdecken Sie einzigartige, regionale Produkte. Tradition trifft auf moderne Eleganz."
+    />
+    <meta
+      name="keywords"
+      content="Einzigware, regionale Produkte, Heimat, Tradition, Handwerk"
+    />
+    <meta name="author" content="Einzigware Team" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/output.css" />
+
+    <!-- Favicon -->
     <link
       rel="icon"
       href="../../public/images/favicon.ico"
       type="image/x-icon"
     />
-    <title>Login</title>
+
+    <!-- Title -->
+    <title>Einzigware - Login</title>
+
+    <!-- Open Graph for Social Media -->
+    <meta
+      property="og:title"
+      content="Einzigware - Regionale Produkte neu entdecken"
+    />
+    <meta
+      property="og:description"
+      content="Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen bringen. Unterstützen Sie lokale Produzenten und genießen Sie handgefertigte Qualität."
+    />
+    <meta property="og:image" content="../../public/images/logo_colored.png" />
+    <meta
+      property="og:url"
+      content="https://www.einzigware.projekt.dhbw-heidenheim.de"
+    />
+    <meta property="og:type" content="website" />
   </head>
 
   <body>
-    <!-- Header v1.3 -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
+    <!-- Header v1.4 -->
+    <header
+      class="sticky top-0 z-50 bg-white px-4 shadow-md sm:px-0"
+      aria-label="Main Header"
+    >
       <div class="container">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
-            <a href="/src/views/index.html">
+            <a href="/src/views/index.html" aria-label="Zur Startseite">
               <img
                 src="../../public/images/logo.png"
                 alt="Logo Einzigware"
@@ -26,67 +62,72 @@
               />
             </a>
           </div>
-          <div class="hidden lg:block">
-            <nav>
-              <ul class="flex items-center gap-6">
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="products.html"
-                  >
-                    Produkte
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="regions.html"
-                  >
-                    Regionen
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="about.html"
-                  >
-                    Unsere Vision
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                    href="contact.html"
-                  >
-                    Kontakt
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="hidden lg:block" aria-label="Hauptnavigation">
+            <ul class="flex items-center gap-6">
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="products.html"
+                  aria-label="Produkte"
+                >
+                  Produkte
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="regions.html"
+                  aria-label="Regionen"
+                >
+                  Regionen
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="about.html"
+                  aria-label="Unsere Vision"
+                >
+                  Unsere Vision
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="contact.html"
+                  aria-label="Kontakt"
+                >
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
           <div class="flex items-center gap-4">
             <div class="sm:flex sm:gap-4">
-              <a
+              <button
                 class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
-                href="login.html"
+                onclick="location.href='login.html'"
+                aria-label="Anmelden"
               >
                 Anmelden
-              </a>
+              </button>
               <div class="hidden sm:flex">
-                <a
+                <button
                   class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
-                  href="registration.html"
+                  onclick="location.href='registration.html'"
+                  aria-label="Registrieren"
                 >
                   Registrieren
-                </a>
+                </button>
               </div>
               <div class="hidden sm:flex">
-                <a
+                <button
                   class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
-                  href="become-seller.html"
+                  onclick="location.href='become-seller.html'"
+                  aria-label="Verkäufer werden"
                 >
                   Verkäufer werden
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -94,46 +135,67 @@
       </div>
     </header>
 
-    <!-- Content -->
-    <section class="bg-beige-50 font-serif text-wm-black">
+    <!-- Login Section -->
+    <section
+      class="bg-beige-50 font-serif text-wm-black"
+      aria-label="Login-Bereich"
+    >
       <!-- Main Container -->
-      <div class="flex min-h-screen items-center justify-center bg-[#f8f2e8]">
+      <div
+        class="flex min-h-screen items-center justify-center bg-wm-beige"
+        aria-label="Hauptcontainer für den Login-Bereich"
+      >
         <!-- Login Card -->
-        <div class="w-full max-w-sm rounded-lg bg-white p-8 shadow-lg">
+        <article
+          class="w-full max-w-sm rounded-lg bg-white p-8 shadow-lg"
+          aria-label="Login-Karte"
+        >
           <!-- Logo -->
-          <div class="flex justify-center text-center">
-            <a href="index.html">
+          <header
+            class="flex justify-center text-center"
+            aria-label="Logo-Bereich"
+          >
+            <a href="index.html" aria-label="Zur Startseite">
               <img
                 src="../../public/images/logo.png"
-                alt="Logo Einzigware"
+                alt="Logo von Einzigware"
                 class="h-16 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
-            /></a>
-          </div>
-          <h1 class="my-6 text-center text-2xl font-semibold text-wm-brown">
+              />
+            </a>
+          </header>
+          <h1
+            class="my-6 text-center text-2xl font-semibold text-wm-brown"
+            aria-label="Überschrift Willkommen Zurück"
+          >
             Willkommen Zurück
           </h1>
+
           <!-- Form -->
-          <form action="#" method="POST">
+          <form action="#" method="POST" aria-label="Login-Formular">
             <!-- Email Field -->
-            <div class="mb-4">
+            <div class="mb-4" aria-label="E-Mail Eingabefeld">
               <label
                 for="email"
                 class="mb-1 block text-sm font-medium text-wm-black"
+                aria-label="E-Mail Label"
                 >E-Mail Adresse</label
               >
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="example@example.com"
+                placeholder="beispiel@e-mail.de"
                 class="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-wm-brown focus:outline-none focus:ring-2 focus:ring-wm-brown"
+                aria-label="Eingabefeld für die E-Mail Adresse"
               />
             </div>
+
             <!-- Password Field -->
-            <div class="mb-6">
+            <div class="mb-6" aria-label="Passwort Eingabefeld">
               <label
                 for="password"
                 class="mb-1 block text-sm font-medium text-wm-black"
+                aria-label="Passwort Label"
                 >Passwort</label
               >
               <input
@@ -142,72 +204,120 @@
                 name="password"
                 placeholder="********"
                 class="w-full rounded-md border border-gray-300 px-4 py-2 focus:border-wm-brown focus:outline-none focus:ring-2 focus:ring-wm-brown"
+                aria-label="Eingabefeld für das Passwort"
               />
             </div>
-            <!-- Anmelden Button -->
-            <div class="mb-4 flex justify-center">
+
+            <!-- Login Button -->
+            <div class="mb-4 flex justify-center" aria-label="Anmeldebutton">
               <a
-                type="submit"
                 class="w-full rounded-md bg-wm-black p-2 text-center text-white transition duration-300 hover:bg-wm-brown"
                 href="index.html"
+                aria-label="Anmelden und zur Startseite wechseln"
               >
                 Anmelden
               </a>
             </div>
           </form>
+
           <!-- Links -->
-          <div class="text-center">
+          <footer class="text-center" aria-label="Registrierungsbereich">
             <p class="text-sm">
               Noch kein Konto?
-              <a href="registration.html" class="text-wm-brown hover:underline"
-                >Registrieren</a
+              <a
+                href="registration.html"
+                class="text-wm-brown hover:underline"
+                aria-label="Zur Registrierung wechseln"
               >
+                Registrieren
+              </a>
             </p>
-          </div>
-        </div>
+          </footer>
+        </article>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-wm-black py-8 text-gray-200">
+    <!-- Footer v1.3 -->
+    <footer
+      class="bg-wm-black py-8 text-gray-200"
+      aria-label="Einzigware Footer"
+    >
       <div
         class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
       >
         <!-- Spalte 1: Logo -->
-        <div class="flex justify-center md:justify-start">
-          <img
-            src="../../public/images/logo_colored.png"
-            alt="Einzigware Logo"
-            class="h-48 w-48 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
-          />
+        <div aria-label="Logo und Startseite Link">
+          <a href="index.html" aria-label="Zur Startseite">
+            <div class="flex justify-center md:justify-start">
+              <img
+                src="../../public/images/logo_colored.png"
+                alt="Einzigware Logo"
+                class="h-44 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+              />
+            </div>
+          </a>
         </div>
 
         <!-- Spalte 2 und 3 mit Slogan oben -->
         <div class="text-center md:col-span-2 md:text-left">
-          <p class="mb-4 text-gray-400">Wir bringen Heimat nach Hause</p>
+          <p class="mb-4 text-gray-400" aria-label="Slogan">
+            Wir bringen Heimat nach Hause
+          </p>
 
-          <div class="grid grid-cols-2 gap-8">
+          <div class="grid grid-cols-2 gap-8" aria-label="Footer-Navigation">
             <!-- Spalte 2: Hyperlinks -->
-            <div class="flex flex-col space-y-2">
-              <a href="#" class="hover:text-gray-400">Standorte</a>
-              <a href="#" class="hover:text-gray-400">Produkte</a>
-              <a href="#" class="hover:text-gray-400">Verkäufer werden</a>
-              <a href="#" class="hover:text-gray-400">Unsere Vision</a>
-            </div>
+            <nav aria-label="Erste Spalte Links">
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a href="products.html" class="hover:text-gray-400"
+                    >Produkte</a
+                  >
+                </li>
+                <li>
+                  <a href="regions.html" class="hover:text-gray-400"
+                    >Regionen</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" class="hover:text-gray-400"
+                    >Unsere Vision</a
+                  >
+                </li>
+                <li>
+                  <a href="become-seller.html" class="hover:text-gray-400"
+                    >Werde Verkäufer</a
+                  >
+                </li>
+              </ul>
+            </nav>
 
             <!-- Spalte 3: Hyperlinks -->
-            <div class="flex flex-col space-y-2">
-              <a href="#" class="hover:text-gray-400">Kontakt</a>
-              <a href="#" class="hover:text-gray-400">Versand</a>
-              <a href="#" class="hover:text-gray-400">Impressum</a>
-              <a href="#" class="hover:text-gray-400">Datenschutz</a>
-            </div>
+            <nav aria-label="Zweite Spalte Links">
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a href="contact.html" class="hover:text-gray-400">Kontakt</a>
+                </li>
+                <li>
+                  <a href="legal-notice.html" class="hover:text-gray-400"
+                    >Impressum</a
+                  >
+                </li>
+                <li>
+                  <a href="privacy.html" class="hover:text-gray-400"
+                    >Datenschutz</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
 
       <!-- Copyright -->
-      <div class="mt-8 text-center text-gray-500">
+      <div
+        class="mt-8 text-center text-gray-500"
+        aria-label="Copyright-Hinweis"
+      >
         <p>&copy; 2024 Einzigware</p>
       </div>
     </footer>

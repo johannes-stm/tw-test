@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <!-- Meta-Informationen -->
+    <!-- Meta-information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -25,10 +25,10 @@
       type="image/x-icon"
     />
 
-    <!-- Titel -->
+    <!-- Title -->
     <title>Einzigware - Unsere Vision</title>
 
-    <!-- Open Graph für Social Media -->
+    <!-- Open Graph for Social Media -->
     <meta
       property="og:title"
       content="Einzigware - Regionale Produkte neu entdecken"
@@ -164,33 +164,47 @@
       </div>
     </section>
 
-    <!-- Section 1 -->
-    <section>
+    <!-- Section for storytelling and product philosophy -->
+    <section aria-label="Geschichte und Philosophie unserer Produkte">
       <div class="bg-wm-beige px-4 py-12 sm:px-0">
         <div class="container mx-auto">
           <div
             class="flex flex-col items-stretch gap-8 rounded-lg text-wm-black md:flex-row md:px-16 2xl:px-52"
           >
-            <!-- Bildbereich -->
-            <div class="w-full flex-shrink-0 md:w-1/2">
+            <!-- Image area -->
+            <figure
+              class="w-full flex-shrink-0 md:w-1/2"
+              aria-label="Bildbereich"
+            >
               <img
                 src="../../public/images/about us/about us edited.jpg"
                 alt="Imker mit Bienenkasten"
                 class="h-full w-full rounded-3xl object-cover"
               />
-            </div>
-            <!-- Textbereich -->
-            <div
+              <figcaption class="sr-only">Imker mit Bienenkasten</figcaption>
+            </figure>
+
+            <!-- Text area -->
+            <article
               class="flex w-full flex-col justify-between font-serif md:w-1/2"
+              aria-label="Textbereich über unsere Philosophie"
             >
-              <h2 class="mb-6 text-4xl leading-tight md:text-5xl lg:text-7xl">
-                Für <br />
-                mehr <br />
-                Geschichte <br />
-                im <br />
-                Geschmack
-              </h2>
-              <p class="text-lg leading-relaxed md:text-2xl">
+              <header>
+                <h2
+                  class="mb-6 text-4xl leading-tight md:text-5xl lg:text-7xl"
+                  aria-label="Slogan: Für mehr Geschichte im Geschmack"
+                >
+                  Für <br />
+                  mehr <br />
+                  Geschichte <br />
+                  im <br />
+                  Geschmack
+                </h2>
+              </header>
+              <p
+                class="text-lg leading-relaxed md:text-2xl"
+                aria-label="Beschreibung der Mission"
+              >
                 Wir glauben daran, dass hinter jedem Produkt eine Geschichte
                 steckt – eine Geschichte von Leidenschaft, handwerklichem Können
                 und regionaler Tradition. Unsere Mission ist es, diesen
@@ -199,22 +213,30 @@
                 Lebensmittel, die so einzigartig sind wie die Menschen, die sie
                 herstellen.
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 2 -->
-    <section class="bg-white px-4 py-12 sm:px-0">
+    <!-- Section for buyers and sellers -->
+    <section
+      class="bg-white px-4 py-12 sm:px-0"
+      aria-label="Informationen für Käufer und Verkäufer"
+    >
       <div
         class="container mx-auto flex flex-col items-stretch gap-8 font-serif text-wm-black md:px-16 lg:flex-row 2xl:px-52"
       >
-        <!-- Linke Seite: 3 Absätze -->
-        <div class="w-full space-y-16 text-right lg:w-1/2">
-          <!-- Absatz 1 -->
-          <div>
-            <h2 class="mb-4 text-2xl md:text-3xl">Für Käufer</h2>
+        <!-- Left side: 3 paragraphs -->
+        <div
+          class="w-full space-y-16 text-right lg:w-1/2"
+          aria-label="Texte für Käufer und Verkäufer"
+        >
+          <!-- Paragraph 1 -->
+          <article aria-label="Abschnitt für Käufer">
+            <header>
+              <h2 class="mb-4 text-2xl md:text-3xl">Für Käufer</h2>
+            </header>
             <p class="text-lg leading-relaxed">
               Unsere Plattform richtet sich an Menschen, die Wert auf
               Authentizität, Qualität und regionale Vielfalt legen. Für jene,
@@ -224,10 +246,12 @@
               entdecken, sind Sie hier genau richtig. Wir verbinden Genuss mit
               einem Bewusstsein für Nachhaltigkeit und Regionalität.
             </p>
-          </div>
-          <!-- Absatz 2 -->
-          <div>
-            <h2 class="mb-4 text-2xl md:text-3xl">Für Verkäufer</h2>
+          </article>
+          <!-- Paragraph 2 -->
+          <article aria-label="Abschnitt für Verkäufer">
+            <header>
+              <h2 class="mb-4 text-2xl md:text-3xl">Für Verkäufer</h2>
+            </header>
             <p class="text-lg leading-relaxed">
               Unsere Plattform ist die ideale Lösung für lokale
               Lebensmittelproduzenten, die ihre Produkte online präsentieren und
@@ -239,10 +263,12 @@
               Plattform einen effektiven Weg, ihren Kundenkreis zu erweitern und
               ihre Umsätze zu steigern.
             </p>
-          </div>
-          <!-- Absatz 3 -->
-          <div>
-            <h2 class="mb-4 text-2xl md:text-3xl">Warum wir das tun</h2>
+          </article>
+          <!-- Paragraph 3 -->
+          <article aria-label="Abschnitt warum wir das tun">
+            <header>
+              <h2 class="mb-4 text-2xl md:text-3xl">Warum wir das tun</h2>
+            </header>
             <p class="text-lg leading-relaxed">
               Wir glauben daran, dass jedes handwerklich hergestellte Produkt
               eine Geschichte erzählt – über die Menschen, die Region und die
@@ -252,19 +278,24 @@
               wir regionale Produkte und ihre Geschichten erlebbar – online und
               für jeden zugänglich.
             </p>
-          </div>
+          </article>
         </div>
-        <!-- Rechte Seite: 2x4 Grid -->
-        <div class="grid w-full grid-cols-2 gap-4 self-stretch lg:w-1/2">
-          <div class="h-full rounded-3xl bg-wm-beige"></div>
-          <div class="h-full rounded-3xl bg-wm-beige"></div>
-          <div class="h-full rounded-3xl bg-wm-beige"></div>
-          <div class="h-full rounded-3xl bg-wm-beige"></div>
-          <div class="h-full rounded-3xl bg-wm-beige"></div>
-          <div class="h-full rounded-3xl bg-wm-beige"></div>
-          <div class="h-full rounded-3xl bg-wm-beige"></div>
-          <div class="h-full rounded-3xl bg-wm-beige"></div>
-        </div>
+
+        <!-- Right side: 2x4 grid -->
+        <section
+          class="grid w-full grid-cols-2 gap-4 self-stretch lg:w-1/2"
+          aria-label="Bildergalerie"
+        >
+          <!-- Placeholder images -->
+          <div class="h-full rounded-3xl bg-wm-beige" aria-label="Bild 1"></div>
+          <div class="h-full rounded-3xl bg-wm-beige" aria-label="Bild 2"></div>
+          <div class="h-full rounded-3xl bg-wm-beige" aria-label="Bild 3"></div>
+          <div class="h-full rounded-3xl bg-wm-beige" aria-label="Bild 4"></div>
+          <div class="h-full rounded-3xl bg-wm-beige" aria-label="Bild 5"></div>
+          <div class="h-full rounded-3xl bg-wm-beige" aria-label="Bild 6"></div>
+          <div class="h-full rounded-3xl bg-wm-beige" aria-label="Bild 7"></div>
+          <div class="h-full rounded-3xl bg-wm-beige" aria-label="Bild 8"></div>
+        </section>
       </div>
     </section>
 
