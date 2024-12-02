@@ -26,10 +26,13 @@
     />
 
     <!-- Titel -->
-    <title>Einzigware - Produktübersicht</title>
+    <title>Einzigware - Verkäufer</title>
 
     <!-- Open Graph für Social Media -->
-    <meta property="og:title" content="Einzigware - Produkt XY" />
+    <meta
+      property="og:title"
+      content="Einzigware - Regionale Produkte neu entdecken"
+    />
     <meta
       property="og:description"
       content="Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen bringen. Unterstützen Sie lokale Produzenten und genießen Sie handgefertigte Qualität."
@@ -41,7 +44,6 @@
     />
     <meta property="og:type" content="website" />
   </head>
-
   <body>
     <!-- Header v1.4 -->
     <header
@@ -149,19 +151,28 @@
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="products.html"
+                  href="regions.html"
                   class="underline hover:no-underline"
                   aria-label="Produktübersicht öffnen"
-                  >Produkte</a
+                  >Regionen</a
                 >
               </li>
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="products.html"
+                  href="regions.html"
                   class="underline hover:no-underline"
                   aria-label="Produkt XY öffnen"
-                  >Produkt XY</a
+                  >Region XY</a
+                >
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <a
+                  href="#"
+                  class="underline hover:no-underline"
+                  aria-label="Produkt XY öffnen"
+                  >Bernd Müller</a
                 >
               </li>
             </ul>
@@ -170,147 +181,63 @@
       </div>
     </section>
 
-    <!-- Product Section -->
-    <section aria-label="Produktdetails Abschnitt" class="bg-wm-beige">
-      <div class="container mx-auto py-6">
-        <!-- Product Container -->
-        <div
-          class="flex h-full overflow-hidden rounded-lg lg:flex-row"
-          role="region"
-          aria-label="Produktübersicht"
-        >
-          <!-- Left Side: Image Area -->
-          <div
-            class="flex items-center justify-center p-4 lg:w-2/3"
-            aria-label="Produktbild"
-          >
-            <img
-              src="../../public/images/products/senf/product_senf.jpg"
-              alt="Bild des Produkts: Historischer Senf"
-              class="max-h-[460px] rounded-lg shadow-sm"
-            />
-          </div>
-
-          <!-- Right Side: Product Details -->
-          <div
-            class="flex flex-col justify-between p-4 lg:w-1/3"
-            aria-label="Produktinformationen"
-          >
-            <!-- Top Section: Title, Price, Features -->
-            <div>
-              <h1
-                class="font-serif text-3xl font-bold text-wm-black"
-                aria-label="Produktname: Historischer Senf"
-              >
-                Historischer Senf
-              </h1>
-              <div
-                class="mt-4 flex items-baseline space-x-2"
-                aria-label="Produktpreis und Steuerinformationen"
-              >
-                <p
-                  class="text-xl font-semibold text-wm-black"
-                  aria-label="Preis: 11,99 Euro"
-                >
-                  11,99 €
-                </p>
-                <span
-                  class="text-sm text-wm-darkgray"
-                  aria-label="Inklusive Mehrwertsteuer"
-                  >(inkl. MwSt.)</span
-                >
-              </div>
-              <!-- Reviews -->
-              <div
-                class="mt-2 flex items-center space-x-2 text-wm-darkgray"
-                aria-label="Kundenbewertungen"
-              >
-                <span
-                  class="text-yellow-500"
-                  aria-label="Bewertung: 4 von 5 Sternen"
-                  >★★★★☆</span
-                >
-                <p>4.5 von 5 Sternen</p>
-              </div>
-            </div>
-
-            <!-- Middle Section: Seller Profile -->
-            <div
-              class="flex items-center space-x-4 border-b border-t border-wm-lightgray py-4"
-              aria-label="Verkäuferprofil"
-            >
-              <!-- Profile Picture -->
+    <!-- Seller Profile Section -->
+    <section aria-label="Verkäuferprofil Abschnitt" class="bg-wm-beige">
+      <div class="container mx-auto py-10">
+        <!-- Flex Wrapper -->
+        <div class="flex justify-between items-center">
+          <!-- Left Section -->
+          <div class="flex items-center space-x-6">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
               <img
                 src="../../public/images/sellers/pp_template.png"
-                alt="Profilbild des Verkäufers Bernd Müller"
-                class="h-20 w-20 rounded-full border-2 border-wm-brown"
+                alt="Shop Logo"
+                class="w-20 h-20 rounded-full border-2 border-wm-brown"
               />
-              <!-- Seller Information -->
-              <div>
-                <a href="">
-                  <p
-                    class="text-lg font-semibold text-wm-black"
-                    aria-label="Verkäufer: Bernd Müller"
-                  >
-                    Bernd Müller
-                  </p>
-                </a>
-                <p
-                  class="text-wm-darkgray"
-                  aria-label="Standort des Verkäufers: Senfmühle Köln / Cochem"
-                >
-                  Senfmühle Köln / Cochem
-                </p>
-                <a href="regions_nordrhein-westfahlen.html">
-                  <p
-                    class="text-wm-darkgray"
-                    aria-label="Region: Nordrhein-Westfahlen"
-                  >
-                    Nordrhein-Westfahlen
-                  </p>
-                </a>
+            </div>
+            <!-- Shop Details -->
+            <div>
+              <h1 class="text-2xl font-semibold text-wm-black">
+                Bernd Müller - Senfmühle Köln / Cochem
+              </h1>
+              <p class="text-wm-darkgray">
+                Sefmühlen-Meister mehrerer Generationen
+              </p>
+              <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
+              <div class="mt-2">
+                <span class="text-wm-black font-medium">Verkäufer-Star</span>
+                <span class="text-wm-lightgray"> | 89 Verkäufe</span>
               </div>
             </div>
+          </div>
 
-            <!-- Bottom Section: Buttons -->
-            <div class="flex flex-col space-y-2" aria-label="Produktaktionen">
-              <!-- Quantity and Availability -->
-              <div
-                class="mt-4 flex items-center space-x-4"
-                aria-label="Mengenauswahl"
+          <!-- Right Section -->
+          <div class="flex space-x-4">
+            <!-- Follow Button -->
+            <a href="login.html">
+              <button
+                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
+                aria-label="Shop folgen"
               >
-                <label for="quantity" class="text-wm-darkgray">Menge:</label>
-                <input
-                  id="quantity"
-                  type="number"
-                  value="1"
-                  min="1"
-                  class="w-16 rounded border border-wm-lightgray text-center"
-                  aria-label="Menge auswählen"
-                />
-              </div>
-
-              <a
-                href="registration.html"
-                class="box-border block w-full transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 text-center uppercase text-wm-black transition duration-200 hover:scale-105"
-                aria-label="In den Warenkorb legen"
+                ❤️ Shop folgen
+              </button>
+            </a>
+            <!-- Send Message Button -->
+            <a href="login.html">
+              <button
+                class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
+                aria-label="Nachricht senden"
               >
-                In den Warenkorb
-              </a>
-              <a
-                href="registration.html"
-                class="box-border block w-full transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 text-center uppercase text-white transition duration-200 hover:scale-105"
-                aria-label="Jetzt kaufen"
-              >
-                Jetzt Kaufen
-              </a>
-            </div>
+                Nachricht senden
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Product Detail Section -->
+    <!-- Seller Detail Section -->
     <section>
       <!-- Navigation -->
       <nav
@@ -321,11 +248,11 @@
           <!-- Navigation links -->
           <li>
             <a
-              href="#beschreibung"
+              href="#alleartikel"
               class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
               aria-label="Springe zur Beschreibung"
             >
-              <h3>Beschreibung</h3>
+              <h3>Alle Artikel</h3>
             </a>
           </li>
           <li>
@@ -348,6 +275,15 @@
           </li>
           <li>
             <a
+              href="#info"
+              class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+              aria-label="Springe zu den Bewertungen"
+            >
+              <h3>Info</h3>
+            </a>
+          </li>
+          <li>
+            <a
               href="#agb"
               class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
               aria-label="Springe zu den AGB"
@@ -358,34 +294,185 @@
         </ul>
       </nav>
 
-      <!-- Description -->
+      <!-- All products from seller -->
       <article
-        id="beschreibung"
+        id="alleartikel"
         class="container mx-auto mb-8 scroll-mt-20"
-        aria-label="Produktbeschreibung"
+        aria-label="Alle Artikel des Verkäufers"
       >
         <div class="flex flex-col lg:flex-row">
           <!-- Left column -->
           <aside class="py-4 lg:w-1/4">
-            <h2 class="text-xl font-semibold text-wm-darkgray">Beschreibung</h2>
+            <h2 class="text-xl font-semibold text-wm-darkgray">Alle Artikel</h2>
           </aside>
           <!-- Right column -->
           <section class="bg-white py-4 lg:w-3/4">
-            <p class="text-wm-black">
-              Entdecken Sie ein Stück Tradition und Genuss mit dem Historischen
-              Delikatess-Senf aus der Senfmühle anno 1810. Dieser fein
-              abgestimmte Senf wird nach überlieferten Rezepturen handwerklich
-              hergestellt und überzeugt durch seinen ausgewogenen Geschmack –
-              kräftig, aromatisch und gleichzeitig angenehm mild.
-            </p>
-            <p class="mt-4 text-wm-black">
-              Perfekt als Begleiter zu Fleisch- und Wurstwaren, als Verfeinerung
-              von Dressings oder als würzige Basis für Marinaden. Die edle
-              Verpackung und die handwerkliche Qualität machen diesen Senf zu
-              einem Highlight für Feinschmecker und Liebhaber authentischer,
-              regionaler Spezialitäten.
-            </p>
-            <p class="mt-4 text-wm-black"><b>Inhalt:</b> 250 ml <br /></p>
+            <!-- Product cards -->
+            <div
+              class="grid grid-cols-1 gap-5 px-4 sm:px-0 md:grid-cols-2 lg:grid-cols-4"
+              aria-label="Produktliste"
+            >
+              <!-- Single product card -->
+              <article
+                class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+                aria-label="Produktkarte: Historischer Senf"
+              >
+                <a
+                  href="products_template.html"
+                  aria-label="Historischer Senf Details"
+                >
+                  <img
+                    src="../../public/images/homepage/senf.jpg"
+                    alt="Bild von Historischem Senf"
+                    class="h-48 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                    <p class="mt-2 font-bold">ab 4,99€</p>
+                  </div>
+                </a>
+              </article>
+              <!-- Single product card -->
+              <article
+                class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+                aria-label="Produktkarte: Historischer Senf"
+              >
+                <a
+                  href="products_template.html"
+                  aria-label="Historischer Senf Details"
+                >
+                  <img
+                    src="../../public/images/homepage/senf.jpg"
+                    alt="Bild von Historischem Senf"
+                    class="h-48 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                    <p class="mt-2 font-bold">ab 4,99€</p>
+                  </div>
+                </a>
+              </article>
+              <!-- Single product card -->
+              <article
+                class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+                aria-label="Produktkarte: Historischer Senf"
+              >
+                <a
+                  href="products_template.html"
+                  aria-label="Historischer Senf Details"
+                >
+                  <img
+                    src="../../public/images/homepage/senf.jpg"
+                    alt="Bild von Historischem Senf"
+                    class="h-48 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                    <p class="mt-2 font-bold">ab 4,99€</p>
+                  </div>
+                </a>
+              </article>
+              <!-- Single product card -->
+              <article
+                class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+                aria-label="Produktkarte: Historischer Senf"
+              >
+                <a
+                  href="products_template.html"
+                  aria-label="Historischer Senf Details"
+                >
+                  <img
+                    src="../../public/images/homepage/senf.jpg"
+                    alt="Bild von Historischem Senf"
+                    class="h-48 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                    <p class="mt-2 font-bold">ab 4,99€</p>
+                  </div>
+                </a>
+              </article>
+              <!-- Single product card -->
+              <article
+                class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+                aria-label="Produktkarte: Historischer Senf"
+              >
+                <a
+                  href="products_template.html"
+                  aria-label="Historischer Senf Details"
+                >
+                  <img
+                    src="../../public/images/homepage/senf.jpg"
+                    alt="Bild von Historischem Senf"
+                    class="h-48 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                    <p class="mt-2 font-bold">ab 4,99€</p>
+                  </div>
+                </a>
+              </article>
+              <!-- Single product card -->
+              <article
+                class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+                aria-label="Produktkarte: Historischer Senf"
+              >
+                <a
+                  href="products_template.html"
+                  aria-label="Historischer Senf Details"
+                >
+                  <img
+                    src="../../public/images/homepage/senf.jpg"
+                    alt="Bild von Historischem Senf"
+                    class="h-48 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                    <p class="mt-2 font-bold">ab 4,99€</p>
+                  </div>
+                </a>
+              </article>
+              <!-- Single product card -->
+              <article
+                class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+                aria-label="Produktkarte: Historischer Senf"
+              >
+                <a
+                  href="products_template.html"
+                  aria-label="Historischer Senf Details"
+                >
+                  <img
+                    src="../../public/images/homepage/senf.jpg"
+                    alt="Bild von Historischem Senf"
+                    class="h-48 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                    <p class="mt-2 font-bold">ab 4,99€</p>
+                  </div>
+                </a>
+              </article>
+              <!-- Single product card -->
+              <article
+                class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+                aria-label="Produktkarte: Historischer Senf"
+              >
+                <a
+                  href="products_template.html"
+                  aria-label="Historischer Senf Details"
+                >
+                  <img
+                    src="../../public/images/homepage/senf.jpg"
+                    alt="Bild von Historischem Senf"
+                    class="h-48 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold">Historischer Senf</h3>
+                    <p class="mt-2 font-bold">ab 4,99€</p>
+                  </div>
+                </a>
+              </article>
+            </div>
           </section>
         </div>
       </article>
@@ -438,7 +525,9 @@
         <div class="flex flex-row">
           <!-- Left column -->
           <aside class="py-4 basis-1/4 flex-grow-0">
-            <h2 class="text-xl font-semibold text-wm-darkgray mb-4">Bewertung</h2>
+            <h2 class="text-xl font-semibold text-wm-darkgray mb-4">
+              Bewertung
+            </h2>
             <div class="text-wm-lightgray" aria-label="Kundenbewertungen">
               <span
                 class="text-yellow-500"
@@ -548,7 +637,37 @@
         </div>
       </section>
 
-      <!-- AGB -->
+      <!-- Info text from seller -->
+      <article
+        id="info"
+        class="container mx-auto scroll-mt-20"
+        aria-label="Verkäufer-Info"
+      >
+        <div class="flex flex-col lg:flex-row">
+          <aside class="py-4 lg:w-1/4">
+            <h2 class="text-xl font-semibold text-wm-darkgray mb-4">Info</h2>
+            <p class="text-wm-lightgray">Registriert seit: 14.04.2024</p>
+          </aside>
+          <section class="bg-white py-4 lg:w-3/4">
+            <h1 class="mb-4">Willkommen in meinem Einzigware-Shop! 🌱</h1>
+            <p class="mb-4">
+              Hier findest du lokal produzierten, handgemachten Senf, der mit
+              viel Liebe und Sorgfalt hergestellt wird. Jeder Senf ist ein
+              echtes Unikat, inspiriert von traditionellen Rezepten und
+              verfeinert mit kreativen Aromen. Ob klassisch, fruchtig oder
+              würzig – mein Senf bringt den perfekten Kick in deine Küche.
+            </p>
+            <p>
+              Nachhaltigkeit und Qualität stehen bei mir an erster Stelle. Alle
+              Zutaten beziehe ich aus der Region, um dir ein authentisches und
+              frisches Geschmackserlebnis zu bieten. Entdecke meinen Senf und
+              bringe neuen Schwung in deine Gerichte! 🥨✨
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <!-- TOS -->
       <article
         id="agb"
         class="container mx-auto scroll-mt-20"
@@ -584,7 +703,7 @@
     <!-- Recommended Products  -->
     <section aria-label="Empfohlene Produkte">
       <div class="container mx-auto mb-12">
-        <!-- Headline product -->
+        <!-- Headline products -->
         <header class="pb-6 pt-8 text-center">
           <h2
             class="font-serif text-2xl sm:text-3xl"
