@@ -46,12 +46,12 @@
   </head>
 
   <body>
-    <!-- Header v1.4 -->
+    <!-- Header v1.5 -->
     <header
-      class="sticky top-0 z-50 bg-white px-4 shadow-md sm:px-0"
+      class="sticky top-0 z-50 bg-white shadow-md"
       aria-label="Main Header"
     >
-      <div class="container">
+      <div class="container lg:px-0 px-4">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
             <a href="/src/views/index.html" aria-label="Zur Startseite">
@@ -103,7 +103,38 @@
             </ul>
           </nav>
           <div class="flex items-center gap-4">
-            <div class="sm:flex sm:gap-4">
+            <div
+              class="flex lg:hidden"
+              onclick="location.href='mobile-menu.html'"
+            >
+              <svg
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 18L20 18"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 12L20 12"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 6L20 6"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="hidden lg:flex lg:gap-4">
               <button
                 class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
                 onclick="location.href='login.html'"
@@ -151,7 +182,7 @@
 
         <!-- Content -->
         <div
-          class="container relative flex h-full flex-col items-start justify-center px-4 py-14 sm:px-6 lg:px-8 lg:py-28"
+          class="container relative flex h-full flex-col items-start justify-center py-14 lg:py-28"
         >
           <article class="flex-1 lg:w-1/2" aria-label="Hero Content">
             <h1 class="text-left font-serif text-3xl text-white lg:text-5xl">
@@ -190,7 +221,7 @@
 
         <!-- Produktkarten -->
         <div
-          class="grid grid-cols-1 gap-5 px-4 sm:px-0 md:grid-cols-2 lg:grid-cols-4"
+          class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4"
           aria-label="Produktliste"
         >
           <!-- Produktkarte -->
