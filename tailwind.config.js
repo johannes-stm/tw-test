@@ -12,16 +12,21 @@ module.exports = {
         "wm-lightgray": "#4b5563",
         "wm-darkgray": "#1f2937",
       },
-      container: {
-        center: true, // Optional: Container wird zentriert
-        screens: {
-          sm: '640px',
-          md: '768px',
-          lg: '1024px',
-          xl: '1280px',
-          '2xl': '1300px', // Breakpoint 1280px wird auf 1300px geändert
-        },
-      },
+container: {
+  center: true,
+  padding: {
+    DEFAULT: '1rem', 
+    sm: '1.5rem', 
+  },
+  screens: {
+    sm: '640px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1280px',
+    '2xl': '1300px',
+  },
+},
+
       scale: {
         '103': '1.03',
       },
@@ -32,9 +37,6 @@ module.exports = {
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
     },
-    container: {
-      center:true,
-    }
   },
   plugins: [],
 }
