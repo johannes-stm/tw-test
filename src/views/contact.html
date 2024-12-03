@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
   <head>
     <!-- Meta-Informationen -->
@@ -16,14 +16,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="/src/css/output.css" />
 
     <!-- Favicon -->
-    <link
-      rel="icon"
-      href="../../public/images/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon" />
 
     <!-- Titel -->
     <title>Einzigware - Kontakt</title>
@@ -37,156 +33,207 @@
       property="og:description"
       content="Entdecken Sie einzigartige Produkte, die die Heimat zu Ihnen bringen. Unterstützen Sie lokale Produzenten und genießen Sie handgefertigte Qualität."
     />
-    <meta property="og:image" content="../../public/images/logo_colored.png" />
+    <meta property="og:image" content="/public/images/logo_colored.png" />
     <meta
       property="og:url"
-      content="https://www.einzigware.projekt.dhbw-heidenheim.de"
+      content="http://einzigware.projekt.dhbw-heidenheim.de"
     />
     <meta property="og:type" content="website" />
   </head>
 
-  <!-- Header v1.4 -->
-  <header class="sticky top-0 z-50 bg-white shadow-md" aria-label="Main Header">
-    <div class="container">
-      <div class="flex h-16 items-center justify-between">
-        <div class="md:flex md:items-center md:gap-12">
-          <a href="/src/views/index.html" aria-label="Zur Startseite">
-            <img
-              src="../../public/images/logo.png"
-              alt="Logo Einzigware"
-              class="h-14 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
-            />
-          </a>
-        </div>
-        <nav class="hidden lg:block" aria-label="Hauptnavigation">
-          <ul class="flex items-center gap-6">
-            <li>
-              <a
-                class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="products.html"
-                aria-label="Produkte"
-              >
-                Produkte
-              </a>
-            </li>
-            <li>
-              <a
-                class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="regions.html"
-                aria-label="Regionen"
-              >
-                Regionen
-              </a>
-            </li>
-            <li>
-              <a
-                class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="about.html"
-                aria-label="Unsere Vision"
-              >
-                Unsere Vision
-              </a>
-            </li>
-            <li>
-              <a
-                class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-                href="contact.html"
-                aria-label="Kontakt"
-              >
-                Kontakt
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="flex items-center gap-4">
-          <div class="sm:flex sm:gap-4">
-            <button
-              class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
-              onclick="location.href='login.html'"
-              aria-label="Anmelden"
+  <body>
+    <!-- Header v1.5.1 -->
+    <header
+      class="sticky top-0 z-50 bg-white shadow-md"
+      aria-label="Hauptkopfbereich der Seite"
+    >
+      <!-- Header Container -->
+      <div class="container px-4 lg:px-0">
+        <div class="flex h-16 items-center justify-between">
+          <!-- Logo Section -->
+          <div class="md:flex md:items-center md:gap-12">
+            <a href="/index.html" aria-label="Zur Startseite">
+              <img
+                src="/public/images/logo.png"
+                alt="Logo Einzigware"
+                class="h-14 w-auto transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+              />
+            </a>
+          </div>
+
+          <!-- Main Navigation -->
+          <nav class="hidden lg:block" aria-label="Hauptnavigation">
+            <ul class="flex items-center gap-6">
+              <!-- Navigation Links -->
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="/src/views/products.html"
+                  aria-label="Produkte"
+                >
+                  Produkte
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="/src/views/regions.html"
+                  aria-label="Regionen"
+                >
+                  Regionen
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="/src/views/about.html"
+                  aria-label="Unsere Vision"
+                >
+                  Unsere Vision
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer uppercase decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
+                  href="/src/views/contact.html"
+                  aria-label="Kontakt"
+                >
+                  Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Utility Links and Mobile Menu -->
+          <div class="flex items-center gap-4">
+            <!-- Mobile Menu Icon -->
+            <div
+              class="flex lg:hidden"
+              onclick="location.href='/src/views/mobile-menu.html'"
+              aria-label="Mobile Navigation öffnen"
             >
-              Anmelden
-            </button>
-            <div class="hidden sm:flex">
-              <button
-                class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
-                onclick="location.href='registration.html'"
-                aria-label="Registrieren"
+              <svg
+                width="40px"
+                height="40px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
-                Registrieren
-              </button>
+                <path
+                  d="M4 18L20 18"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 12L20 12"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 6L20 6"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
             </div>
-            <div class="hidden sm:flex">
+
+            <!-- Desktop Utility Links -->
+            <div class="hidden lg:flex lg:gap-4">
+              <!-- Login Button -->
               <button
-                class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
-                onclick="location.href='become-seller.html'"
-                aria-label="Verkäufer werden"
+                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
+                onclick="location.href='/src/views/login.html'"
+                aria-label="Anmelden"
               >
-                Verkäufer werden
+                Anmelden
               </button>
+
+              <!-- Registration Button -->
+              <div class="hidden sm:flex">
+                <button
+                  class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
+                  onclick="location.href='/src/views/registration.html'"
+                  aria-label="Registrieren"
+                >
+                  Registrieren
+                </button>
+              </div>
+
+              <!-- Become a Seller Button -->
+              <div class="hidden sm:flex">
+                <button
+                  class="box-border transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 uppercase text-white transition duration-200 hover:scale-105"
+                  onclick="location.href='/src/views/registration.html'"
+                  aria-label="Verkäufer werden"
+                >
+                  Verkäufer werden
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Breadcrumb Section -->
-  <div class="bg-white" aria-label="Breadcrumb-Navigation">
-    <div class="container">
-      <div class="max-w-7xl py-4 text-sm">
-        <nav aria-label="Navigationspfad">
-          <ul class="flex space-x-2 text-wm-black">
-            <li>
-              <a
-                href="index.html"
-                class="underline hover:no-underline"
-                aria-label="Zurück zur Startseite"
-                >Startseite</a
-              >
-            </li>
-            <li aria-hidden="true">/</li>
-            <li>
-              <a
-                href="contact.html"
-                class="underline hover:no-underline"
-                aria-label="Kontaktseite öffnen"
-                >Kontakt</a
-              >
-            </li>
-          </ul>
-        </nav>
+    <!-- Breadcrumb Section -->
+    <div class="bg-white" aria-label="Breadcrumb-Navigation">
+      <div class="container lg:px-0">
+        <div class="max-w-7xl py-4 text-sm">
+          <nav aria-label="Navigationspfad">
+            <ul class="flex space-x-2 text-wm-black">
+              <li>
+                <a
+                  href="/index.html"
+                  class="underline hover:no-underline"
+                  aria-label="Zurück zur Startseite"
+                  >Startseite</a
+                >
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <a
+                  href="/src/views/contact.html"
+                  class="underline hover:no-underline"
+                  aria-label="Kontaktseite öffnen"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Headline Section -->
-  <div class="container font-serif" aria-label="Kontaktbereich">
-    <h1 class="mb-2 text-3xl" aria-label="Überschrift: Kontaktiere uns">
-      Kontaktiere uns
-    </h1>
-    <p
-      aria-label="Beschreibung: Schreib uns – wir sind für dich da und beantworten gerne deine Fragen!"
-    >
-      Schreib uns – wir sind für dich da und beantworten gerne deine Fragen!
-    </p>
-  </div>
+    <!-- Headline Section -->
+    <div class="container font-serif lg:px-0" aria-label="Kontaktbereich">
+      <h1 class="mb-2 text-3xl" aria-label="Überschrift: Kontaktiere uns">
+        Kontaktiere uns
+      </h1>
+      <p
+        aria-label="Beschreibung: Schreib uns – wir sind für dich da und beantworten gerne deine Fragen!"
+      >
+        Schreib uns – wir sind für dich da und beantworten gerne deine Fragen!
+      </p>
+    </div>
 
-  <!-- Contact Form Full -->
-  <section aria-label="Kontaktbereich">
-    <div
-      class="flex flex-col items-start justify-center gap-8 py-8 lg:flex-row"
-      role="region"
-      aria-label="Kontaktinformationen und Kontaktformular"
-    >
-      <div class="container flex">
-        <!-- Contact Info -->
-        <div
-          class="w-full max-w-md rounded-lg bg-wm-beige p-4"
+    <!-- Contact Form Full Section -->
+    <section aria-label="Kontaktbereich">
+      <div
+        class="container mx-auto flex flex-col items-stretch justify-center gap-12 py-8 lg:px-0 lg:flex-row"
+        role="region"
+        aria-label="Kontaktinformationen und Kontaktformular"
+      >
+        <!-- Contact Info Section -->
+        <aside
+          class="w-full lg:w-1/3 rounded-lg bg-wm-beige p-4 py-8 flex flex-col justify-between"
           role="complementary"
           aria-label="Kontaktinformationen"
         >
-          <h2 class="mb-4 text-lg font-semibold uppercase text-wm-black">
+          <h2 class="mb-6 text-lg font-semibold uppercase text-wm-black">
             Kontaktiere Einzigware
           </h2>
           <p class="mb-4 text-sm text-wm-black">
@@ -218,21 +265,23 @@
             Wir freuen uns auf deine Nachricht!
           </p>
           <p class="mt-4 text-wm-black">Dein <b>Einzigware-Team</b></p>
-        </div>
+        </aside>
 
-        <!-- Contact Form -->
-        <div class="w-full px-4 pt-4" role="form" aria-label="Kontaktformular">
-          <h2 class="mb-4 text-lg font-semibold uppercase text-wm-black">
+        <!-- Contact Form Section -->
+        <div
+          class="w-full lg:w-2/3 p-4 py-8"
+          role="form"
+          aria-label="Kontaktformular"
+        >
+          <h2 class="mb-6 text-lg font-semibold uppercase text-wm-black">
             Sende uns eine Nachricht
           </h2>
           <form
-            class="space-y-4"
-            aria-label="Formular zum Senden einer Nachricht"
+            class="grid grid-cols-1 gap-6 lg:grid-cols-2"
+            aria-label="Kontaktformular"
           >
-            <p class="sr-only">
-              Felder mit einem Sternchen (*) sind erforderlich.
-            </p>
-            <div>
+            <!-- Name -->
+            <div class="flex flex-col">
               <label
                 for="name"
                 class="mb-1 block text-sm font-medium text-wm-black"
@@ -247,7 +296,9 @@
                 aria-label="Dein Vor- und Nachname"
               />
             </div>
-            <div>
+
+            <!-- Email -->
+            <div class="flex flex-col">
               <label
                 for="email"
                 class="mb-1 block text-sm font-medium text-wm-black"
@@ -262,7 +313,9 @@
                 aria-label="Deine E-Mail Adresse"
               />
             </div>
-            <div>
+
+            <!-- Order Number -->
+            <div class="flex flex-col lg:col-span-2">
               <label
                 for="order"
                 class="mb-1 block text-sm font-medium text-wm-black"
@@ -276,7 +329,9 @@
                 aria-label="Deine Bestellnummer (optional)"
               />
             </div>
-            <div>
+
+            <!-- Message -->
+            <div class="flex flex-col lg:col-span-2">
               <label
                 for="message"
                 class="mb-1 block text-sm font-medium text-wm-black"
@@ -290,91 +345,111 @@
                 aria-label="Deine Nachricht"
               ></textarea>
             </div>
-            <button
-              type="submit"
-              class="w-full transform rounded-lg border-2 border-wm-brown bg-wm-brown px-4 py-2 font-medium text-white transition duration-200 hover:scale-105 focus:ring-2 focus:ring-wm-brown"
-              aria-label="Formular absenden"
-            >
-              SENDEN
-            </button>
+
+            <!-- Submit Button -->
+            <div class="flex justify-center lg:col-span-2">
+              <button
+                type="submit"
+                class="w-1/2 transform rounded-lg border-2 border-wm-brown bg-wm-brown px-4 py-2 font-medium text-white transition duration-200 hover:scale-105 focus:ring-2 focus:ring-wm-brown"
+                aria-label="Formular absenden"
+              >
+                SENDEN
+              </button>
+            </div>
           </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer v1.3 -->
-  <footer class="bg-wm-black py-8 text-gray-200" aria-label="Einzigware Footer">
-    <div
-      class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
+    <!-- Footer v1.3.1 -->
+    <footer
+      class="bg-wm-black py-8 text-gray-200"
+      aria-label="Einzigware Footer"
     >
-      <!-- Spalte 1: Logo -->
-      <div aria-label="Logo und Startseite Link">
-        <a href="index.html" aria-label="Zur Startseite">
-          <div class="flex justify-center md:justify-start">
-            <img
-              src="../../public/images/logo_colored.png"
-              alt="Einzigware Logo"
-              class="h-44 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
-            />
+      <div
+        class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
+      >
+        <!-- Column 1: Logo -->
+        <div aria-label="Logo und Startseite Link">
+          <a href="/index.html" aria-label="Zur Startseite">
+            <div class="flex justify-center md:justify-start">
+              <img
+                src="/public/images/logo_colored.png"
+                alt="Einzigware Logo"
+                class="h-44 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
+              />
+            </div>
+          </a>
+        </div>
+
+        <!-- Column 2 and 3 with Slogan on top -->
+        <div class="text-center md:col-span-2 md:text-left">
+          <p class="mb-4 text-gray-400" aria-label="Slogan">
+            Wir bringen Heimat nach Hause
+          </p>
+
+          <div class="grid grid-cols-2 gap-8" aria-label="Footer-Navigation">
+            <!-- Column 2: Hyperlinks Navigation -->
+            <nav aria-label="Erste Spalte Links">
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a href="/src/views/products.html" class="hover:text-gray-400"
+                    >Produkte</a
+                  >
+                </li>
+                <li>
+                  <a href="/src/views/regions.html" class="hover:text-gray-400"
+                    >Regionen</a
+                  >
+                </li>
+                <li>
+                  <a href="/src/views/about.html" class="hover:text-gray-400"
+                    >Unsere Vision</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/src/views/registration.html"
+                    class="hover:text-gray-400"
+                    >Werde Verkäufer</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Column 3: Hyperlinks General -->
+            <nav aria-label="Zweite Spalte Links">
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a href="/src/views/contact.html" class="hover:text-gray-400"
+                    >Kontakt</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/src/views/legal-notice.html"
+                    class="hover:text-gray-400"
+                    >Impressum</a
+                  >
+                </li>
+                <li>
+                  <a href="/src/views/privacy.html" class="hover:text-gray-400"
+                    >Datenschutz</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
-        </a>
-      </div>
-
-      <!-- Spalte 2 und 3 mit Slogan oben -->
-      <div class="text-center md:col-span-2 md:text-left">
-        <p class="mb-4 text-gray-400" aria-label="Slogan">
-          Wir bringen Heimat nach Hause
-        </p>
-
-        <div class="grid grid-cols-2 gap-8" aria-label="Footer-Navigation">
-          <!-- Spalte 2: Hyperlinks -->
-          <nav aria-label="Erste Spalte Links">
-            <ul class="flex flex-col space-y-2">
-              <li>
-                <a href="products.html" class="hover:text-gray-400">Produkte</a>
-              </li>
-              <li>
-                <a href="regions.html" class="hover:text-gray-400">Regionen</a>
-              </li>
-              <li>
-                <a href="about.html" class="hover:text-gray-400"
-                  >Unsere Vision</a
-                >
-              </li>
-              <li>
-                <a href="become-seller.html" class="hover:text-gray-400"
-                  >Werde Verkäufer</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <!-- Spalte 3: Hyperlinks -->
-          <nav aria-label="Zweite Spalte Links">
-            <ul class="flex flex-col space-y-2">
-              <li>
-                <a href="contact.html" class="hover:text-gray-400">Kontakt</a>
-              </li>
-              <li>
-                <a href="legal-notice.html" class="hover:text-gray-400"
-                  >Impressum</a
-                >
-              </li>
-              <li>
-                <a href="privacy.html" class="hover:text-gray-400"
-                  >Datenschutz</a
-                >
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
-    </div>
 
-    <!-- Copyright -->
-    <div class="mt-8 text-center text-gray-500" aria-label="Copyright-Hinweis">
-      <p>&copy; 2024 Einzigware</p>
-    </div>
-  </footer>
+      <!-- Copyright -->
+      <div
+        class="mt-8 text-center text-gray-500"
+        aria-label="Copyright-Hinweis"
+      >
+        <p>&copy; 2024 Einzigware</p>
+      </div>
+    </footer>
+  </body>
 </html>
