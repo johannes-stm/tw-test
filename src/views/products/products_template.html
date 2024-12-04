@@ -219,22 +219,22 @@
 
     <!-- Product Section -->
     <section aria-label="Produktdetails Abschnitt" class="bg-wm-beige">
-      <div class="container mx-auto py-6">
+      <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <!-- Product Container -->
         <div
-          class="flex h-full overflow-hidden rounded-lg lg:flex-row"
+          class="flex flex-col-reverse lg:flex-row h-full overflow-hidden rounded-lg"
           role="region"
           aria-label="Produktübersicht"
         >
           <!-- Left Side: Image Area -->
           <div
-            class="flex items-center justify-center p-4 lg:w-2/3"
+            class="flex items-center justify-center p-4 lg:w-2/3 order-1 lg:order-none"
             aria-label="Produktbild"
           >
             <img
               src="/public/images/products/senf/product_senf.jpg"
               alt="Bild des Produkts: Historischer Senf"
-              class="max-h-[460px] rounded-lg shadow-sm"
+              class="w-full max-w-full sm:max-w-[460px] rounded-lg shadow-sm object-contain"
             />
           </div>
 
@@ -246,7 +246,7 @@
             <!-- Top Section: Title, Price, Features -->
             <div>
               <h1
-                class="font-serif text-3xl font-bold text-wm-black"
+                class="font-serif text-2xl sm:text-3xl font-bold text-wm-black"
                 aria-label="Produktname: Historischer Senf"
               >
                 Historischer Senf
@@ -277,20 +277,20 @@
                   aria-label="Bewertung: 4 von 5 Sternen"
                   >★★★★☆</span
                 >
-                <p>4.5 von 5 Sternen</p>
+                <p class="text-sm">4.5 von 5 Sternen</p>
               </div>
             </div>
 
             <!-- Middle Section: Seller Profile -->
             <div
-              class="flex items-center space-x-4 border-b border-t border-wm-lightgray py-4"
+              class="flex items-center space-x-4 border-b border-t border-wm-lightgray py-4 mt-4 lg:mt-6"
               aria-label="Verkäuferprofil"
             >
               <!-- Profile Picture -->
               <img
                 src="/public/images/sellers/pp_template.png"
                 alt="Profilbild des Verkäufers Bernd Müller"
-                class="h-20 w-20 rounded-full border-2 border-wm-brown"
+                class="h-16 w-16 sm:h-20 sm:w-20 rounded-full border-2 border-wm-brown object-cover"
               />
               <!-- Seller Information -->
               <div>
@@ -303,14 +303,14 @@
                   </p>
                 </a>
                 <p
-                  class="text-wm-darkgray"
+                  class="text-wm-darkgray text-sm"
                   aria-label="Standort des Verkäufers: Senfmühle Köln / Cochem"
                 >
                   Senfmühle Köln / Cochem
                 </p>
-                <a href="regions_nordrhein-westfahlen.html">
+                <a href="/src/views/regions/regions_template.html">
                   <p
-                    class="text-wm-darkgray"
+                    class="text-wm-darkgray text-sm"
                     aria-label="Region: Nordrhein-Westfahlen"
                   >
                     Nordrhein-Westfahlen
@@ -320,13 +320,18 @@
             </div>
 
             <!-- Bottom Section: Buttons -->
-            <div class="flex flex-col space-y-2" aria-label="Produktaktionen">
+            <div
+              class="flex flex-col space-y-2 mt-4 lg:mt-6"
+              aria-label="Produktaktionen"
+            >
               <!-- Quantity and Availability -->
               <div
-                class="mt-4 flex items-center space-x-4"
+                class="flex items-center space-x-4"
                 aria-label="Mengenauswahl"
               >
-                <label for="quantity" class="text-wm-darkgray">Menge:</label>
+                <label for="quantity" class="text-wm-darkgray text-sm"
+                  >Menge:</label
+                >
                 <input
                   id="quantity"
                   type="number"
@@ -338,15 +343,15 @@
               </div>
 
               <a
-                href="registration.html"
-                class="box-border block w-full transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 text-center uppercase text-wm-black transition duration-200 hover:scale-105"
+                href="/src/views/registration.html"
+                class="box-border block w-full transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 text-center uppercase text-wm-black text-sm sm:text-base transition duration-200 hover:scale-105"
                 aria-label="In den Warenkorb legen"
               >
                 In den Warenkorb
               </a>
               <a
-                href="registration.html"
-                class="box-border block w-full transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 text-center uppercase text-white transition duration-200 hover:scale-105"
+                href="/src/views/registration.html"
+                class="box-border block w-full transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 text-center uppercase text-white text-sm sm:text-base transition duration-200 hover:scale-105"
                 aria-label="Jetzt kaufen"
               >
                 Jetzt Kaufen
@@ -361,7 +366,7 @@
     <section aria-label="Produktdetails">
       <!-- Navigation -->
       <nav
-        class="container mx-auto mb-4 py-4 text-center"
+        class="container mx-auto mb-4 py-4 text-center overflow-x-auto"
         aria-label="Navigation der Produktseite"
       >
         <ul class="flex justify-start space-x-6 text-lg">
@@ -393,7 +398,7 @@
               <h3>Bewertungen</h3>
             </a>
           </li>
-          <li>
+          <li class="pr-6">
             <a
               href="#agb"
               class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
