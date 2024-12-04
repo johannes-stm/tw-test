@@ -181,13 +181,13 @@
 
     <!-- Breadcrumb Section -->
     <section class="bg-white" aria-label="Breadcrumb-Navigation">
-      <div class="container">
+      <div class="container lg:px-0">
         <div class="max-w-7xl py-4 text-sm">
           <nav aria-label="Navigationspfad">
             <ul class="flex space-x-2 text-wm-black">
               <li>
                 <a
-                  href="index.html"
+                  href="/index.html"
                   class="underline hover:no-underline"
                   aria-label="Zurück zur Startseite"
                   >Startseite</a
@@ -196,7 +196,7 @@
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="products.html"
+                  href="/src/views/products.html"
                   class="underline hover:no-underline"
                   aria-label="Produktübersicht öffnen"
                   >Produkte</a
@@ -205,7 +205,7 @@
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="products.html"
+                  href="/src/views/products/products_template.html"
                   class="underline hover:no-underline"
                   aria-label="Produkt XY öffnen"
                   >Produkt XY</a
@@ -366,7 +366,7 @@
     <section aria-label="Produktdetails">
       <!-- Navigation -->
       <nav
-        class="container mx-auto mb-4 py-4 text-center overflow-x-auto"
+        class="container lg:px-0 mx-auto mb-4 py-4 text-center overflow-x-auto"
         aria-label="Navigation der Produktseite"
       >
         <ul class="flex justify-start space-x-6 text-lg">
@@ -413,12 +413,15 @@
       <!-- Description -->
       <article
         id="beschreibung"
-        class="container mx-auto mb-8 scroll-mt-20"
+        class="container lg:px-0 mx-auto mb-8 scroll-mt-20"
         aria-label="Produktbeschreibung"
       >
         <div class="flex flex-col lg:flex-row">
           <!-- Left column -->
-          <aside class="py-4 lg:w-1/4" aria-label="Abschnitt Beschreibung">
+          <aside
+            class="py-4 lg:w-1/4 text-center lg:text-left"
+            aria-label="Abschnitt Beschreibung"
+          >
             <h2 class="text-xl font-semibold text-wm-darkgray">Beschreibung</h2>
           </aside>
           <!-- Right column -->
@@ -448,16 +451,16 @@
       <!-- Region of origin -->
       <article
         id="herkunftsregion"
-        class="container mx-auto mb-8 scroll-mt-20"
+        class="container lg:px-0 mx-auto mb-8 scroll-mt-20"
         aria-label="Herkunftsregion des Produkts"
       >
-        <div class="flex flex-row">
+        <div class="flex flex-col lg:flex-row">
           <!-- Left column -->
           <aside
-            class="flex-grow-0 basis-1/4 py-4"
+            class="py-4 lg:w-1/4 text-center lg:text-left"
             aria-label="Information zur Herkunftsregion"
           >
-            <h2 class="mb-4 text-xl font-semibold text-wm-darkgray">
+            <h2 class="text-xl font-semibold text-wm-darkgray mb-4">
               Herkunftsregion
             </h2>
             <a href="#">
@@ -476,12 +479,12 @@
           </aside>
           <!-- Right column -->
           <section
-            class="flex-grow-0 basis-3/4 bg-white py-4"
+            class="bg-white py-4 lg:w-3/4"
             aria-label="Bild der Herkunftsregion"
           >
             <div class="flex h-full w-full items-center justify-center">
               <img
-                src="../../public/images/products/senf/product_region_cologne.png"
+                src="/public/images/products/senf/product_region_cologne.png"
                 alt="Bild der Herkunftsregion"
                 class="h-80 w-full rounded-lg border object-cover"
               />
@@ -493,16 +496,16 @@
       <!-- Reviews -->
       <section
         id="bewertungen"
-        class="container mx-auto mb-8 scroll-mt-20"
+        class="container lg:px-0 mx-auto mb-8 scroll-mt-20"
         aria-label="Produktbewertungen"
       >
-        <div class="flex flex-row">
+        <div class="flex flex-col lg:flex-row">
           <!-- Left column -->
           <aside
-            class="flex-grow-0 basis-1/4 py-4"
+            class="py-4 lg:w-1/4 text-center lg:text-left"
             aria-label="Bewertungen-Übersicht"
           >
-            <h2 class="mb-4 text-xl font-semibold text-wm-darkgray">
+            <h2 class="text-xl font-semibold text-wm-darkgray mb-4">
               Bewertung
             </h2>
             <div class="text-wm-lightgray" aria-label="Kundenbewertung">
@@ -516,7 +519,7 @@
           </aside>
           <!-- Right column -->
           <section
-            class="flex-grow-0 basis-3/4 space-y-8 bg-white py-4"
+            class="bg-white py-4 lg:w-3/4 space-y-8"
             aria-label="Bewertungen"
           >
             <!-- Review 1 -->
@@ -526,7 +529,7 @@
             >
               <figure class="flex-shrink-0" aria-label="Profilbild des Nutzers">
                 <img
-                  src="../../public/images/sellers/pp_template.png"
+                  src="/public/images/reviewers/pp_template.png"
                   alt="Profilbild von User"
                   class="h-12 w-12 rounded-full border"
                 />
@@ -572,13 +575,18 @@
       <!-- AGB -->
       <article
         id="agb"
-        class="container mx-auto scroll-mt-20"
+        class="container lg:px-0 mx-auto scroll-mt-20"
         aria-label="Allgemeine Geschäftsbedingungen"
       >
         <div class="flex flex-col lg:flex-row">
-          <aside class="py-4 lg:w-1/4" aria-label="Abschnitt AGB">
+          <!-- Left column -->
+          <aside
+            class="py-4 lg:w-1/4 text-center lg:text-left"
+            aria-label="Abschnitt AGB"
+          >
             <h2 class="text-xl font-semibold text-wm-darkgray">AGB</h2>
           </aside>
+          <!-- Right column -->
           <section class="bg-white py-4 lg:w-3/4" aria-label="Details der AGB">
             <p>
               Der Versand erfolgt nach Zahlungseingang. Die Lieferzeiten sind im
@@ -603,21 +611,21 @@
     </section>
 
     <!-- Recommended Products  -->
-    <section aria-label="Empfohlene Produkte">
-      <div class="container mx-auto mb-12">
-        <!-- Headline product -->
-        <header class="pb-6 pt-8 text-center">
+    <section aria-label="Trendprodukte">
+      <div class="container mx-auto lg:px-0 mb-8">
+        <!-- Headline Products -->
+        <div class="pb-6 pt-8 text-center">
           <h2
             class="font-serif text-2xl sm:text-3xl"
-            aria-label="Überschrift empfohlene Produkte"
+            aria-label="Überschrift Produkte"
           >
             Das könnte dir auch gefallen
           </h2>
-        </header>
+        </div>
 
         <!-- Product cards -->
         <div
-          class="grid grid-cols-1 gap-5 px-4 sm:px-0 md:grid-cols-2 lg:grid-cols-4"
+          class="grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:px-0"
           aria-label="Produktliste"
         >
           <!-- Single product cards -->
@@ -626,11 +634,11 @@
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
-              href="products_template.html"
+              href="/src/views/products/products_template.html"
               aria-label="Historischer Senf Details"
             >
               <img
-                src="../../public/images/homepage/senf.jpg"
+                src="/public/images/products/senf/product_senf.jpg"
                 alt="Bild von Historischem Senf"
                 class="h-48 w-full object-cover"
               />
@@ -648,11 +656,11 @@
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
-              href="products_template.html"
+              href="/src/views/products/products_template.html"
               aria-label="Historischer Senf Details"
             >
               <img
-                src="../../public/images/homepage/senf.jpg"
+                src="/public/images/products/senf/product_senf.jpg"
                 alt="Bild von Historischem Senf"
                 class="h-48 w-full object-cover"
               />
@@ -670,11 +678,11 @@
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
-              href="products_template.html"
+              href="/src/views/products/products_template.html"
               aria-label="Historischer Senf Details"
             >
               <img
-                src="../../public/images/homepage/senf.jpg"
+                src="/public/images/products/senf/product_senf.jpg"
                 alt="Bild von Historischem Senf"
                 class="h-48 w-full object-cover"
               />
@@ -686,16 +694,17 @@
               </div>
             </a>
           </article>
+
           <article
             class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
-              href="products_template.html"
+              href="/src/views/products/products_template.html"
               aria-label="Historischer Senf Details"
             >
               <img
-                src="../../public/images/homepage/senf.jpg"
+                src="/public/images/products/senf/product_senf.jpg"
                 alt="Bild von Historischem Senf"
                 class="h-48 w-full object-cover"
               />
@@ -711,7 +720,7 @@
       </div>
     </section>
 
-    <!-- Footer v1.3 -->
+    <!-- Footer v1.3.1 -->
     <footer
       class="bg-wm-black py-8 text-gray-200"
       aria-label="Einzigware Footer"
@@ -719,12 +728,12 @@
       <div
         class="container mx-auto grid grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8"
       >
-        <!-- Spalte 1: Logo -->
+        <!-- Column 1: Logo -->
         <div aria-label="Logo und Startseite Link">
-          <a href="index.html" aria-label="Zur Startseite">
+          <a href="/index.html" aria-label="Zur Startseite">
             <div class="flex justify-center md:justify-start">
               <img
-                src="../../public/images/logo_colored.png"
+                src="/public/images/logo_colored.png"
                 alt="Einzigware Logo"
                 class="h-44 transform cursor-pointer transition duration-200 hover:rotate-1 hover:scale-105"
               />
@@ -732,52 +741,58 @@
           </a>
         </div>
 
-        <!-- Spalte 2 und 3 mit Slogan oben -->
+        <!-- Column 2 and 3 with Slogan on top -->
         <div class="text-center md:col-span-2 md:text-left">
           <p class="mb-4 text-gray-400" aria-label="Slogan">
             Wir bringen Heimat nach Hause
           </p>
 
           <div class="grid grid-cols-2 gap-8" aria-label="Footer-Navigation">
-            <!-- Spalte 2: Hyperlinks -->
+            <!-- Column 2: Hyperlinks Navigation -->
             <nav aria-label="Erste Spalte Links">
               <ul class="flex flex-col space-y-2">
                 <li>
-                  <a href="products.html" class="hover:text-gray-400"
+                  <a href="/src/views/products.html" class="hover:text-gray-400"
                     >Produkte</a
                   >
                 </li>
                 <li>
-                  <a href="regions.html" class="hover:text-gray-400"
+                  <a href="/src/views/regions.html" class="hover:text-gray-400"
                     >Regionen</a
                   >
                 </li>
                 <li>
-                  <a href="about.html" class="hover:text-gray-400"
+                  <a href="/src/views/about.html" class="hover:text-gray-400"
                     >Unsere Vision</a
                   >
                 </li>
                 <li>
-                  <a href="become-seller.html" class="hover:text-gray-400"
+                  <a
+                    href="/src/views/registration.html"
+                    class="hover:text-gray-400"
                     >Werde Verkäufer</a
                   >
                 </li>
               </ul>
             </nav>
 
-            <!-- Spalte 3: Hyperlinks -->
+            <!-- Column 3: Hyperlinks General -->
             <nav aria-label="Zweite Spalte Links">
               <ul class="flex flex-col space-y-2">
                 <li>
-                  <a href="contact.html" class="hover:text-gray-400">Kontakt</a>
+                  <a href="/src/views/contact.html" class="hover:text-gray-400"
+                    >Kontakt</a
+                  >
                 </li>
                 <li>
-                  <a href="legal-notice.html" class="hover:text-gray-400"
+                  <a
+                    href="/src/views/legal-notice.html"
+                    class="hover:text-gray-400"
                     >Impressum</a
                   >
                 </li>
                 <li>
-                  <a href="privacy.html" class="hover:text-gray-400"
+                  <a href="/src/views/privacy.html" class="hover:text-gray-400"
                     >Datenschutz</a
                   >
                 </li>
