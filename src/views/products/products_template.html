@@ -22,7 +22,7 @@
     <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon" />
 
     <!-- Titel -->
-    <title>Einzigware - Produkt XY</title>
+    <title>Einzigware - $PRODUKT</title>
 
     <!-- Open Graph für Social Media -->
     <meta
@@ -205,10 +205,10 @@
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="/src/views/products/products_template.html"
+                  href="/src/views/products/$PRODUKTSEITE"
                   class="underline hover:no-underline"
-                  aria-label="Produkt XY öffnen"
-                  >Produkt XY</a
+                  aria-label="$PRODUKT öffnen"
+                  >$PRODUKT</a
                 >
               </li>
             </ul>
@@ -232,8 +232,8 @@
             aria-label="Produktbild"
           >
             <img
-              src="/public/images/products/senf/product_senf.jpg"
-              alt="Bild des Produkts: Historischer Senf"
+              src="/public/images/products/$PRODUKTBILD"
+              alt="Bild des Produkts: $PRODUKT"
               class="w-full max-w-full sm:max-w-[460px] rounded-lg shadow-sm object-contain"
             />
           </div>
@@ -247,9 +247,9 @@
             <div>
               <h1
                 class="font-serif text-2xl sm:text-3xl font-bold text-wm-black"
-                aria-label="Produktname: Historischer Senf"
+                aria-label="Produktname: $PRODUKT"
               >
-                Historischer Senf
+                $PRODUKT
               </h1>
               <div
                 class="mt-4 flex items-baseline space-x-2"
@@ -257,9 +257,9 @@
               >
                 <p
                   class="text-xl font-semibold text-wm-black"
-                  aria-label="Preis: 11,99 Euro"
+                  aria-label="Preis: 6,90 Euro für 200 Gramm"
                 >
-                  11,99 €
+                  $PRODUKTPREIS
                 </p>
                 <span
                   class="text-sm text-wm-darkgray"
@@ -288,32 +288,32 @@
             >
               <!-- Profile Picture -->
               <img
-                src="/public/images/sellers/pp_template.png"
-                alt="Profilbild des Verkäufers Bernd Müller"
+                src="/public/images/sellers/$VERKÄUFERBILD"
+                alt="Profilbild des Verkäufers $VERKÄUFER"
                 class="h-16 w-16 sm:h-20 sm:w-20 rounded-full border-2 border-wm-brown object-cover"
               />
               <!-- Seller Information -->
               <div>
-                <a href="">
+                <a href="/src/views/sellers/$VERKÄUFERSEITE">
                   <p
                     class="text-lg font-semibold text-wm-black"
-                    aria-label="Verkäufer: Bernd Müller"
+                    aria-label="Verkäufer: $VERKÄUFER"
                   >
-                    Bernd Müller
+                    $VERKÄUFER
                   </p>
                 </a>
                 <p
                   class="text-wm-darkgray text-sm"
-                  aria-label="Standort des Verkäufers: Senfmühle Köln / Cochem"
+                  aria-label="Standort des Verkäufers: $VERKÄUFERSTANDORT"
                 >
-                  Senfmühle Köln / Cochem
+                  $VERKÄUFERSTANDORT
                 </p>
-                <a href="/src/views/regions/regions_template.html">
+                <a href="/src/views/regions/$VERKÄUFERREGIONSEITE">
                   <p
                     class="text-wm-darkgray text-sm"
-                    aria-label="Region: Nordrhein-Westfahlen"
+                    aria-label="Region: $VERKÄUFERREGION - $VERKÄUFERBL"
                   >
-                    Nordrhein-Westfahlen
+                    $VERKÄUFERREGION - $VERKÄUFERBL
                   </p>
                 </a>
               </div>
@@ -430,18 +430,17 @@
             aria-label="Details zur Produktbeschreibung"
           >
             <p class="text-wm-black">
-              Entdecken Sie ein Stück Tradition und Genuss mit dem Historischen
-              Delikatess-Senf aus der Senfmühle anno 1810. Dieser fein
-              abgestimmte Senf wird nach überlieferten Rezepturen handwerklich
-              hergestellt und überzeugt durch seinen ausgewogenen Geschmack –
-              kräftig, aromatisch und gleichzeitig angenehm mild.
+              Traditionell gereift und unvergleichlich würzig Genießen Sie den
+              einzigartigen Geschmack unseres $PRODUKTs, hergestellt nach
+              traditioneller Rezeptur und mindestens 12 Monate in den Alpen
+              gereift. Mit seiner goldgelben Rinde, dem aromatischen Duft und
+              der cremig-würzigen Textur ist er ein echter Genuss für
+              Feinschmecker. Perfekt zu frischem Brot, Wein oder als Highlight
+              auf Ihrer Käseplatte.
             </p>
             <p class="mt-4 text-wm-black">
-              Perfekt als Begleiter zu Fleisch- und Wurstwaren, als Verfeinerung
-              von Dressings oder als würzige Basis für Marinaden. Die edle
-              Verpackung und die handwerkliche Qualität machen diesen Senf zu
-              einem Highlight für Feinschmecker und Liebhaber authentischer,
-              regionaler Spezialitäten.
+              Erleben Sie echte Allgäuer Käsetradition – ein Stück Alpenidylle
+              für Ihre Küche!
             </p>
             <p class="mt-4 text-wm-black"><b>Inhalt:</b> 250 ml</p>
           </section>
@@ -464,16 +463,16 @@
               Herkunftsregion
             </h2>
             <a href="#">
-              <p aria-label="Standort des Verkäufers: Senfmühle Köln / Cochem">
-                Senfmühle Köln / Cochem
+              <p aria-label="Standort des Verkäufers: $VERKÄUFERSTANDORT">
+                $VERKÄUFERSTANDORT
               </p>
             </a>
             <a href="#">
               <p
                 class="text-wm-lightgray"
-                aria-label="Region: Nordrhein-Westfahlen"
+                aria-label="Region: $VERKÄUFERREGION - $VERKÄUFERBL"
               >
-                Nordrhein-Westfahlen
+                $VERKÄUFERREGION - $VERKÄUFERBL
               </p>
             </a>
           </aside>
@@ -484,7 +483,7 @@
           >
             <div class="flex h-full w-full items-center justify-center">
               <img
-                src="/public/images/products/senf/product_region_cologne.png"
+                src="/public/images/regions/$VERKÄUFERSTANDORTBILD"
                 alt="Bild der Herkunftsregion"
                 class="h-80 w-full rounded-lg border object-cover"
               />
@@ -517,6 +516,7 @@
               <p>4.5 von 5 Sternen</p>
             </div>
           </aside>
+          
           <!-- Right column -->
           <section
             class="bg-white py-4 lg:w-3/4 space-y-8"
@@ -529,7 +529,7 @@
             >
               <figure class="flex-shrink-0" aria-label="Profilbild des Nutzers">
                 <img
-                  src="/public/images/reviewers/pp_template.png"
+                  src="/public/images/reviewers/user.png"
                   alt="Profilbild von User"
                   class="h-12 w-12 rounded-full border"
                 />
@@ -544,7 +544,7 @@
                     class="font-semibold text-wm-black hover:underline"
                     aria-label="Profil von User anzeigen"
                   >
-                    Bernd Müller
+                    Oma O., Heidenheim
                   </a>
                   <time
                     datetime="2024-11-27"
@@ -558,13 +558,65 @@
                   class="mt-2 flex items-center space-x-1 text-yellow-500"
                   aria-label="Bewertung: 5 Sterne"
                 >
+                  <span>★★★★★</span>
+                </div>
+                <p class="mt-2 text-wm-black">
+                  Ich bin begeistert vom $PRODUKT! Sein intensives Aroma und die
+                  cremig-würzige Textur sind einfach himmlisch. Besonders die
+                  lange Reifung macht ihn zu etwas ganz Besonderem. Egal ob zu
+                  einem Glas Rotwein oder auf einem frischen Brot – dieser Käse
+                  ist immer ein Highlight. Für 6,90 € pro 200 g ein absolut
+                  fairer Preis für diese Spitzenqualität. Ich werde ihn
+                  definitiv wieder kaufen!
+                </p>
+              </div>
+            </article>
+
+            <!-- Review 2 -->
+            <article
+              class="flex flex-col space-y-4 pb-6 lg:flex-row lg:space-x-4 lg:space-y-0"
+              aria-label="Einzelbewertung"
+            >
+              <figure class="flex-shrink-0" aria-label="Profilbild des Nutzers">
+                <img
+                  src="/public/images/reviewers/user.png"
+                  alt="Profilbild von User"
+                  class="h-12 w-12 rounded-full border"
+                />
+              </figure>
+              <div class="flex-1">
+                <header
+                  class="flex items-center justify-between"
+                  aria-label="Bewertungskopf"
+                >
+                  <a
+                    href="#"
+                    class="font-semibold text-wm-black hover:underline"
+                    aria-label="Profil von User anzeigen"
+                  >
+                    Max H., Stuttgart
+                  </a>
+                  <time
+                    datetime="2024-11-27"
+                    class="text-right text-sm text-wm-lightgray"
+                    aria-label="Datum der Bewertung"
+                  >
+                    am 27. Nov. 2024
+                  </time>
+                </header>
+                <div
+                  class="mt-2 flex items-center space-x-1 text-yellow-500"
+                  aria-label="Bewertung: 4 Sterne"
+                >
                   <span>★★★★☆</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Der Historische Senf aus der Traditionsmühle von 1810 ist ein
-                  absolutes Highlight für jeden Senfliebhaber! Sein fein
-                  abgestimmter Geschmack und die cremige Konsistenz machen ihn
-                  perfekt für Fleisch, Würstchen oder als Basis für Dressings.
+                  Der $PRODUKT ist wirklich ein hochwertiger Käse. Der würzige
+                  Geschmack und die goldgelbe Rinde zeigen die Sorgfalt bei der
+                  Herstellung. Für die Käseplatte meiner letzten Party war er
+                  der Star! Der Preis ist etwas höher als bei anderen Sorten,
+                  aber die Qualität rechtfertigt das. Ich empfehle ihn für alle,
+                  die echten Käsegenuss suchen.
                 </p>
               </div>
             </article>
@@ -572,7 +624,7 @@
         </div>
       </section>
 
-      <!-- AGB -->
+      <!-- TOS -->
       <article
         id="agb"
         class="container lg:px-0 mx-auto scroll-mt-20"

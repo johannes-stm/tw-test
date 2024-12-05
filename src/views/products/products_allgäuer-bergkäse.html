@@ -22,7 +22,7 @@
     <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon" />
 
     <!-- Titel -->
-    <title>Einzigware - $VERKÄUFER</title>
+    <title>Einzigware - Allgäuer Bergkäse</title>
 
     <!-- Open Graph für Social Media -->
     <meta
@@ -196,28 +196,19 @@
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="/src/views/regions.html"
+                  href="/src/views/products.html"
                   class="underline hover:no-underline"
-                  aria-label="Regionen öffnen"
-                  >Regionen</a
+                  aria-label="Produktübersicht öffnen"
+                  >Produkte</a
                 >
               </li>
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="/src/views/products/$REGIONSSEITE"
+                  href="/src/views/products/products_allgäuer-bergkäse.html"
                   class="underline hover:no-underline"
-                  aria-label="$REGION öffnen"
-                  >$REGION</a
-                >
-              </li>
-              <li aria-hidden="true">/</li>
-              <li>
-                <a
-                  href="/src/views/products/$VERKÄUFERSEITE"
-                  class="underline hover:no-underline"
-                  aria-label="$VERKÄUFER öffnen"
-                  >$VERKÄUFER</a
+                  aria-label="Allgäuer Bergkäse öffnen"
+                  >Allgäuer Bergkäse</a
                 >
               </li>
             </ul>
@@ -226,76 +217,167 @@
       </div>
     </section>
 
-    <!-- Seller Profile Section -->
-    <section aria-label="Verkäuferprofil Abschnitt" class="bg-wm-beige">
-      <div class="container mx-auto py-10">
-        <!-- Flex Wrapper -->
-        <div class="flex items-center justify-between">
-          <!-- Left Section -->
-          <div class="flex items-center space-x-6">
-            <!-- Logo -->
-            <div class="flex-shrink-0">
-              <img
-                src="/public/images/sellers/$VERKÄUFERBILD"
-                alt="Shop Logo"
-                class="h-20 w-20 rounded-full border-2 border-wm-brown"
-              />
-            </div>
-            <!-- Shop Details -->
-            <div>
-              <h1 class="text-2xl font-semibold text-wm-black">
-                $VERKÄUFER - $VERKÄUFERSTANDORT
-              </h1>
-              <p class="text-wm-darkgray">$VERKÄUFERBESCHREIBUNG</p>
-              <p class="text-wm-lightgray">$VERKÄUFERREGION</p>
-              <div class="mt-2">
-                <span class="font-medium text-wm-black">Verkäufer-Star</span>
-                <span class="text-wm-lightgray"> | 89 Verkäufe</span>
-              </div>
-            </div>
+    <!-- Product Section -->
+    <section aria-label="Produktdetails Abschnitt" class="bg-wm-beige">
+      <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <!-- Product Container -->
+        <div
+          class="flex flex-col-reverse lg:flex-row h-full overflow-hidden rounded-lg"
+          role="region"
+          aria-label="Produktübersicht"
+        >
+          <!-- Left Side: Image Area -->
+          <div
+            class="flex items-center justify-center p-4 lg:w-2/3 order-1 lg:order-none"
+            aria-label="Produktbild"
+          >
+            <img
+              src="/public/images/products/allgäuer-bergkäse.png"
+              alt="Bild des Produkts: Allgäuer Bergkäse"
+              class="w-full max-w-full sm:max-w-[460px] rounded-lg shadow-sm object-contain"
+            />
           </div>
 
-          <!-- Right Section -->
-          <div class="flex space-x-4">
-            <!-- Follow Button -->
-            <a href="/src/views/login.html">
-              <button
-                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
-                aria-label="Shop folgen"
+          <!-- Right Side: Product Details -->
+          <div
+            class="flex flex-col justify-between p-4 lg:w-1/3"
+            aria-label="Produktinformationen"
+          >
+            <!-- Top Section: Title, Price, Features -->
+            <div>
+              <h1
+                class="font-serif text-2xl sm:text-3xl font-bold text-wm-black"
+                aria-label="Produktname: Allgäuer Bergkäse"
               >
-                ❤️ Shop folgen
-              </button>
-            </a>
-            <!-- Send Message Button -->
-            <a href="/src/views/login.html">
-              <button
-                class="box-border transform rounded-full border-2 border-wm-black bg-wm-black px-4 py-1.5 uppercase text-wm-beige transition duration-200 hover:scale-105"
-                aria-label="Nachricht senden"
+                Allgäuer Bergkäse
+              </h1>
+              <div
+                class="mt-4 flex items-baseline space-x-2"
+                aria-label="Produktpreis und Steuerinformationen"
               >
-                Nachricht senden
-              </button>
-            </a>
+                <p
+                  class="text-xl font-semibold text-wm-black"
+                  aria-label="Preis: 6,90 Euro für 200 Gramm"
+                >
+                  6,90 € / 200g
+                </p>
+                <span
+                  class="text-sm text-wm-darkgray"
+                  aria-label="Inklusive Mehrwertsteuer"
+                  >(inkl. MwSt.)</span
+                >
+              </div>
+              <!-- Reviews -->
+              <div
+                class="mt-2 flex items-center space-x-2 text-wm-darkgray"
+                aria-label="Kundenbewertungen"
+              >
+                <span
+                  class="text-yellow-500"
+                  aria-label="Bewertung: 4 von 5 Sternen"
+                  >★★★★☆</span
+                >
+                <p class="text-sm">4.5 von 5 Sternen</p>
+              </div>
+            </div>
+
+            <!-- Middle Section: Seller Profile -->
+            <div
+              class="flex items-center space-x-4 border-b border-t border-wm-lightgray py-4 mt-4 lg:mt-6"
+              aria-label="Verkäuferprofil"
+            >
+              <!-- Profile Picture -->
+              <img
+                src="/public/images/sellers/käsekeller-alpenglück.png"
+                alt="Profilbild des Verkäufers Käsekeller Alpenglück"
+                class="h-16 w-16 sm:h-20 sm:w-20 rounded-full border-2 border-wm-brown object-cover"
+              />
+              <!-- Seller Information -->
+              <div>
+                <a href="/src/views/sellers/seller_template.html">
+                  <p
+                    class="text-lg font-semibold text-wm-black"
+                    aria-label="Verkäufer: Käsekeller Alpenglück"
+                  >
+                    Käsekeller Alpenglück
+                  </p>
+                </a>
+                <p
+                  class="text-wm-darkgray text-sm"
+                  aria-label="Standort des Verkäufers: Oberstdorf"
+                >
+                  Oberstdorf
+                </p>
+                <a href="/src/views/regions/regions_template.html">
+                  <p
+                    class="text-wm-darkgray text-sm"
+                    aria-label="Region: Oberallgäu - Bayern"
+                  >
+                    Oberallgäu - Bayern
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bottom Section: Buttons -->
+            <div
+              class="flex flex-col space-y-2 mt-4 lg:mt-6"
+              aria-label="Produktaktionen"
+            >
+              <!-- Quantity and Availability -->
+              <div
+                class="flex items-center space-x-4"
+                aria-label="Mengenauswahl"
+              >
+                <label for="quantity" class="text-wm-darkgray text-sm"
+                  >Menge:</label
+                >
+                <input
+                  id="quantity"
+                  type="number"
+                  value="1"
+                  min="1"
+                  class="w-16 rounded border border-wm-lightgray text-center"
+                  aria-label="Menge auswählen"
+                />
+              </div>
+
+              <a
+                href="/src/views/registration.html"
+                class="box-border block w-full transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 text-center uppercase text-wm-black text-sm sm:text-base transition duration-200 hover:scale-105"
+                aria-label="In den Warenkorb legen"
+              >
+                In den Warenkorb
+              </a>
+              <a
+                href="/src/views/registration.html"
+                class="box-border block w-full transform rounded-full border-2 border-wm-brown bg-wm-brown px-4 py-1.5 text-center uppercase text-white text-sm sm:text-base transition duration-200 hover:scale-105"
+                aria-label="Jetzt kaufen"
+              >
+                Jetzt Kaufen
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Seller Detail Section -->
-    <section>
+    <!-- Product Detail Section -->
+    <section aria-label="Produktdetails">
       <!-- Navigation -->
       <nav
         class="container lg:px-0 mx-auto mb-4 py-4 text-center overflow-x-auto"
         aria-label="Navigation der Produktseite"
       >
-        <ul class="flex justify-start space-x-6 text-lg flex-nowrap">
+        <ul class="flex justify-start space-x-6 text-lg">
           <!-- Navigation links -->
           <li>
             <a
-              href="#alleartikel"
-              class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline whitespace-nowrap flex-nowrap"
+              href="#beschreibung"
+              class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
               aria-label="Springe zur Beschreibung"
             >
-              <h3>Alle Artikel</h3>
+              <h3>Beschreibung</h3>
             </a>
           </li>
           <li>
@@ -316,16 +398,7 @@
               <h3>Bewertungen</h3>
             </a>
           </li>
-          <li>
-            <a
-              href="#info"
-              class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
-              aria-label="Springe zu den Bewertungen"
-            >
-              <h3>Info</h3>
-            </a>
-          </li>
-          <li>
+          <li class="pr-6">
             <a
               href="#agb"
               class="cursor-pointer decoration-wm-darkbrown decoration-2 underline-offset-4 hover:underline"
@@ -337,112 +410,40 @@
         </ul>
       </nav>
 
-      <!-- All products from seller -->
+      <!-- Description -->
       <article
-        id="alleartikel"
+        id="beschreibung"
         class="container lg:px-0 mx-auto mb-8 scroll-mt-20"
-        aria-label="Alle Artikel des Verkäufers"
+        aria-label="Produktbeschreibung"
       >
         <div class="flex flex-col lg:flex-row">
           <!-- Left column -->
-          <aside class="py-4 lg:w-1/4">
-            <h2 class="text-xl font-semibold text-wm-darkgray">Alle Artikel</h2>
+          <aside
+            class="py-4 lg:w-1/4 text-center lg:text-left"
+            aria-label="Abschnitt Beschreibung"
+          >
+            <h2 class="text-xl font-semibold text-wm-darkgray">Beschreibung</h2>
           </aside>
           <!-- Right column -->
-          <!-- Product cards -->
-          <div
-            class="grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:px-0"
-            aria-label="Produktliste"
+          <section
+            class="bg-white py-4 lg:w-3/4"
+            aria-label="Details zur Produktbeschreibung"
           >
-            <!-- Single product cards -->
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-          </div>
+            <p class="text-wm-black">
+              Traditionell gereift und unvergleichlich würzig Genießen Sie den
+              einzigartigen Geschmack unseres Allgäuer Bergkäses, hergestellt
+              nach traditioneller Rezeptur und mindestens 12 Monate in den Alpen
+              gereift. Mit seiner goldgelben Rinde, dem aromatischen Duft und
+              der cremig-würzigen Textur ist er ein echter Genuss für
+              Feinschmecker. Perfekt zu frischem Brot, Wein oder als Highlight
+              auf Ihrer Käseplatte.
+            </p>
+            <p class="mt-4 text-wm-black">
+              Erleben Sie echte Allgäuer Käsetradition – ein Stück Alpenidylle
+              für Ihre Küche!
+            </p>
+            <p class="mt-4 text-wm-black"><b>Inhalt:</b> 250 ml</p>
+          </section>
         </div>
       </article>
 
@@ -462,16 +463,11 @@
               Herkunftsregion
             </h2>
             <a href="#">
-              <p aria-label="Standort des Verkäufers: $VERKÄUFERSTANDORT">
-                $VERKÄUFERSTANDORT
-              </p>
+              <p aria-label="Standort des Verkäufers: Oberstdorf">Oberstdorf</p>
             </a>
             <a href="#">
-              <p
-                class="text-wm-lightgray"
-                aria-label="Region: $VERKÄUFERREGION - $VERKÄUFERBL"
-              >
-                $VERKÄUFERREGION - $VERKÄUFERBL
+              <p class="text-wm-lightgray" aria-label="Region: Oberallgäu">
+                Oberallgäu - Bayern
               </p>
             </a>
           </aside>
@@ -482,7 +478,7 @@
           >
             <div class="flex h-full w-full items-center justify-center">
               <img
-                src="/public/images/products/senf/$VERKÄUFERSTANDORTBILD"
+                src="/public/images/regions/allgäu_oberstdorf.png"
                 alt="Bild der Herkunftsregion"
                 class="h-80 w-full rounded-lg border object-cover"
               />
@@ -515,7 +511,6 @@
               <p>4.5 von 5 Sternen</p>
             </div>
           </aside>
-
           <!-- Right column -->
           <section
             class="bg-white py-4 lg:w-3/4 space-y-8"
@@ -560,13 +555,13 @@
                   <span>★★★★★</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Ich bin begeistert vom $PRODUKT! Sein intensives Aroma und die
-                  cremig-würzige Textur sind einfach himmlisch. Besonders die
-                  lange Reifung macht ihn zu etwas ganz Besonderem. Egal ob zu
-                  einem Glas Rotwein oder auf einem frischen Brot – dieser Käse
-                  ist immer ein Highlight. Für 6,90 € pro 200 g ein absolut
-                  fairer Preis für diese Spitzenqualität. Ich werde ihn
-                  definitiv wieder kaufen!
+                  Ich bin begeistert vom Allgäuer Bergkäse! Sein intensives
+                  Aroma und die cremig-würzige Textur sind einfach himmlisch.
+                  Besonders die lange Reifung macht ihn zu etwas ganz
+                  Besonderem. Egal ob zu einem Glas Rotwein oder auf einem
+                  frischen Brot – dieser Käse ist immer ein Highlight. Für 6,90
+                  € pro 200 g ein absolut fairer Preis für diese
+                  Spitzenqualität. Ich werde ihn definitiv wieder kaufen!
                 </p>
               </div>
             </article>
@@ -610,12 +605,12 @@
                   <span>★★★★☆</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Der $PRODUKT ist wirklich ein hochwertiger Käse. Der würzige
-                  Geschmack und die goldgelbe Rinde zeigen die Sorgfalt bei der
-                  Herstellung. Für die Käseplatte meiner letzten Party war er
-                  der Star! Der Preis ist etwas höher als bei anderen Sorten,
-                  aber die Qualität rechtfertigt das. Ich empfehle ihn für alle,
-                  die echten Käsegenuss suchen.
+                  Der Allgäuer Bergkäse ist wirklich ein hochwertiger Käse. Der
+                  würzige Geschmack und die goldgelbe Rinde zeigen die Sorgfalt
+                  bei der Herstellung. Für die Käseplatte meiner letzten Party
+                  war er der Star! Der Preis ist etwas höher als bei anderen
+                  Sorten, aber die Qualität rechtfertigt das. Ich empfehle ihn
+                  für alle, die echten Käsegenuss suchen.
                 </p>
               </div>
             </article>
@@ -623,43 +618,7 @@
         </div>
       </section>
 
-      <!-- Info text from seller -->
-      <article
-        id="info"
-        class="container lg:px-0 mx-auto scroll-mt-20"
-        aria-label="Verkäufer-Info"
-      >
-        <div class="flex flex-col lg:flex-row">
-          <!-- Left column -->
-          <aside
-            class="py-4 lg:w-1/4 text-center lg:text-left"
-            aria-label="Informationen zum Verkäufer"
-          >
-            <h2 class="mb-4 text-xl font-semibold text-wm-darkgray">Info</h2>
-            <p class="text-wm-lightgray">Registriert seit: 14.04.2024</p>
-          </aside>
-
-          <!-- Right column -->
-          <section class="bg-white py-4 lg:w-3/4" aria-label="Verkäuferdetails">
-            <h1 class="mb-4">Willkommen in meinem Einzigware-Shop! 🌱</h1>
-            <p class="mb-4">
-              Hier findest du lokal produzierten, handgemachten Senf, der mit
-              viel Liebe und Sorgfalt hergestellt wird. Jeder Senf ist ein
-              echtes Unikat, inspiriert von traditionellen Rezepten und
-              verfeinert mit kreativen Aromen. Ob klassisch, fruchtig oder
-              würzig – mein Senf bringt den perfekten Kick in deine Küche.
-            </p>
-            <p>
-              Nachhaltigkeit und Qualität stehen bei mir an erster Stelle. Alle
-              Zutaten beziehe ich aus der Region, um dir ein authentisches und
-              frisches Geschmackserlebnis zu bieten. Entdecke meinen Senf und
-              bringe neuen Schwung in deine Gerichte! 🥨✨
-            </p>
-          </section>
-        </div>
-      </article>
-
-      <!-- TOS -->
+      <!-- AGB -->
       <article
         id="agb"
         class="container lg:px-0 mx-auto scroll-mt-20"

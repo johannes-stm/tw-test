@@ -1,10 +1,26 @@
+Techn. Besonderheiten:
+- Verwendung von aria-labels und semantische tags zur barrierefreiheit
+- Einheitliche Struktur von Kommentaren und Aria-Labels:
+  - Aria-Labels deutsch, da sich der Zielmarkt aktuell nur auf deutsche Länder spezialisiert und dort die gesprochene Sprache deutsch ist
+  - HTML-KOmmentare englisch, um der Firma Outsourcing oder Troubleshooting mit externen/ausländischen Freelancern/Dienstleistern zu erleichtern
+- verwendung eines css-frameworks (tailwind css)
+  - einfacherer einstieg und schnellere lernkurve durch vorgefertigte css-klassen
+  - da es für versch. branchen als state of the art gilt
+  - zusammenspiel mit integration von zukünftigen Frameworks/Bibliotheken in kommenden semestern für interaktive webanwendungen
+
+- Verwendung von Template-Dateien mit Variablen, um Bereitstellung von weiteren Pages zu erleichtern
+
+ordnerstruktur
+techn. anspruchsvollere konstrukte erklären (zb. header mit mobile view)
+verschlagwortung seo
+
 1. Einführung
 Zweck und Funktionalität der Webseite:
 Kurze Beschreibung, worum es bei der Webseite geht.
 Zielgruppe und Mehrwert der Webseite.
 Überblick über die Technologie:
 Verwendete Technologien und Tools (z. B. HTML5, CSS3, Bootstrap).
-2. Struktur der Webseite
+1. Struktur der Webseite
 Datei- und Ordnerstruktur:
 Übersicht und Beschreibung der Verzeichnisse und Dateien.
 Beispiel:
@@ -16,7 +32,7 @@ Code kopieren
 /about.html         -> Über-uns-Seite
 Seitenstruktur:
 Sitemap oder Navigation (welche Seiten existieren und wie sie miteinander verbunden sind).
-3. Technische Besonderheiten
+1. Technische Besonderheiten
 Semantik und Struktur:
 Verwendung semantischer HTML5-Elemente (z. B. <header>, <footer>, <article>).
 Barrierefreiheit:
@@ -27,7 +43,7 @@ Tastaturnavigation.
 Responsive Design:
 Beschreibung der Media Queries und wie die Webseite auf verschiedene Gerätegrößen angepasst wurde.
 
-4. Verwendete Technologien und Frameworks (Fortsetzung)
+1. Verwendete Technologien und Frameworks (Fortsetzung)
 Tools und Methoden:
 
 Beschreibung der Entwicklungsumgebung (z. B. Visual Studio Code, Sublime Text).
@@ -111,16 +127,3 @@ Systemkonfiguration:
   - Jede Anfrage an http://einzigware.projekt.dhbw-heidenheim.de automatisch auf https://einzigware.projekt.dhbw-heidenheim.de umgeleitet.
   - Die Verbindung über HTTPS abgesichert, basierend auf den Let's Encrypt-Zertifikaten.
 
-Techn. Besonderheiten:
-- Verwendung von aria-labels und semantische tags zur barrierefreiheit
-- Einheitliche Struktur von Kommentaren und Aria-Labels:
-  - Aria-Labels deutsch, da sich der Zielmarkt aktuell nur auf deutsche Länder spezialisiert und dort die gesprochene Sprache deutsch ist
-  - HTML-KOmmentare englisch, um der Firma Outsourcing oder Troubleshooting mit externen/ausländischen Freelancern/Dienstleistern zu erleichtern
-- verwendung eines css-frameworks (tailwind css)
-  - einfacherer einstieg und schnellere lernkurve durch vorgefertigte css-klassen
-  - da es für versch. branchen als state of the art gilt
-  - zusammenspiel mit integration von zukünftigen Frameworks/Bibliotheken in kommenden semestern für interaktive webanwendungen
-
-ordnerstruktur
-techn. anspruchsvollere konstrukte erklären (zb. header mit mobile view)
-verschlafwortung seo
