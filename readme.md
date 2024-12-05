@@ -10,6 +10,9 @@ Techn. Besonderheiten:
 
 - Verwendung von Template-Dateien mit Variablen, um Bereitstellung von weiteren Pages zu erleichtern
 
+- Map-Screenshots über kostenfreies OpenStreetMap-Tool "uMap" erstellt
+- Hintergrundbilder von Pixabay
+
 ordnerstruktur
 techn. anspruchsvollere konstrukte erklären (zb. header mit mobile view)
 verschlagwortung seo

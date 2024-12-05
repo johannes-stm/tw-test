@@ -22,7 +22,7 @@
     <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon" />
 
     <!-- Titel -->
-    <title>Einzigware - Regionen</title>
+    <title>Einzigware - Köln</title>
 
     <!-- Open Graph für Social Media -->
     <meta
@@ -180,7 +180,7 @@
     </header>
 
     <!-- Breadcrumb Section -->
-    <div class="bg-white" aria-label="Breadcrumb-Navigation">
+    <section class="bg-white" aria-label="Breadcrumb-Navigation">
       <div class="container lg:px-0">
         <div class="max-w-7xl py-4 text-sm">
           <nav aria-label="Navigationspfad">
@@ -198,169 +198,175 @@
                 <a
                   href="/src/views/regions.html"
                   class="underline hover:no-underline"
-                  aria-label="Regionenübersicht öffnen"
+                  aria-label="Regionen öffnen"
                   >Regionen</a
+                >
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <a
+                  href="/src/views/products/regions_köln.html"
+                  class="underline hover:no-underline"
+                  aria-label="Köln öffnen"
+                  >Köln</a
                 >
               </li>
             </ul>
           </nav>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Headline Section -->
-    <div class="container lg:px-0 font-serif" aria-label="Produktbereich">
-      <h1 class="mb-2 text-3xl" aria-label="Überschrift: Unsere Produkte">
-        Unsere Regionen
-      </h1>
-      <p
-        aria-label="Beschreibung: Entdecke unsere Herkunftsregionen auf der Karte und finde die Adresse,
-        die zu dir passt."
-      >
-        Entdecke unsere Herkunftsregionen auf der Karte und finde die Adresse,
-        die zu dir passt.
-      </p>
-    </div>
-
-    <!-- Region Section -->
     <section
-      class="container mx-auto my-8 flex flex-col lg:flex-row lg:px-0 max-h-[450px] min-h-[400px] overflow-y-auto"
-      aria-label="Auswahl verfügbarer Regionen"
+      class="relative bg-cover bg-center shadow"
+      style="background-image: url('/public/images/regions/köln_bg.webp')"
+      aria-label="Köln Region in Nordrhein-Westfahlen"
     >
-      <!-- Left Section (1/3) -->
-      <aside
-        class="mb-4 lg:mb-0 lg:mr-3 w-full lg:w-1/3 overflow-y-auto bg-white"
-        aria-label="Liste der Herkunftsregionen"
-      >
-        <!-- Regionen Cards -->
-        <div>
-          <!-- Single Region Card -->
-          <a
-            href="/src/views/regions/regions_köln.html"
-            aria-label="Zur Region Köln"
-          >
-            <article
-              class="cursor-pointer rounded border-b bg-white p-4"
-              aria-label="Region Köln Nordrhein-Westfahlen"
-            >
-              <h3
-                class="font-bold hover:text-wm-darkbrown"
-                aria-label="Regionstitel"
-              >
-                Köln
-              </h3>
-              <p aria-label="Region Bundesland Nordrhein-Westfahlen">
-                Nordrhein-Westfahlen
-              </p>
-              <p class="text-sm text-wm-black" aria-label="1 aktiver Verkäufer">
-                <b>1</b> aktiver Verkäufer
-              </p>
-              <p
-                class="text-sm text-wm-black"
-                aria-label="16 verfügbare Produkte"
-              >
-                <b>1</b> verfügbares Produkt
-              </p>
-            </article>
-          </a>
-
-          <!-- Single Region Card -->
-          <a
-            href="/src/views/regions/regions_schwarzwald.html"
-            aria-label="Zur Region Schwarzwald"
-          >
-            <article
-              class="cursor-pointer rounded border-b bg-white p-4"
-              aria-label="Region Schwarzwald Baden-Württemberg"
-            >
-              <h3
-                class="font-bold hover:text-wm-darkbrown"
-                aria-label="Regionstitel"
-              >
-                Schwarzwald
-              </h3>
-              <p aria-label="Region Bundesland Baden-Württemberg">
-                Baden-Württemberg
-              </p>
-              <p class="text-sm text-wm-black" aria-label="1 aktiver Verkäufer">
-                <b>1</b> aktiver Verkäufer
-              </p>
-              <p
-                class="text-sm text-wm-black"
-                aria-label="3 verfügbare Produkte"
-              >
-                <b>3</b> verfügbare Produkte
-              </p>
-            </article>
-          </a>
-
-          <!-- Single Region Card -->
-          <a
-            href="/src/views/regions/regions_oberallgäu.html"
-            aria-label="Zur Region Oberallgäu"
-          >
-            <article
-              class="cursor-pointer rounded border-b bg-white p-4"
-              aria-label="Region Oberallgäu Bayern"
-            >
-              <h3
-                class="font-bold hover:text-wm-darkbrown"
-                aria-label="Regionstitel"
-              >
-                Oberallgäu
-              </h3>
-              <p aria-label="Region Bundesland Bayern">Bayern</p>
-              <p class="text-sm text-wm-black" aria-label="3 aktive Verkäufer">
-                <b>3</b> aktive Verkäufer
-              </p>
-              <p
-                class="text-sm text-wm-black"
-                aria-label="3 verfügbare Produkte"
-              >
-                <b>3</b> verfügbare Produkte
-              </p>
-            </article>
-          </a>
-
-          <!-- Single Region Card -->
-          <a
-            href="#"
-            aria-label="Zur Regionsübersicht"
-          >
-            <article
-              class="cursor-pointer rounded border-b bg-white p-4"
-              aria-label="Ankündigung: Weitere Regionen sind bald schon verfügbar!"
-            >
-              <h3
-                class="font-bold hover:text-wm-darkbrown"
-                aria-label="Ankündigung: Weitere Regionen sind bald schon verfügbar!"
-              >
-                Weitere Regionen sind bald schon verfügbar!
-              </h3>
-            </article>
-          </a>
-        </div>
-      </aside>
-
-      <!-- Right Section (2/3) -->
+      <!-- Gradient Overlay -->
       <div
-        class="flex w-full lg:w-2/3 items-center justify-center border-t lg:border-t-0 lg:border-l border-gray-300 px-4"
-        aria-label="Statische Karte"
+        class="absolute inset-0 bg-gradient-to-b from-wm-black via-transparent to-transparent"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Headline Content -->
+      <div
+        class="container relative p-4 pt-8"
+        aria-label="Überschrift der Region"
       >
-        <!-- Image of the region -->
-        <figure
-          class="h-full w-full overflow-hidden rounded-lg bg-gray-100"
-          aria-label="Bild der ausgewählten Region"
+        <h2
+          class="text-center font-serif text-3xl text-white drop-shadow-md"
+          aria-label="Region Köln Nordrhein-Westfahlen"
         >
-          <img
-            src="/public/images/regions/aktueller-standort.webp"
-            alt="Aktueller Standort"
-            class="h-full w-full object-cover"
-          />
-          <figcaption class="text-center text-sm text-gray-700">
-            Aktueller Standort
-          </figcaption>
-        </figure>
+          Region: Köln - Nordrhein-Westfahlen
+        </h2>
+      </div>
+
+      <!-- Region Introduction Section -->
+      <div class="relative p-6">
+        <article
+          class="container mx-auto my-6 rounded-lg bg-wm-beige p-6 shadow-md"
+          aria-label="Einführung zur Region Schwarzwald"
+        >
+          <!-- Section Title -->
+          <header>
+            <h2
+              class="text-2xl font-semibold text-gray-800"
+              aria-label="Überschrift: Über die Region"
+            >
+              Über die Region
+            </h2>
+          </header>
+          <!-- Section Content -->
+          <p class="mt-4 text-gray-700" aria-label="Beschreibung der Region">
+            Köln verbindet Tradition und Genuss auf kölsche Art – ob würziger
+            Kölner Senf, der klassische "Halve Hahn", zarter Senfrostbraten oder
+            ein frisch gezapftes Altbier, hier trifft kulinarische Vielfalt auf
+            rheinische Lebensfreude.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Regional Products Section -->
+    <section
+      class="container lg:px-0 mx-auto my-8"
+      aria-label="Produkte der Region"
+    >
+      <!-- Section Header -->
+      <header>
+        <!-- Section title -->
+        <h2
+          class="mb-6 text-2xl font-semibold text-gray-800"
+          aria-label="Überschrift Produkte der Region"
+        >
+          Produkte der Region
+        </h2>
+      </header>
+
+      <!-- Product cards -->
+      <div
+        class="grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:px-0"
+        aria-label="Produktliste"
+      >
+        <!-- Single product cards -->
+        <article
+          class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Historischer Senf"
+        >
+          <a
+            href="/src/views/products/products_template.html"
+            aria-label="Historischer Senf Details"
+          >
+            <img
+              src="/public/images/products/senf/product_senf.jpg"
+              alt="Bild von Historischem Senf"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Historischer Senf</h3>
+              <p>Senfmühle Köln / Cochem</p>
+              <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
+              <p class="mt-2 font-bold">ab 4,99€</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sellers from the region section -->
+    <section
+      class="container lg:px-0 mx-auto my-8"
+      aria-label="Verkäufer aus der Region"
+    >
+      <!-- Section header -->
+      <header>
+        <h2
+          class="mb-6 text-2xl font-semibold text-gray-800"
+          aria-label="Überschrift Verkäufer der Region"
+        >
+          Verkäufer der Region
+        </h2>
+      </header>
+
+      <!-- Sellers grid -->
+      <div
+        class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        aria-label="Liste der Verkäufer aus der Region"
+      >
+        <!-- Seller card 1 -->
+        <article
+          class="flex transform items-center overflow-hidden rounded-lg bg-white p-4 shadow transition duration-200 hover:scale-103"
+          aria-label="Verkäuferkarte Bernd Müller"
+        >
+          <!-- Seller profile image -->
+          <figure class="flex-shrink-0">
+            <img
+              src="../../public/images/sellers/pp_template.png"
+              alt="Profilbild von Bernd Müller"
+              class="h-20 w-20 rounded-full border-2 border-wm-brown"
+            />
+          </figure>
+          <!-- Seller details -->
+          <div class="ml-4">
+            <h3
+              class="text-lg font-bold text-gray-800"
+              aria-label="Name des Verkäufers Bernd Müller"
+            >
+              Bernd Müller
+            </h3>
+            <p class="text-gray-600" aria-label="Standort Senfmühle Köln">
+              Senfmühle Köln
+            </p>
+            <a
+              href="seller.html"
+              class="mt-2 inline-block text-wm-brown hover:underline"
+              aria-label="Link zum Verkäuferprofil von Bernd Müller"
+            >
+              Verkäuferprofil ansehen
+            </a>
+          </div>
+        </article>
       </div>
     </section>
 
