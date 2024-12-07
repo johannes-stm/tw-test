@@ -230,20 +230,20 @@
     <section aria-label="Verkäuferprofil Abschnitt" class="bg-wm-beige">
       <div class="container mx-auto py-10">
         <!-- Flex Wrapper -->
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between flex-col md:flex-row">
           <!-- Left Section -->
-          <div class="flex items-center space-x-6">
+          <div class="flex items-center justify-center md:justify-start space-x-6 flex-col md:flex-row">
             <!-- Logo -->
             <div class="flex-shrink-0">
               <img
                 src="/public/images/sellers/$VERKÄUFERBILD"
                 alt="Shop Logo"
-                class="h-20 w-20 rounded-full border-2 border-wm-brown"
+                class="h-20 w-20 rounded-full border-2 border-wm-brown mb-2 md:mb-0"
               />
             </div>
             <!-- Shop Details -->
-            <div>
-              <h1 class="text-2xl font-semibold text-wm-black">
+            <div class="flex md:flex-none flex-col items-center md:items-start">
+              <h1 class="text-xl lg:text-2xl font-semibold text-wm-black">
                 $VERKÄUFER - $VERKÄUFERSTANDORT
               </h1>
               <p class="text-wm-darkgray">$VERKÄUFERBESCHREIBUNG</p>
@@ -256,11 +256,11 @@
           </div>
 
           <!-- Right Section -->
-          <div class="flex space-x-4">
+          <div class="flex space-x-0 md:space-x-4 flex-col md:flex-ro items-center justify-center">
             <!-- Follow Button -->
             <a href="/src/views/login.html">
               <button
-                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
+                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105 my-3"
                 aria-label="Shop folgen"
               >
                 ❤️ Shop folgen
