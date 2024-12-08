@@ -22,7 +22,7 @@
     <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon" />
 
     <!-- Titel -->
-    <title>Einzigware - $PRODUKT</title>
+    <title>Einzigware - Blütenhonig</title>
 
     <!-- Open Graph für Social Media -->
     <meta
@@ -205,10 +205,10 @@
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="/src/views/products/$PRODUKTSEITE"
+                  href="/src/views/products/products_blütenhonig.html"
                   class="underline hover:no-underline"
-                  aria-label="$PRODUKT öffnen"
-                  >$PRODUKT</a
+                  aria-label="Blütenhonig öffnen"
+                  >Blütenhonig</a
                 >
               </li>
             </ul>
@@ -232,8 +232,8 @@
             aria-label="Produktbild"
           >
             <img
-              src="/public/images/products/$PRODUKTBILD"
-              alt="Bild des Produkts: $PRODUKT"
+              src="/public/images/products/blütenhonig.webp"
+              alt="Bild des Produkts: Blütenhonig"
               class="w-full max-w-full sm:max-w-[460px] rounded-lg shadow-sm object-contain"
             />
           </div>
@@ -247,9 +247,9 @@
             <div>
               <h1
                 class="font-serif text-2xl sm:text-3xl font-bold text-wm-black"
-                aria-label="Produktname: $PRODUKT"
+                aria-label="Produktname: Blütenhonig"
               >
-                $PRODUKT
+                Blütenhonig
               </h1>
               <div
                 class="mt-4 flex items-baseline space-x-2"
@@ -257,9 +257,9 @@
               >
                 <p
                   class="text-xl font-semibold text-wm-black"
-                  aria-label="Preis: 6,90 Euro für 200 Gramm"
+                  aria-label="Preis: 5,90 € / 250 g"
                 >
-                  $PRODUKTPREIS
+                  5,90 € / 250 g
                 </p>
                 <span
                   class="text-sm text-wm-darkgray"
@@ -288,32 +288,32 @@
             >
               <!-- Profile Picture -->
               <img
-                src="/public/images/sellers/$VERKÄUFERBILD"
-                alt="Profilbild des Verkäufers $VERKÄUFER"
+                src="/public/images/sellers/imkerei-berggold.webp"
+                alt="Profilbild des Verkäufers Imkerei Berggold"
                 class="h-16 w-16 sm:h-20 sm:w-20 rounded-full border-2 border-wm-brown object-cover"
               />
               <!-- Seller Information -->
               <div>
-                <a href="/src/views/sellers/$VERKÄUFERSEITE">
+                <a href="/src/views/sellers/seller_imkerei-berggold.html">
                   <p
                     class="text-lg font-semibold text-wm-black"
-                    aria-label="Verkäufer: $VERKÄUFER"
+                    aria-label="Verkäufer: Imkerei Berggold"
                   >
-                    $VERKÄUFER
+                    Imkerei Berggold
                   </p>
                 </a>
                 <p
                   class="text-wm-darkgray text-sm"
-                  aria-label="Standort des Verkäufers: $VERKÄUFERSTANDORT"
+                  aria-label="Standort des Verkäufers: Oberstaufen"
                 >
-                  $VERKÄUFERSTANDORT
+                  Oberstaufen
                 </p>
-                <a href="/src/views/regions/$VERKÄUFERREGIONSEITE">
+                <a href="/src/views/regions/regions_oberallgäu.html">
                   <p
                     class="text-wm-darkgray text-sm"
-                    aria-label="Region: $VERKÄUFERREGION - $VERKÄUFERBL"
+                    aria-label="Region: Oberallgäu - Bayern"
                   >
-                    $VERKÄUFERREGION - $VERKÄUFERBL
+                    Oberallgäu - Bayern
                   </p>
                 </a>
               </div>
@@ -430,19 +430,15 @@
             aria-label="Details zur Produktbeschreibung"
           >
             <p class="text-wm-black">
-              Traditionell gereift und unvergleichlich würzig Genießen Sie den
-              einzigartigen Geschmack unseres $PRODUKTs, hergestellt nach
-              traditioneller Rezeptur und mindestens 12 Monate in den Alpen
-              gereift. Mit seiner goldgelben Rinde, dem aromatischen Duft und
-              der cremig-würzigen Textur ist er ein echter Genuss für
-              Feinschmecker. Perfekt zu frischem Brot, Wein oder als Highlight
-              auf Ihrer Käseplatte.
+              Unser Blütenhonig wird von Bienen gesammelt, die auf den saftigen
+              Almwiesen des Allgäus Nektar sammeln. Sein mild-süßer Geschmack
+              und die goldene Farbe spiegeln die Vielfalt der Alpenflora wider.
+              Perfekt für Tee, Brot oder als natürlicher Süßmacher in der Küche.
             </p>
             <p class="mt-4 text-wm-black">
-              Erleben Sie echte Allgäuer Käsetradition – ein Stück Alpenidylle
-              für Ihre Küche!
+              Genießen Sie die authentischen Aromen der Allgäuer Region!
             </p>
-            <p class="mt-4 text-wm-black"><b>Inhalt:</b> 250 ml</p>
+            <p class="mt-4 text-wm-black"><b>Inhalt:</b> 250 g</p>
           </section>
         </div>
       </article>
@@ -462,17 +458,13 @@
             <h2 class="text-xl font-semibold text-wm-darkgray mb-4">
               Herkunftsregion
             </h2>
-            <a href="#">
-              <p aria-label="Standort des Verkäufers: $VERKÄUFERSTANDORT">
-                $VERKÄUFERSTANDORT
-              </p>
-            </a>
-            <a href="#">
+            <p aria-label="Standort des Verkäufers: Oberstaufen">Oberstaufen</p>
+            <a href="/src/views/regions/regions_oberallgäu.html">
               <p
                 class="text-wm-lightgray"
-                aria-label="Region: $VERKÄUFERREGION - $VERKÄUFERBL"
+                aria-label="Region: Oberallgäu - Bayern"
               >
-                $VERKÄUFERREGION - $VERKÄUFERBL
+                Oberallgäu - Bayern
               </p>
             </a>
           </aside>
@@ -483,7 +475,7 @@
           >
             <div class="flex h-full w-full items-center justify-center">
               <img
-                src="/public/images/regions/$VERKÄUFERSTANDORTBILD"
+                src="/public/images/regions/allgäu-oberstaufen.webp"
                 alt="Bild der Herkunftsregion"
                 class="h-80 w-full rounded-lg border object-cover"
               />
@@ -516,7 +508,7 @@
               <p>4.5 von 5 Sternen</p>
             </div>
           </aside>
-          
+
           <!-- Right column -->
           <section
             class="bg-white py-4 lg:w-3/4 space-y-8"
@@ -544,7 +536,7 @@
                     class="font-semibold text-wm-black hover:underline"
                     aria-label="Profil von User anzeigen"
                   >
-                    Oma O., Heidenheim
+                    Anna B., Rosenheim
                   </a>
                   <time
                     datetime="2024-11-27"
@@ -561,13 +553,11 @@
                   <span>★★★★★</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Ich bin begeistert vom $PRODUKT! Sein intensives Aroma und die
-                  cremig-würzige Textur sind einfach himmlisch. Besonders die
-                  lange Reifung macht ihn zu etwas ganz Besonderem. Egal ob zu
-                  einem Glas Rotwein oder auf einem frischen Brot – dieser Käse
-                  ist immer ein Highlight. Für 6,90 € pro 200 g ein absolut
-                  fairer Preis für diese Spitzenqualität. Ich werde ihn
-                  definitiv wieder kaufen!
+                  Der Blütenhonig hat mich sofort begeistert! Er ist herrlich
+                  mild und süß, genau richtig für meinen täglichen Tee. Die
+                  goldene Farbe und der feine Geschmack erinnern an die Natur
+                  der Alpen. Ich schätze besonders, dass er aus der Region
+                  stammt. Ein Stück Allgäu für zu Hause – einfach wunderbar!
                 </p>
               </div>
             </article>
@@ -594,7 +584,7 @@
                     class="font-semibold text-wm-black hover:underline"
                     aria-label="Profil von User anzeigen"
                   >
-                    Max H., Stuttgart
+                    Jonas H., Ulm
                   </a>
                   <time
                     datetime="2024-11-27"
@@ -611,12 +601,11 @@
                   <span>★★★★☆</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Der $PRODUKT ist wirklich ein hochwertiger Käse. Der würzige
-                  Geschmack und die goldgelbe Rinde zeigen die Sorgfalt bei der
-                  Herstellung. Für die Käseplatte meiner letzten Party war er
-                  der Star! Der Preis ist etwas höher als bei anderen Sorten,
-                  aber die Qualität rechtfertigt das. Ich empfehle ihn für alle,
-                  die echten Käsegenuss suchen.
+                  Ein absoluter Genuss! Der Blütenhonig überzeugt durch seine
+                  feine Süße und das authentische Aroma der Alpenflora. Ich
+                  benutze ihn nicht nur fürs Frühstücksbrot, sondern auch zum
+                  Süßen von Desserts. Man schmeckt die Qualität und die Sorgfalt
+                  bei der Herstellung. Werde ihn auf jeden Fall wieder kaufen!
                 </p>
               </div>
             </article>

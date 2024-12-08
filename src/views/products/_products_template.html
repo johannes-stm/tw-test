@@ -257,7 +257,7 @@
               >
                 <p
                   class="text-xl font-semibold text-wm-black"
-                  aria-label="Preis: 6,90 Euro für 200 Gramm"
+                  aria-label="Preis: $PRODUKTPREIS"
                 >
                   $PRODUKTPREIS
                 </p>
@@ -462,12 +462,10 @@
             <h2 class="text-xl font-semibold text-wm-darkgray mb-4">
               Herkunftsregion
             </h2>
-            <a href="#">
-              <p aria-label="Standort des Verkäufers: $VERKÄUFERSTANDORT">
-                $VERKÄUFERSTANDORT
-              </p>
-            </a>
-            <a href="#">
+            <p aria-label="Standort des Verkäufers: $VERKÄUFERSTANDORT">
+              $VERKÄUFERSTANDORT
+            </p>
+            <a href="/src/views/regions/$VERKÄUFERREGIONSEITE">
               <p
                 class="text-wm-lightgray"
                 aria-label="Region: $VERKÄUFERREGION - $VERKÄUFERBL"
@@ -516,7 +514,7 @@
               <p>4.5 von 5 Sternen</p>
             </div>
           </aside>
-          
+
           <!-- Right column -->
           <section
             class="bg-white py-4 lg:w-3/4 space-y-8"
