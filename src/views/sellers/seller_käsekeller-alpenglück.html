@@ -214,7 +214,7 @@
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="/src/views/products/seller_käsekeller-alpenglück.html"
+                  href="/src/views/sellers/seller_käsekeller-alpenglück.html"
                   class="underline hover:no-underline"
                   aria-label="Käsekeller Alpenglück öffnen"
                   >Käsekeller Alpenglück</a
@@ -230,20 +230,22 @@
     <section aria-label="Verkäuferprofil Abschnitt" class="bg-wm-beige">
       <div class="container mx-auto py-10">
         <!-- Flex Wrapper -->
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between flex-col md:flex-row">
           <!-- Left Section -->
-          <div class="flex items-center space-x-6">
+          <div
+            class="flex items-center justify-center md:justify-start space-x-6 flex-col md:flex-row"
+          >
             <!-- Logo -->
             <div class="flex-shrink-0">
               <img
                 src="/public/images/sellers/käsekeller-alpenglück.webp"
                 alt="Shop Logo"
-                class="h-20 w-20 rounded-full border-2 border-wm-brown"
+                class="h-20 w-20 rounded-full border-2 border-wm-brown mb-2 md:mb-0"
               />
             </div>
             <!-- Shop Details -->
-            <div>
-              <h1 class="text-2xl font-semibold text-wm-black">
+            <div class="flex md:flex-none flex-col items-center md:items-start">
+              <h1 class="text-xl lg:text-2xl font-semibold text-wm-black">
                 Käsekeller Alpenglück - Oberstdorf
               </h1>
               <p class="text-wm-darkgray">
@@ -258,11 +260,13 @@
           </div>
 
           <!-- Right Section -->
-          <div class="flex space-x-4">
+          <div
+            class="flex space-x-0 md:space-x-4 flex-col md:flex-ro items-center justify-center"
+          >
             <!-- Follow Button -->
             <a href="/src/views/login.html">
               <button
-                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105"
+                class="box-border transform rounded-full border-2 border-wm-black bg-wm-beige px-4 py-1.5 uppercase text-wm-black transition duration-200 hover:scale-105 my-3"
                 aria-label="Shop folgen"
               >
                 ❤️ Shop folgen
@@ -359,88 +363,20 @@
             <!-- Single product cards -->
             <article
               class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
+              aria-label="Produktkarte: Allgäuer Bergkäse"
             >
               <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
+                href="/src/views/products/products_allgäuer-bergkäse.html"
+                aria-label="Allgäuer Bergkäse Details"
               >
                 <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
+                  src="/public/images/products/allgäuer-bergkäse.webp"
+                  alt="Bild von Allgäuer Bergkäse"
                   class="h-48 w-full object-cover"
                 />
                 <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
+                  <h3 class="text-lg font-semibold">Allgäuer Bergkäse</h3>
+                  <p class="mt-2 font-bold">ab 6,99€</p>
                 </div>
               </a>
             </article>
@@ -466,7 +402,7 @@
             <a href="#">
               <p aria-label="Standort des Verkäufers: Oberstdorf">Oberstdorf</p>
             </a>
-            <a href="#">
+            <a href="/src/views/regions/regions_oberallgäu.html">
               <p
                 class="text-wm-lightgray"
                 aria-label="Region: Oberallgäu - Bayern"
@@ -543,7 +479,7 @@
                     class="font-semibold text-wm-black hover:underline"
                     aria-label="Profil von User anzeigen"
                   >
-                    Oma O., Heidenheim
+                    Lena M., Augsburg
                   </a>
                   <time
                     datetime="2024-11-27"
@@ -560,13 +496,12 @@
                   <span>★★★★★</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Ich bin begeistert vom $PRODUKT! Sein intensives Aroma und die
-                  cremig-würzige Textur sind einfach himmlisch. Besonders die
-                  lange Reifung macht ihn zu etwas ganz Besonderem. Egal ob zu
-                  einem Glas Rotwein oder auf einem frischen Brot – dieser Käse
-                  ist immer ein Highlight. Für 6,90 € pro 200 g ein absolut
-                  fairer Preis für diese Spitzenqualität. Ich werde ihn
-                  definitiv wieder kaufen!
+                  Der Allgäuer Bergkäse hat mich voll und ganz überzeugt. Die
+                  12-monatige Reifung merkt man sofort – der Käse ist angenehm
+                  würzig, ohne zu aufdringlich zu sein, und hat eine wunderbar
+                  cremige Textur. Perfekt mit einem Glas Rotwein und ein Muss
+                  auf jeder Käseplatte. Der Preis ist absolut gerechtfertigt für
+                  diese Qualität. Ich werde definitiv wieder bestellen!
                 </p>
               </div>
             </article>
@@ -593,7 +528,7 @@
                     class="font-semibold text-wm-black hover:underline"
                     aria-label="Profil von User anzeigen"
                   >
-                    Max H., Stuttgart
+                    Thomas K., Freiburg
                   </a>
                   <time
                     datetime="2024-11-27"
@@ -610,12 +545,12 @@
                   <span>★★★★☆</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Der $PRODUKT ist wirklich ein hochwertiger Käse. Der würzige
-                  Geschmack und die goldgelbe Rinde zeigen die Sorgfalt bei der
-                  Herstellung. Für die Käseplatte meiner letzten Party war er
-                  der Star! Der Preis ist etwas höher als bei anderen Sorten,
-                  aber die Qualität rechtfertigt das. Ich empfehle ihn für alle,
-                  die echten Käsegenuss suchen.
+                  Ich bin begeistert von diesem Allgäuer Bergkäse. Schon der
+                  Duft ist herrlich aromatisch, und der Geschmack ist ein Traum
+                  – kräftig und ausgewogen. Besonders gut passt er zu frischem
+                  Bauernbrot. Man schmeckt die Tradition und die Qualität der
+                  Herstellung. Für alle, die echten Käsegenuss suchen, eine
+                  klare Empfehlung!
                 </p>
               </div>
             </article>
@@ -626,7 +561,7 @@
       <!-- Info text from seller -->
       <article
         id="info"
-        class="container lg:px-0 mx-auto scroll-mt-20"
+        class="container lg:px-0 mx-auto mb-8 scroll-mt-20"
         aria-label="Verkäufer-Info"
       >
         <div class="flex flex-col lg:flex-row">
@@ -648,17 +583,14 @@
               Reifung von erstklassigem Allgäuer Bergkäse. Die Käselaibe werden
               ausschließlich aus frischer Alpenmilch hergestellt, die von
               glücklichen Kühen stammt, die auf den saftigen Bergwiesen grasen.
+            </p>
+            <p>
               In ihrem eigenen Reifekeller in Oberstdorf sorgt die Familie mit
               viel Geduld und handwerklichem Können für den unvergleichlich
               würzigen Geschmack und die perfekte Konsistenz ihrer Käse. Neben
               dem Klassiker – dem mindestens 12 Monate gereiften Allgäuer
               Bergkäse – bietet der Käsekeller Alpenglück auch besondere
               Variationen an, etwa mit Kräutern oder geräuchert.
-            </p>
-            <p>
-              „Echte Handwerkskunst, die nach Heimat schmeckt.“ Dieser Verkäufer
-              bringt die Allgäuer Käsetradition mit Leidenschaft und Qualität in
-              jeden Haushalt – ob vor Ort oder deutschlandweit!
             </p>
           </section>
         </div>
@@ -726,11 +658,11 @@
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
-              href="/src/views/products/products_template.html"
+              href="/src/views/products/products_historischer-senf.html"
               aria-label="Historischer Senf Details"
             >
               <img
-                src="/public/images/products/senf/product_senf.jpg"
+                src="/public/images/products/historischer-senf.webp"
                 alt="Bild von Historischem Senf"
                 class="h-48 w-full object-cover"
               />
@@ -738,73 +670,73 @@
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
                 <p>Senfmühle Köln / Cochem</p>
                 <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                <p class="mt-2 font-bold">ab 4,99€</p>
+                <p class="mt-2 font-bold">ab 3,99€</p>
               </div>
             </a>
           </article>
 
           <article
             class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-            aria-label="Produktkarte: Historischer Senf"
+            aria-label="Produktkarte: Allgäuer Bergkäse"
           >
             <a
-              href="/src/views/products/products_template.html"
-              aria-label="Historischer Senf Details"
+              href="/src/views/products/products_allgäuer-bergkäse.html"
+              aria-label="Allgäuer Bergkäse Details"
             >
               <img
-                src="/public/images/products/senf/product_senf.jpg"
-                alt="Bild von Historischem Senf"
+                src="/public/images/products/allgäuer-bergkäse.webp"
+                alt="Bild von Allgäuer Bergkäse"
                 class="h-48 w-full object-cover"
               />
               <div class="p-4">
-                <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                <p>Senfmühle Köln / Cochem</p>
-                <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                <p class="mt-2 font-bold">ab 4,99€</p>
+                <h3 class="text-lg font-semibold">Allgäuer Bergkäse</h3>
+                <p>Käsekeller Alpenglück</p>
+                <p class="text-wm-lightgray">Bayern</p>
+                <p class="mt-2 font-bold">ab 6,99€</p>
               </div>
             </a>
           </article>
 
           <article
             class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-            aria-label="Produktkarte: Historischer Senf"
+            aria-label="Produktkarte: Kirschwasser"
           >
             <a
-              href="/src/views/products/products_template.html"
-              aria-label="Historischer Senf Details"
+              href="/src/views/products/products_kirschwasser.html"
+              aria-label="Kirschwasser Details"
             >
               <img
-                src="/public/images/products/senf/product_senf.jpg"
-                alt="Bild von Historischem Senf"
+                src="/public/images/products/kirschwasser.webp"
+                alt="Bild von Kirschwasser"
                 class="h-48 w-full object-cover"
               />
               <div class="p-4">
-                <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                <p>Senfmühle Köln / Cochem</p>
-                <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                <p class="mt-2 font-bold">ab 4,99€</p>
+                <h3 class="text-lg font-semibold">Kirschwasser</h3>
+                <p>Schwarzwald Destillerie</p>
+                <p class="text-wm-lightgray">Baden-Württemberg</p>
+                <p class="mt-2 font-bold">ab 19,90€</p>
               </div>
             </a>
           </article>
 
           <article
             class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-            aria-label="Produktkarte: Historischer Senf"
+            aria-label="Produktkarte: Schwarzwälder Honig"
           >
             <a
-              href="/src/views/products/products_template.html"
-              aria-label="Historischer Senf Details"
+              href="/src/views/products/products_schwarzwälder-honig.html"
+              aria-label="Schwarzwälder Honig Details"
             >
               <img
-                src="/public/images/products/senf/product_senf.jpg"
-                alt="Bild von Historischem Senf"
+                src="/public/images/products/schwarzwälder-honig.webp"
+                alt="Bild von Schwarzwälder Honig"
                 class="h-48 w-full object-cover"
               />
               <div class="p-4">
-                <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                <p>Senfmühle Köln / Cochem</p>
-                <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                <p class="mt-2 font-bold">ab 4,99€</p>
+                <h3 class="text-lg font-semibold">Schwarzwälder Honig</h3>
+                <p>Imkerei Schwarzwaldgold</p>
+                <p class="text-wm-lightgray">Baden-Württemberg</p>
+                <p class="mt-2 font-bold">ab 8,90€</p>
               </div>
             </a>
           </article>

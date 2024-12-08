@@ -296,22 +296,66 @@
         <!-- Single product cards -->
         <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-          aria-label="Produktkarte: Historischer Senf"
+          aria-label="Produktkarte: Kirschwasser"
         >
           <a
-            href="/src/views/products/products_template.html"
-            aria-label="Historischer Senf Details"
+            href="/src/views/products/products_kirschwasser.html"
+            aria-label="Kirschwasser Details"
           >
             <img
-              src="/public/images/products/senf/product_senf.jpg"
-              alt="Bild von Historischem Senf"
+              src="/public/images/products/kirschwasser.webp"
+              alt="Bild von Kirschwasser"
               class="h-48 w-full object-cover"
             />
             <div class="p-4">
-              <h3 class="text-lg font-semibold">Historischer Senf</h3>
-              <p>Senfmühle Köln / Cochem</p>
-              <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-              <p class="mt-2 font-bold">ab 4,99€</p>
+              <h3 class="text-lg font-semibold">Kirschwasser</h3>
+              <p>Schwarzwald Destillerie</p>
+              <p class="text-wm-lightgray">Baden-Württemberg</p>
+              <p class="mt-2 font-bold">ab 19,90€</p>
+            </div>
+          </a>
+        </article>
+
+        <article
+          class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Schwarzwälder Honig"
+        >
+          <a
+            href="/src/views/products/products_schwarzwälder-honig.html"
+            aria-label="Schwarzwälder Honig Details"
+          >
+            <img
+              src="/public/images/products/schwarzwälder-honig.webp"
+              alt="Bild von Schwarzwälder Honig"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Schwarzwälder Honig</h3>
+              <p>Imkerei Schwarzwaldgold</p>
+              <p class="text-wm-lightgray">Baden-Württemberg</p>
+              <p class="mt-2 font-bold">ab 8,90€</p>
+            </div>
+          </a>
+        </article>
+
+        <article
+          class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Schwarzwälder Schinken"
+        >
+          <a
+            href="/src/views/products/products_schwarzwälder-schinken.html"
+            aria-label="Schwarzwälder Schinken Details"
+          >
+            <img
+              src="/public/images/products/schwarzwälder-schinken.webp"
+              alt="Bild von Schwarzwälder Schinken"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Schwarzwälder Schinken</h3>
+              <p>Schinkenmanuf. Schwarzwaldgenuss</p>
+              <p class="text-wm-lightgray">Baden-Württemberg</p>
+              <p class="mt-2 font-bold">ab 12,90€</p>
             </div>
           </a>
         </article>
@@ -338,16 +382,16 @@
         class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
         aria-label="Liste der Verkäufer aus der Region"
       >
-        <!-- Seller card 1 -->
+        <!-- Seller card -->
         <article
           class="flex transform items-center overflow-hidden rounded-lg bg-white p-4 shadow transition duration-200 hover:scale-103"
-          aria-label="Verkäuferkarte Bernd Müller"
+          aria-label="Verkäuferkarte Schinkenmanufaktur Schwarzwaldgenuss"
         >
           <!-- Seller profile image -->
           <figure class="flex-shrink-0">
             <img
-              src="../../public/images/sellers/pp_template.png"
-              alt="Profilbild von Bernd Müller"
+              src="/public/images/sellers/schinkenmanufaktur-schwarzwaldgenuss.webp"
+              alt="Profilbild von Schinkenmanufaktur Schwarzwaldgenuss"
               class="h-20 w-20 rounded-full border-2 border-wm-brown"
             />
           </figure>
@@ -355,17 +399,94 @@
           <div class="ml-4">
             <h3
               class="text-lg font-bold text-gray-800"
-              aria-label="Name des Verkäufers Bernd Müller"
+              aria-label="Name des Verkäufers Schinkenmanufaktur Schwarzwaldgenuss"
             >
-              Bernd Müller
+              Schinkenm. Schwarzwaldgenuss
             </h3>
-            <p class="text-gray-600" aria-label="Standort Senfmühle Köln">
-              Senfmühle Köln
+            <p
+              class="text-gray-600"
+              aria-label="Standort Schinkenmanufaktur Schwarzwaldgenuss"
+            >
+              Oberstdorf
             </p>
             <a
-              href="seller.html"
+              href="/src/views/sellers/seller_schinkenmanufaktur-schwarzwaldgenuss.html"
               class="mt-2 inline-block text-wm-brown hover:underline"
-              aria-label="Link zum Verkäuferprofil von Bernd Müller"
+              aria-label="Link zum Verkäuferprofil von Schinkenmanufaktur Schwarzwaldgenuss"
+            >
+              Verkäuferprofil ansehen
+            </a>
+          </div>
+        </article>
+
+        <!-- Seller card -->
+        <article
+          class="flex transform items-center overflow-hidden rounded-lg bg-white p-4 shadow transition duration-200 hover:scale-103"
+          aria-label="Verkäuferkarte Schwarzwald Destillerie"
+        >
+          <!-- Seller profile image -->
+          <figure class="flex-shrink-0">
+            <img
+              src="/public/images/sellers/schwarzwald-destillerie.webp"
+              alt="Profilbild von Schwarzwald Destillerie"
+              class="h-20 w-20 rounded-full border-2 border-wm-brown"
+            />
+          </figure>
+          <!-- Seller details -->
+          <div class="ml-4">
+            <h3
+              class="text-lg font-bold text-gray-800"
+              aria-label="Name des Verkäufers Schwarzwald Destillerie"
+            >
+              Schwarzwald Destillerie
+            </h3>
+            <p
+              class="text-gray-600"
+              aria-label="Standort Schwarzwald Destillerie"
+            >
+              Oberstdorf
+            </p>
+            <a
+              href="/src/views/sellers/seller_schwarzwald-destillerie.html"
+              class="mt-2 inline-block text-wm-brown hover:underline"
+              aria-label="Link zum Verkäuferprofil von Schwarzwald Destillerie"
+            >
+              Verkäuferprofil ansehen
+            </a>
+          </div>
+        </article>
+
+        <!-- Seller card -->
+        <article
+          class="flex transform items-center overflow-hidden rounded-lg bg-white p-4 shadow transition duration-200 hover:scale-103"
+          aria-label="Verkäuferkarte Imkerei Schwarzwaldgold"
+        >
+          <!-- Seller profile image -->
+          <figure class="flex-shrink-0">
+            <img
+              src="/public/images/sellers/imkerei-schwarzwaldgold.webp"
+              alt="Profilbild von Imkerei Schwarzwaldgold"
+              class="h-20 w-20 rounded-full border-2 border-wm-brown"
+            />
+          </figure>
+          <!-- Seller details -->
+          <div class="ml-4">
+            <h3
+              class="text-lg font-bold text-gray-800"
+              aria-label="Name des Verkäufers Imkerei Schwarzwaldgold"
+            >
+              Imkerei Schwarzwaldgold
+            </h3>
+            <p
+              class="text-gray-600"
+              aria-label="Standort Imkerei Schwarzwaldgold"
+            >
+              Oberstdorf
+            </p>
+            <a
+              href="/src/views/sellers/seller_imkerei-schwarzwaldgold.html"
+              class="mt-2 inline-block text-wm-brown hover:underline"
+              aria-label="Link zum Verkäuferprofil von Imkerei Schwarzwaldgold"
             >
               Verkäuferprofil ansehen
             </a>

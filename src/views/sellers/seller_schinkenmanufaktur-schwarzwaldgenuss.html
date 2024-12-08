@@ -22,7 +22,7 @@
     <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon" />
 
     <!-- Titel -->
-    <title>Einzigware - $VERKÄUFER</title>
+    <title>Einzigware - Schinkenmanufaktur Schwarzwald</title>
 
     <!-- Open Graph für Social Media -->
     <meta
@@ -205,19 +205,19 @@
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="/src/views/regions/$REGIONSSEITE"
+                  href="/src/views/regions/regions_schwarzwald.html"
                   class="underline hover:no-underline"
-                  aria-label="$REGION öffnen"
-                  >$REGION</a
+                  aria-label="Schwarzwald öffnen"
+                  >Schwarzwald</a
                 >
               </li>
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="/src/views/products/$VERKÄUFERSEITE"
+                  href="/src/views/sellers/seller_schinkenmanufaktur-schwarzwaldgenuss.html"
                   class="underline hover:no-underline"
-                  aria-label="$VERKÄUFER öffnen"
-                  >$VERKÄUFER</a
+                  aria-label="Schinkenmanufaktur Schwarzwald öffnen"
+                  >Schinkenmanufaktur Schwarzwald</a
                 >
               </li>
             </ul>
@@ -232,11 +232,13 @@
         <!-- Flex Wrapper -->
         <div class="flex items-center justify-between flex-col md:flex-row">
           <!-- Left Section -->
-          <div class="flex items-center justify-center md:justify-start space-x-6 flex-col md:flex-row">
+          <div
+            class="flex items-center justify-center md:justify-start space-x-6 flex-col md:flex-row"
+          >
             <!-- Logo -->
             <div class="flex-shrink-0">
               <img
-                src="/public/images/sellers/$VERKÄUFERBILD"
+                src="/public/images/sellers/schinkenmanufaktur-schwarzwaldgenuss.webp"
                 alt="Shop Logo"
                 class="h-20 w-20 rounded-full border-2 border-wm-brown mb-2 md:mb-0"
               />
@@ -244,19 +246,21 @@
             <!-- Shop Details -->
             <div class="flex md:flex-none flex-col items-center md:items-start">
               <h1 class="text-xl lg:text-2xl font-semibold text-wm-black">
-                $VERKÄUFER - $VERKÄUFERSTANDORT
+                Schinkenmanufaktur Schwarzwald - Triberg
               </h1>
-              <p class="text-wm-darkgray">$VERKÄUFERBESCHREIBUNG</p>
-              <p class="text-wm-lightgray">$VERKÄUFERREGION</p>
+              <p class="text-wm-darkgray">Traditioneller Fleischer</p>
+              <p class="text-wm-lightgray">Schwarzwald</p>
               <div class="mt-2">
                 <span class="font-medium text-wm-black">Verkäufer-Star</span>
-                <span class="text-wm-lightgray"> | 89 Verkäufe</span>
+                <span class="text-wm-lightgray"> | 129 Verkäufe</span>
               </div>
             </div>
           </div>
 
           <!-- Right Section -->
-          <div class="flex space-x-0 md:space-x-4 flex-col md:flex-ro items-center justify-center">
+          <div
+            class="flex space-x-0 md:space-x-4 flex-col md:flex-ro items-center justify-center"
+          >
             <!-- Follow Button -->
             <a href="/src/views/login.html">
               <button
@@ -357,88 +361,20 @@
             <!-- Single product cards -->
             <article
               class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
+              aria-label="Produktkarte: Schwarzwälder Schinken"
             >
               <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
+                href="/src/views/products/products_schwarzwälder-schinken.html"
+                aria-label="Schwarzwälder Schinken Details"
               >
                 <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
+                  src="/public/images/products/schwarzwälder-schinken.webp"
+                  alt="Bild von Schwarzwälder Schinken"
                   class="h-48 w-full object-cover"
                 />
                 <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
-                </div>
-              </a>
-            </article>
-
-            <article
-              class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-              aria-label="Produktkarte: Historischer Senf"
-            >
-              <a
-                href="/src/views/products/products_template.html"
-                aria-label="Historischer Senf Details"
-              >
-                <img
-                  src="/public/images/products/senf/product_senf.jpg"
-                  alt="Bild von Historischem Senf"
-                  class="h-48 w-full object-cover"
-                />
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                  <p>Senfmühle Köln / Cochem</p>
-                  <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                  <p class="mt-2 font-bold">ab 4,99€</p>
+                  <h3 class="text-lg font-semibold">Schwarzwälder Schinken</h3>
+                  <p class="mt-2 font-bold">ab 12,90€</p>
                 </div>
               </a>
             </article>
@@ -462,16 +398,14 @@
               Herkunftsregion
             </h2>
             <a href="#">
-              <p aria-label="Standort des Verkäufers: $VERKÄUFERSTANDORT">
-                $VERKÄUFERSTANDORT
-              </p>
+              <p aria-label="Standort des Verkäufers: Triberg">Triberg</p>
             </a>
-            <a href="$REGIONSSEITE">
+            <a href="/src/views/regions/regions_schwarzwald.html">
               <p
                 class="text-wm-lightgray"
-                aria-label="Region: $VERKÄUFERREGION - $VERKÄUFERBL"
+                aria-label="Region: Schwarzwald - Baden-Württemberg"
               >
-                $VERKÄUFERREGION - $VERKÄUFERBL
+                Schwarzwald - Baden-Württemberg
               </p>
             </a>
           </aside>
@@ -482,7 +416,7 @@
           >
             <div class="flex h-full w-full items-center justify-center">
               <img
-                src="/public/images/regions/$VERKÄUFERSTANDORTBILD"
+                src="/public/images/regions/schwarzwald-triberg.webp"
                 alt="Bild der Herkunftsregion"
                 class="h-80 w-full rounded-lg border object-cover"
               />
@@ -543,7 +477,7 @@
                     class="font-semibold text-wm-black hover:underline"
                     aria-label="Profil von User anzeigen"
                   >
-                    Oma O., Heidenheim
+                    Felix W., Freiburg
                   </a>
                   <time
                     datetime="2024-11-27"
@@ -560,13 +494,11 @@
                   <span>★★★★★</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Ich bin begeistert vom $PRODUKT! Sein intensives Aroma und die
-                  cremig-würzige Textur sind einfach himmlisch. Besonders die
-                  lange Reifung macht ihn zu etwas ganz Besonderem. Egal ob zu
-                  einem Glas Rotwein oder auf einem frischen Brot – dieser Käse
-                  ist immer ein Highlight. Für 6,90 € pro 200 g ein absolut
-                  fairer Preis für diese Spitzenqualität. Ich werde ihn
-                  definitiv wieder kaufen!
+                  Ich liebe diesen Schwarzwälder Schinken! Die Gewürzmischung
+                  und die lange Reifung in der klaren Schwarzwälder Luft
+                  verleihen ihm einen unvergleichlichen Geschmack. Besonders gut
+                  gefällt mir, dass er so vielseitig ist – ob als Snack oder als
+                  Zutat in der Küche. Ein Genuss, den ich gerne öfter kaufe!
                 </p>
               </div>
             </article>
@@ -593,7 +525,7 @@
                     class="font-semibold text-wm-black hover:underline"
                     aria-label="Profil von User anzeigen"
                   >
-                    Max H., Stuttgart
+                    Katharina S., Heidelberg
                   </a>
                   <time
                     datetime="2024-11-27"
@@ -610,12 +542,12 @@
                   <span>★★★★☆</span>
                 </div>
                 <p class="mt-2 text-wm-black">
-                  Der $PRODUKT ist wirklich ein hochwertiger Käse. Der würzige
-                  Geschmack und die goldgelbe Rinde zeigen die Sorgfalt bei der
-                  Herstellung. Für die Käseplatte meiner letzten Party war er
-                  der Star! Der Preis ist etwas höher als bei anderen Sorten,
-                  aber die Qualität rechtfertigt das. Ich empfehle ihn für alle,
-                  die echten Käsegenuss suchen.
+                  Der Schwarzwälder Schinken ist einfach ein Traum! Die zarte
+                  Textur und der intensive Geschmack sind genau das, was ich von
+                  einem traditionellen Schinken erwarte. Ob auf einem frischen
+                  Brot oder zu besonderen Gerichten, er passt immer perfekt. Man
+                  schmeckt die Qualität und die Sorgfalt bei der Herstellung –
+                  absolut empfehlenswert!
                 </p>
               </div>
             </article>
@@ -626,7 +558,7 @@
       <!-- Info text from seller -->
       <article
         id="info"
-        class="container lg:px-0 mx-auto scroll-mt-20"
+        class="container lg:px-0 mb-8 mx-auto scroll-mt-20"
         aria-label="Verkäufer-Info"
       >
         <div class="flex flex-col lg:flex-row">
@@ -642,17 +574,20 @@
           <!-- Right column -->
           <section class="bg-white py-4 lg:w-3/4" aria-label="Verkäuferdetails">
             <p class="mb-4">
-              Hier findest du lokal produzierten, handgemachten Senf, der mit
-              viel Liebe und Sorgfalt hergestellt wird. Jeder Senf ist ein
-              echtes Unikat, inspiriert von traditionellen Rezepten und
-              verfeinert mit kreativen Aromen. Ob klassisch, fruchtig oder
-              würzig – mein Senf bringt den perfekten Kick in deine Küche.
+              Die Schinkenmanufaktur Schwarzwaldgenuss in Triberg ist ein
+              traditionsreicher Familienbetrieb, der sich auf die Herstellung
+              von Schwarzwälder Schinken spezialisiert hat. Hier wird der
+              Schinken nach altem Handwerk und überlieferter Rezeptur aus
+              hochwertigem Schweinefleisch der Region gefertigt. Das Fleisch
+              wird mit einer einzigartigen Gewürzmischung eingerieben und über
+              Monate in der klaren, kühlen Schwarzwälder Luft gereift, was ihm
+              seinen unverwechselbaren, intensiven Geschmack verleiht.
             </p>
             <p>
-              Nachhaltigkeit und Qualität stehen bei mir an erster Stelle. Alle
-              Zutaten beziehe ich aus der Region, um dir ein authentisches und
-              frisches Geschmackserlebnis zu bieten. Entdecke meinen Senf und
-              bringe neuen Schwung in deine Gerichte! 🥨✨
+              „Schwarzwälder Schinken, der nach Tradition und Heimat schmeckt.“
+              Die Schinkenmanufaktur Schwarzwaldgenuss steht für handwerkliche
+              Qualität, Authentizität und den einzigartigen Geschmack des
+              Schwarzwaldes.
             </p>
           </section>
         </div>
@@ -720,11 +655,11 @@
             aria-label="Produktkarte: Historischer Senf"
           >
             <a
-              href="/src/views/products/products_template.html"
+              href="/src/views/products/products_historischer-senf.html"
               aria-label="Historischer Senf Details"
             >
               <img
-                src="/public/images/products/senf/product_senf.jpg"
+                src="/public/images/products/historischer-senf.webp"
                 alt="Bild von Historischem Senf"
                 class="h-48 w-full object-cover"
               />
@@ -732,73 +667,73 @@
                 <h3 class="text-lg font-semibold">Historischer Senf</h3>
                 <p>Senfmühle Köln / Cochem</p>
                 <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                <p class="mt-2 font-bold">ab 4,99€</p>
+                <p class="mt-2 font-bold">ab 3,99€</p>
               </div>
             </a>
           </article>
 
           <article
             class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-            aria-label="Produktkarte: Historischer Senf"
+            aria-label="Produktkarte: Allgäuer Bergkäse"
           >
             <a
-              href="/src/views/products/products_template.html"
-              aria-label="Historischer Senf Details"
+              href="/src/views/products/products_allgäuer-bergkäse.html"
+              aria-label="Allgäuer Bergkäse Details"
             >
               <img
-                src="/public/images/products/senf/product_senf.jpg"
-                alt="Bild von Historischem Senf"
+                src="/public/images/products/allgäuer-bergkäse.webp"
+                alt="Bild von Allgäuer Bergkäse"
                 class="h-48 w-full object-cover"
               />
               <div class="p-4">
-                <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                <p>Senfmühle Köln / Cochem</p>
-                <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                <p class="mt-2 font-bold">ab 4,99€</p>
+                <h3 class="text-lg font-semibold">Allgäuer Bergkäse</h3>
+                <p>Käsekeller Alpenglück</p>
+                <p class="text-wm-lightgray">Bayern</p>
+                <p class="mt-2 font-bold">ab 6,99€</p>
               </div>
             </a>
           </article>
 
           <article
             class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-            aria-label="Produktkarte: Historischer Senf"
+            aria-label="Produktkarte: Kirschwasser"
           >
             <a
-              href="/src/views/products/products_template.html"
-              aria-label="Historischer Senf Details"
+              href="/src/views/products/products_kirschwasser.html"
+              aria-label="Kirschwasser Details"
             >
               <img
-                src="/public/images/products/senf/product_senf.jpg"
-                alt="Bild von Historischem Senf"
+                src="/public/images/products/kirschwasser.webp"
+                alt="Bild von Kirschwasser"
                 class="h-48 w-full object-cover"
               />
               <div class="p-4">
-                <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                <p>Senfmühle Köln / Cochem</p>
-                <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                <p class="mt-2 font-bold">ab 4,99€</p>
+                <h3 class="text-lg font-semibold">Kirschwasser</h3>
+                <p>Schwarzwald Destillerie</p>
+                <p class="text-wm-lightgray">Baden-Württemberg</p>
+                <p class="mt-2 font-bold">ab 19,90€</p>
               </div>
             </a>
           </article>
 
           <article
             class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-            aria-label="Produktkarte: Historischer Senf"
+            aria-label="Produktkarte: Schwarzwälder Honig"
           >
             <a
-              href="/src/views/products/products_template.html"
-              aria-label="Historischer Senf Details"
+              href="/src/views/products/products_schwarzwälder-honig.html"
+              aria-label="Schwarzwälder Honig Details"
             >
               <img
-                src="/public/images/products/senf/product_senf.jpg"
-                alt="Bild von Historischem Senf"
+                src="/public/images/products/schwarzwälder-honig.webp"
+                alt="Bild von Schwarzwälder Honig"
                 class="h-48 w-full object-cover"
               />
               <div class="p-4">
-                <h3 class="text-lg font-semibold">Historischer Senf</h3>
-                <p>Senfmühle Köln / Cochem</p>
-                <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-                <p class="mt-2 font-bold">ab 4,99€</p>
+                <h3 class="text-lg font-semibold">Schwarzwälder Honig</h3>
+                <p>Imkerei Schwarzwaldgold</p>
+                <p class="text-wm-lightgray">Baden-Württemberg</p>
+                <p class="mt-2 font-bold">ab 8,90€</p>
               </div>
             </a>
           </article>

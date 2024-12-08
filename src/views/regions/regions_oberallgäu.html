@@ -293,22 +293,66 @@
         <!-- Single product cards -->
         <article
           class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
-          aria-label="Produktkarte: Historischer Senf"
+          aria-label="Produktkarte: Allgäuer Bergkäse"
         >
           <a
-            href="/src/views/products/products_template.html"
-            aria-label="Historischer Senf Details"
+            href="/src/views/products/products_allgäuer-bergkäse.html"
+            aria-label="Allgäuer Bergkäse Details"
           >
             <img
-              src="/public/images/products/senf/product_senf.jpg"
-              alt="Bild von Historischem Senf"
+              src="/public/images/products/allgäuer-bergkäse.webp"
+              alt="Bild von Allgäuer Bergkäse"
               class="h-48 w-full object-cover"
             />
             <div class="p-4">
-              <h3 class="text-lg font-semibold">Historischer Senf</h3>
-              <p>Senfmühle Köln / Cochem</p>
-              <p class="text-wm-lightgray">Nordrhein-Westfahlen</p>
-              <p class="mt-2 font-bold">ab 4,99€</p>
+              <h3 class="text-lg font-semibold">Allgäuer Bergkäse</h3>
+              <p>Käsekeller Alpenglück</p>
+              <p class="text-wm-lightgray">Bayern</p>
+              <p class="mt-2 font-bold">ab 6,99€</p>
+            </div>
+          </a>
+        </article>
+
+        <article
+          class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Hirschsalami"
+        >
+          <a
+            href="/src/views/products/products_hirschsalami.html"
+            aria-label="Hirschsalami Details"
+          >
+            <img
+              src="/public/images/products/hirschsalami.webp"
+              alt="Bild von Hirschsalami"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Hirschsalami</h3>
+              <p>Wildmanufaktur Alpenglück</p>
+              <p class="text-wm-lightgray">Bayern</p>
+              <p class="mt-2 font-bold">ab 8,90€</p>
+            </div>
+          </a>
+        </article>
+
+        <article
+          class="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow transition duration-200 hover:scale-103"
+          aria-label="Produktkarte: Blütenhonig"
+        >
+          <a
+            href="/src/views/products/products_blütenhonig.html"
+            aria-label="Blütenhonig Details"
+          >
+            <img
+              src="/public/images/products/blütenhonig.webp"
+              alt="Bild von Blütenhonig"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Blütenhonig</h3>
+              <p>Imkerei Berggold</p>
+              <p class="text-wm-lightgray">Bayern</p>
+              <p class="mt-2 font-bold">ab 5,90€</p>
             </div>
           </a>
         </article>
@@ -335,16 +379,16 @@
         class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
         aria-label="Liste der Verkäufer aus der Region"
       >
-        <!-- Seller card 1 -->
+        <!-- Seller card -->
         <article
           class="flex transform items-center overflow-hidden rounded-lg bg-white p-4 shadow transition duration-200 hover:scale-103"
-          aria-label="Verkäuferkarte Bernd Müller"
+          aria-label="Verkäuferkarte Käsekeller Alpenglück"
         >
           <!-- Seller profile image -->
           <figure class="flex-shrink-0">
             <img
-              src="../../public/images/sellers/pp_template.png"
-              alt="Profilbild von Bernd Müller"
+              src="/public/images/sellers/käsekeller-alpenglück.webp"
+              alt="Profilbild von Käsekeller Alpenglück"
               class="h-20 w-20 rounded-full border-2 border-wm-brown"
             />
           </figure>
@@ -352,17 +396,94 @@
           <div class="ml-4">
             <h3
               class="text-lg font-bold text-gray-800"
-              aria-label="Name des Verkäufers Bernd Müller"
+              aria-label="Name des Verkäufers Käsekeller Alpenglück"
             >
-              Bernd Müller
+              Käsekeller Alpenglück
             </h3>
-            <p class="text-gray-600" aria-label="Standort Senfmühle Köln">
-              Senfmühle Köln
+            <p
+              class="text-gray-600"
+              aria-label="Standort Käsekeller Alpenglück"
+            >
+              Oberstdorf
             </p>
             <a
-              href="seller.html"
+              href="/src/views/sellers/seller_käsekeller-alpenglück.html"
               class="mt-2 inline-block text-wm-brown hover:underline"
-              aria-label="Link zum Verkäuferprofil von Bernd Müller"
+              aria-label="Link zum Verkäuferprofil von Käsekeller Alpenglück"
+            >
+              Verkäuferprofil ansehen
+            </a>
+          </div>
+        </article>
+
+        <!-- Seller card -->
+        <article
+          class="flex transform items-center overflow-hidden rounded-lg bg-white p-4 shadow transition duration-200 hover:scale-103"
+          aria-label="Verkäuferkarte Wildmanufaktur Alpenglück"
+        >
+          <!-- Seller profile image -->
+          <figure class="flex-shrink-0">
+            <img
+              src="/public/images/sellers/wildmanufaktur-alpenblick.webp"
+              alt="Profilbild von Wildmanufaktur Alpenglück"
+              class="h-20 w-20 rounded-full border-2 border-wm-brown"
+            />
+          </figure>
+          <!-- Seller details -->
+          <div class="ml-4">
+            <h3
+              class="text-lg font-bold text-gray-800"
+              aria-label="Name des Verkäufers Wildmanufaktur Alpenglück"
+            >
+              Wildmanufaktur Alpenglück
+            </h3>
+            <p
+              class="text-gray-600"
+              aria-label="Standort Wildmanufaktur Alpenglück"
+            >
+              Bad Hindelang
+            </p>
+            <a
+              href="/src/views/sellers/seller_wildmanufaktur-alpenglück.html"
+              class="mt-2 inline-block text-wm-brown hover:underline"
+              aria-label="Link zum Verkäuferprofil von Wildmanufaktur Alpenglück"
+            >
+              Verkäuferprofil ansehen
+            </a>
+          </div>
+        </article>
+
+        <!-- Seller card -->
+        <article
+          class="flex transform items-center overflow-hidden rounded-lg bg-white p-4 shadow transition duration-200 hover:scale-103"
+          aria-label="Verkäuferkarte Imkerei Berggold"
+        >
+          <!-- Seller profile image -->
+          <figure class="flex-shrink-0">
+            <img
+              src="/public/images/sellers/imkerei-berggold.webp"
+              alt="Profilbild von Imkerei Berggold"
+              class="h-20 w-20 rounded-full border-2 border-wm-brown"
+            />
+          </figure>
+          <!-- Seller details -->
+          <div class="ml-4">
+            <h3
+              class="text-lg font-bold text-gray-800"
+              aria-label="Name des Verkäufers Imkerei Berggold"
+            >
+              Imkerei Berggold
+            </h3>
+            <p
+              class="text-gray-600"
+              aria-label="Standort Imkerei Berggold"
+            >
+              Oberallgäu
+            </p>
+            <a
+              href="/src/views/sellers/seller_imkerei-berggold.html"
+              class="mt-2 inline-block text-wm-brown hover:underline"
+              aria-label="Link zum Verkäuferprofil von Imkerei Berggold"
             >
               Verkäuferprofil ansehen
             </a>
