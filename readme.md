@@ -15,8 +15,10 @@
   - [Technische Besonderheiten](#technische-besonderheiten)
     - [Barrierefreiheit](#barrierefreiheit)
     - [Kommentierung](#kommentierung)
+    - [Versionierter Header und Footer](#versionierter-header-und-footer)
     - [Templates](#templates)
       - [Beispiel: Template für Regionen](#beispiel-template-für-regionen)
+      - [Beispiel: Template für Verkäufer](#beispiel-template-für-verkäufer)
       - [Beispiel: Template für Produkte](#beispiel-template-für-produkte)
   - [Persönliches Learning und Probleme](#persönliches-learning-und-probleme)
     - [Lernerfahrungen](#lernerfahrungen)
@@ -137,11 +139,53 @@ Die Farbpalette und das Design sind sorgfältig aufeinander abgestimmt, um eine 
   ```
 - Dies ermöglicht einen klaren und einheitlichen Stil bei der Dokumentation des Codes.
 
+### Versionierter Header und Footer
+Aufgrund mehrfacher Änderungen wurde eine Versionierung als Kommentar sowohl im Header als auch im Footer eingeführt, um sicherzustellen, dass auf jeder Seite die aktuelle Komponente verwendet wird.
+
+- **Header**
+  ```html
+  <!-- Header v1.5.1 -->
+  <header>
+    ...
+  </header>
+  ```
+- **Footer**
+    ```html
+  <!-- Footer v1.3.1 -->
+  <footer>
+    ...
+  </footer>
+  ```
+
+### Wiederverwendbare Komponenten
+Im Laufe des Entwicklungsprozesses wurden bestimmte Komponenten entwickelt, die entweder unverändert oder angepasst auch auf anderen Unterseiten verwendet wurden. Sie wurden zunächst einmalig erstellt, anschließend an responsive und barrierefreie Anforderungen angepasst und danach auf weiteren Seiten integriert.
+
+Da in diesem Fall nur wenige Änderungen während des Entwicklungsprozesses erforderlich waren, wurde auf eine Versionierung verzichtet.
+
+- **Produkt-Karte**
+  ```html
+  <!-- Recommended Products  -->
+  <section aria-label="Trendprodukte">
+    ...
+  </section>
+  ```
+- **Detail-Abschnitt auf Verkäufer- und Produkt-Seite**
+  ```html
+  <!-- Seller Detail Section -->
+  <section>
+    <!-- Navigation -->
+    <nav>
+    ...
+    </nav>
+  ```
+- **...**
+
 ### Templates
-Templates werden eingesetzt, um wiederverwendbare Layouts und Komponenten zu definieren. Dadurch wird die Entwicklungszeit verkürzt und die Konsistenz der Webseite gewahrt.
+Templates wurden eingesetzt, um die Erstellung von Regionen-, Verkäufer- und Produktseiten zu vereinfachen und dabei die Konsistenz zu gewährleisten. Dieser Ansatz ermöglicht, trotz der technischen Einschränkungen von HTML und CSS, eine dynamische Datenpflege und erleichtert zudem die zukünftige Einführung einer Datenbank, da bereits eine Grundlage geschaffen wurde, auf der aufgebaut werden kann.
+
+Nach der Erstellung der Template-Dateien wurde der Musterinhalt durch vordefinierte Variablen ersetzt. Anschließend konnten die Templates mehrfach dupliziert und mithilfe der Suchen-und-Ersetzen-Funktion von Visual Studio Code die Variablen durch die passenden Inhalte ersetzt werden. Die benötigten Variablen wurden zuvor in einer Excel-Tabelle definiert und mit den entsprechenden Inhalten vorbereitet.
 
 #### Beispiel: Template für Regionen
-Die folgende Tabelle zeigt ein Beispiel-Template für die Darstellung von Regionen:
 
 | Variablen         | regions_schwarzwald.html          |
 |--------------------|-----------------------------------|
@@ -150,8 +194,23 @@ Die folgende Tabelle zeigt ein Beispiel-Template für die Darstellung von Region
 | `$REGIONSBILD`     | schwarzwald_bg.webp              |
 | `$REGIONSSEITE`    | regions_schwarzwald.html         |
 
+#### Beispiel: Template für Verkäufer
+
+| Variablen              | Käsekeller Alpenglück           |
+|------------------------|---------------------------------|
+| `$REGION`              | Oberallgäu                     |
+| `$REGIONSSEITE`        | regions_oberallgäu.html        |
+| `$VERKÄUFER`           | Käsekeller Alpenglück          |
+| `$VERKÄUFERBESCHREIBUNG` | Traditionsreicher Familienbetrieb aus dem Herzen des Allgäus |
+| `$VERKÄUFERBILD`       | käsekeller-alpenglück.webp     |
+| `$VERKÄUFERBL`         | Bayern                         |
+| `$VERKÄUFERREGION`     | Oberallgäu                     |
+| `$VERKÄUFERSEITE`      | seller_käsekeller-alpenglück.html |
+| `$VERKÄUFERSTANDORT`   | Oberstdorf                     |
+| `$VERKÄUFERSTANDORTBILD` | allgäu-oberstdorf.webp       |
+
+
 #### Beispiel: Template für Produkte
-Die folgende Tabelle zeigt ein Beispiel-Template für die Darstellung von Produkten:
 
 | Variablen         | allgäuer-bergkäse                |
 |--------------------|----------------------------------|
@@ -188,4 +247,5 @@ Die folgende Tabelle zeigt ein Beispiel-Template für die Darstellung von Produk
 - **Dark Mode:** Implementierung eines Dunkelmodus zur Verbesserung der Benutzererfahrung.
 - **Benutzerfunktionen:** Erweiterung um Login-, Registrierungs- und Authentifizierungsmechanismen auf Basis einer Datenbank.
 - **Favoritenliste:** Einführung einer Funktion, mit der Benutzer ihre bevorzugten Produkte speichern können.
+- **Erweiterte Bestellfunktion:** Bestellvorgang vollständig abbilden mit Warenkorb, Lieferadresse, Zahlungsmethoden und E-Mail-Bestellbestätigung
 ---
