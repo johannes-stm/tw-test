@@ -7,6 +7,7 @@
     - [Ziele:](#ziele)
   - [Systemkonfiguration](#systemkonfiguration)
     - [Entwicklungsumgebung:](#entwicklungsumgebung)
+    - [Tailwind CLI](#tailwind-cli)
     - [Hosting-Umgebung:](#hosting-umgebung)
   - [Datei- und Ordnerstruktur](#datei--und-ordnerstruktur)
   - [Styling und Design](#styling-und-design)
@@ -45,6 +46,19 @@ Das Projekt wurde auf folgenden Systemen entwickelt und gehostet:
 - **Entwicklungstools**: 
   - Visual Studio Code
   - Tailwind CLI für CSS-Generierung
+
+### Tailwind CLI
+Tailwind wurde zur Generierung des CSS mithilfe des folgenden Codes verwendet:
+- **input.css für Klassen-Import**
+  ```bash
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  ```
+- **Kompilierung mithilfe npx-Befehl**
+  ```bash
+  npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch --content "./src/**/*.html,index.html"
+  ```
 
 ### Hosting-Umgebung:
 - **Server**: 
