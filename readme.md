@@ -4,7 +4,7 @@
 - [Technische Dokumentation: Einzigware Projekt](#technische-dokumentation-einzigware-projekt)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Projektübersicht](#projektübersicht)
-    - [Ziele:](#ziele)
+    - [Zielsetzung](#zielsetzung)
   - [Systemkonfiguration](#systemkonfiguration)
     - [Entwicklungsumgebung:](#entwicklungsumgebung)
     - [Tailwind CLI](#tailwind-cli)
@@ -12,7 +12,8 @@
   - [Datei- und Ordnerstruktur](#datei--und-ordnerstruktur)
   - [Styling und Design](#styling-und-design)
     - [Farbdefinitionen](#farbdefinitionen)
-    - [Design Details](#design-details)
+    - [Responsive Design](#responsive-design)
+    - [Schriftarten](#schriftarten)
   - [Technische Besonderheiten](#technische-besonderheiten)
     - [Barrierefreiheit](#barrierefreiheit)
     - [Kommentierung](#kommentierung)
@@ -31,7 +32,7 @@
 ## Projektübersicht
 Das **Einzigware Projekt** ist eine dynamische, barrierefreie Webseite, die die Anforderungen des HTML-Projekts erfüllt und dabei den aktuellen Standards der Webentwicklung entspricht. Sie wurde für eine deutschsprachige Zielgruppe entwickelt.
 
-### Ziele:
+### Zielsetzung
 - **Barrierefreiheit**: Umsetzung von WCAG 2.2 Standards.
 - **Performance**: Optimierte Ladezeiten durch effizientes CSS und Bildkomprimierung.
 - **Skalierbarkeit**: Möglichkeit zur einfachen Erweiterung mit neuen Seiten und Funktionen.
@@ -125,10 +126,50 @@ Die Farbpalette und das Design sind sorgfältig aufeinander abgestimmt, um eine 
 - **wm-lightgray**: `#4b5563`
 - **wm-darkgray**: `#1f2937`
 
-### Design Details
-- **Framework**: Es wird **Tailwind CSS** genutzt, um eine flexible und modulare Gestaltung der Oberfläche zu ermöglichen.
-- **Farbpalette**: Die oben definierte Farbpalette gewährleistet ein harmonisches Erscheinungsbild, das an den Corporate Identity angepasst ist.
-- **Responsive Design**: Media Queries kommen zum Einsatz, um sicherzustellen, dass das Layout auf allen Gerätetypen – insbesondere auf Mobilgeräten – optimal dargestellt wird.
+### Responsive Design
+Media Queries werden verwendet, um sicherzustellen, dass das Layout auf allen Gerätetypen – insbesondere auf Mobilgeräten – optimal dargestellt wird. Dies wird mithilfe von Tailwind-Klassen umgesetzt, die intern auf Media Queries verweisen und eine responsive Gestaltung ermöglichen.
+
+```html
+<div class="p-4">
+  <!-- Container mit unterschiedlichen Layouts für verschiedene Bildschirmgrößen -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- Element 1 -->
+    <div class="bg-wm-beige p-4 rounded shadow">
+      Inhalt 1
+    </div>
+    <!-- Element 2 -->
+    <div class="bg-wm-beige p-4 rounded shadow">
+      Inhalt 2
+    </div>
+    <!-- Element 3 -->
+    <div class="bg-wm-beige p-4 rounded shadow">
+      Inhalt 3
+    </div>
+  </div>
+</div>
+```
+
+**Erklärung der Tailwind-Klassen**
+- **`grid grid-cols-1`**: Definiert ein Spalten-Layout mit einer Spalte (Standard für kleine Geräte).
+- **`md:grid-cols-2`**: Ab mittlerer Bildschirmgröße (Media Query für `min-width: 768px`) werden zwei Spalten verwendet.
+- **`lg:grid-cols-3`**: Ab großer Bildschirmgröße (Media Query für `min-width: 1026px`) wird das Layout auf drei Spalten erweitert.
+
+### Schriftarten
+Auf der Website kommen abwechselnd Serifenschriften und serifenlose Schriftarten zum Einsatz. Titel werden meist in Serifenschrift hervorgehoben, während informative Texte in der Standardschrift des Betriebssystems dargestellt werden. Diese Entscheidung wurde getroffen, da Serifenschriften häufig mit Nostalgie und Heimat assoziiert werden, was die Botschaft der Website unterstützt. Um eine unleserliche Darstellung von Serifenschriften auf Mobilgeräten zu vermeiden, wird mit Tailwind-Klassen gearbeitet, die die Schriftgröße der Elemente responsiv skalieren.
+
+```html
+<div class="p-4">
+  <!-- Titel mit Serifenschrift -->
+  <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif">
+    Willkommen in der Heimat
+  </h1>
+  
+  <!-- Informative Texte mit Standardschrift -->
+  <p class="mt-4 text-base md:text-lg lg:text-xl font-sans">
+    Produktbeschreibung, Herkunftsregion, Bewertungen, AGB, ...
+  </p>
+</div>
+```
 
 ---
 
@@ -195,7 +236,7 @@ Im Laufe des Entwicklungsprozesses wurden bestimmte Komponenten entwickelt, die 
 
 Da in diesem Fall nur wenige Änderungen während des Entwicklungsprozesses erforderlich waren, wurde auf eine Versionierung verzichtet.
 
-- **Produkt-Karte:**
+- **Produkt-Karten:**
   ```html
   <!-- Recommended Products  -->
   <section aria-label="Trendprodukte">
