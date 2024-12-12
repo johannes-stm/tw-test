@@ -16,6 +16,7 @@
     - [Barrierefreiheit](#barrierefreiheit)
     - [Kommentierung](#kommentierung)
     - [Versionierter Header und Footer](#versionierter-header-und-footer)
+    - [Wiederverwendbare Komponenten](#wiederverwendbare-komponenten)
     - [Templates](#templates)
       - [Beispiel: Template für Regionen](#beispiel-template-für-regionen)
       - [Beispiel: Template für Verkäufer](#beispiel-template-für-verkäufer)
@@ -130,10 +131,11 @@ Die Farbpalette und das Design sind sorgfältig aufeinander abgestimmt, um eine 
     <h1>Willkommen bei Einzigware</h1>
   </header>
   ```
+- **Prüfung über externe Anwendungen**: Zur Prüfung der Barrierefreiheit wurden Tools wie Accessibility Checker sowie die Browser-Erweiterung WAVE (Web Accessibility Evaluation Tool) eingesetzt. Identifiziertes Verbesserungspotenzial wurde anschließend bearbeitet.
 - Diese Maßnahmen stellen sicher, dass auch Nutzer von Screenreadern oder anderer assistiver Technologie problemlos navigieren können.
 
 ### Kommentierung
-- **Mehrsprachige Unterstützung:** HTML-Kommentare wurden bewusst auf Englisch verfasst, um die Zusammenarbeit mit internationalen Entwicklern zu erleichtern. Beispiel:
+- **Mehrsprachige Unterstützung:** HTML-Kommentare wurden bewusst auf Englisch verfasst, um die Zusammenarbeit mit internationalen Entwicklern (im Sinne der fiktiven Firma) zu erleichtern. Beispiel:
   ```html
   <!-- Main navigation bar starts here -->
   ```
@@ -142,14 +144,14 @@ Die Farbpalette und das Design sind sorgfältig aufeinander abgestimmt, um eine 
 ### Versionierter Header und Footer
 Aufgrund mehrfacher Änderungen wurde eine Versionierung als Kommentar sowohl im Header als auch im Footer eingeführt, um sicherzustellen, dass auf jeder Seite die aktuelle Komponente verwendet wird.
 
-- **Header**
+- **Header:**
   ```html
   <!-- Header v1.5.1 -->
   <header>
     ...
   </header>
   ```
-- **Footer**
+- **Footer:**
     ```html
   <!-- Footer v1.3.1 -->
   <footer>
@@ -157,19 +159,36 @@ Aufgrund mehrfacher Änderungen wurde eine Versionierung als Kommentar sowohl im
   </footer>
   ```
 
+### Mobiles Menü (Hamburger)  
+Für eine responsive Nutzung wurde ein mobiles Menü entwickelt, das sich auf kleineren Bildschirmgrößen zu einem sogenannten "Hamburger" Symbol reduziert. Beim Öffnen des Menüs wird zu einer separaten, für mobile Nutzung optimierten Seite navigiert.  
+
+Diese Lösung weist jedoch Verbesserungspotenzial auf: Beim Schließen des mobilen Menüs über das "X" wird derzeit die Startseite (Index) erneut aufgerufen, anstatt zur zuletzt besuchten Seite zurückzukehren. Zukünftig kann dieses Verhalten durch die Implementierung einer passenden JavaScript-Funktion, wie z. B. *document.referrer*, optimiert werden.  
+
+**Verweis im Header auf Mobiles Menü:**
+  ```html
+  <!-- Utility Links and Mobile Menu -->
+  <div class="flex items-center gap-4">
+    <!-- Mobile Menu Icon -->
+    <div
+      class="flex lg:hidden"
+      onclick="location.href='/src/views/mobile-menu.html'"
+      aria-label="Mobile Navigation öffnen"
+    >
+  ```
+  
 ### Wiederverwendbare Komponenten
 Im Laufe des Entwicklungsprozesses wurden bestimmte Komponenten entwickelt, die entweder unverändert oder angepasst auch auf anderen Unterseiten verwendet wurden. Sie wurden zunächst einmalig erstellt, anschließend an responsive und barrierefreie Anforderungen angepasst und danach auf weiteren Seiten integriert.
 
 Da in diesem Fall nur wenige Änderungen während des Entwicklungsprozesses erforderlich waren, wurde auf eine Versionierung verzichtet.
 
-- **Produkt-Karte**
+- **Produkt-Karte:**
   ```html
   <!-- Recommended Products  -->
   <section aria-label="Trendprodukte">
     ...
   </section>
   ```
-- **Detail-Abschnitt auf Verkäufer- und Produkt-Seite**
+- **Detail-Abschnitt auf Verkäufer- und Produkt-Seite:**
   ```html
   <!-- Seller Detail Section -->
   <section>
@@ -187,7 +206,7 @@ Nach der Erstellung der Template-Dateien wurde der Musterinhalt durch vordefinie
 
 #### Beispiel: Template für Regionen
 
-| Variablen         | regions_schwarzwald.html          |
+| Variablen         | Schwarzwald        |
 |--------------------|-----------------------------------|
 | `$REGION`          | Schwarzwald                      |
 | `$REGIONBL`        | Baden-Württemberg                |
@@ -212,7 +231,7 @@ Nach der Erstellung der Template-Dateien wurde der Musterinhalt durch vordefinie
 
 #### Beispiel: Template für Produkte
 
-| Variablen         | allgäuer-bergkäse                |
+| Variablen         | Allgäuer Bergkäse                |
 |--------------------|----------------------------------|
 | `$PRODUKT`         | Allgäuer Bergkäse               |
 | `$PRODUKTBILD`     | allgäuer-bergkäse.webp          |
