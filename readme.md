@@ -6,14 +6,14 @@
   - [Projektübersicht](#projektübersicht)
     - [Zielsetzung](#zielsetzung)
   - [Systemkonfiguration](#systemkonfiguration)
-    - [Entwicklungsumgebung:](#entwicklungsumgebung)
+    - [Entwicklungsumgebung](#entwicklungsumgebung)
     - [Tailwind CLI](#tailwind-cli)
-    - [Hosting-Umgebung:](#hosting-umgebung)
+    - [Hosting-Umgebung](#hosting-umgebung)
   - [Datei- und Ordnerstruktur](#datei--und-ordnerstruktur)
   - [Styling und Design](#styling-und-design)
-    - [Farbdefinitionen](#farbdefinitionen)
     - [Responsive Design](#responsive-design)
     - [Schriftarten](#schriftarten)
+    - [Farbdefinitionen](#farbdefinitionen)
   - [Technische Besonderheiten](#technische-besonderheiten)
     - [Barrierefreiheit](#barrierefreiheit)
     - [Kommentierung](#kommentierung)
@@ -42,7 +42,7 @@ Das **Einzigware Projekt** ist eine dynamische, barrierefreie Webseite, die die 
 ## Systemkonfiguration
 Das Projekt wurde auf folgenden Systemen entwickelt und gehostet:
 
-### Entwicklungsumgebung:
+### Entwicklungsumgebung
 - **Betriebssystem**: Windows 11
 - **Entwicklungstools**: 
   - Visual Studio Code
@@ -61,7 +61,7 @@ Tailwind wurde zur Generierung des CSS mithilfe des folgenden Codes verwendet:
   npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch --content "./src/**/*.html,index.html"
   ```
 
-### Hosting-Umgebung:
+### Hosting-Umgebung
 - **Server**: 
   - Standard-Linux-Server der DHBW Heidenheim
   - Betriebssystem Linux (Ubuntu 22.04)
@@ -115,17 +115,6 @@ Einzigware/
 
 ## Styling und Design
 
-Die Farbpalette und das Design sind sorgfältig aufeinander abgestimmt, um eine konsistente und ansprechende Benutzeroberfläche zu gewährleisten.
-
-### Farbdefinitionen
-- **wm-black**: `#201e1e`
-- **wm-brown**: `#b07141`
-- **wm-beige**: `#f7ede2`
-- **wm-darkbrown**: `#50211d`
-- **wm-blue**: `#00CED1`
-- **wm-lightgray**: `#4b5563`
-- **wm-darkgray**: `#1f2937`
-
 ### Responsive Design
 Media Queries werden verwendet, um sicherzustellen, dass das Layout auf allen Gerätetypen – insbesondere auf Mobilgeräten – optimal dargestellt wird. Dies wird mithilfe von Tailwind-Klassen umgesetzt, die intern auf Media Queries verweisen und eine responsive Gestaltung ermöglichen.
 
@@ -170,6 +159,18 @@ Auf der Website kommen abwechselnd Serifenschriften und serifenlose Schriftarten
   </p>
 </div>
 ```
+
+### Farbdefinitionen
+
+Die Farbpalette und das Design sind sorgfältig aufeinander abgestimmt, um eine konsistente und ansprechende Benutzeroberfläche zu gewährleisten.
+
+- **wm-black**: `#201e1e`
+- **wm-brown**: `#b07141`
+- **wm-beige**: `#f7ede2`
+- **wm-darkbrown**: `#50211d`
+- **wm-blue**: `#00CED1`
+- **wm-lightgray**: `#4b5563`
+- **wm-darkgray**: `#1f2937`
 
 ---
 
