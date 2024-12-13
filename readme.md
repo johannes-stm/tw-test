@@ -56,6 +56,18 @@ Tailwind wurde zur Generierung des CSS mithilfe des folgenden Codes verwendet:
   @tailwind components;
   @tailwind utilities;
   ```
+- **Weitere CSS-Klassen für Import ergänzt**
+  ```bash
+  ...
+  .container {
+  width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  }
+  ...
+  ``` 
 - **Kompilierung mithilfe npx-Befehl**
   ```bash
   npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch --content "./src/**/*.html,index.html"
@@ -262,45 +274,45 @@ Nach der Erstellung der Template-Dateien wurde der Musterinhalt durch vordefinie
 
 #### Beispiel: Template für Regionen
 
-| Variablen         | Schwarzwald        |
-|--------------------|-----------------------------------|
-| `$REGION`          | Schwarzwald                      |
-| `$REGIONBL`        | Baden-Württemberg                |
-| `$REGIONSBILD`     | schwarzwald_bg.webp              |
-| `$REGIONSSEITE`    | regions_schwarzwald.html         |
+| Variablen       | Schwarzwald              |
+| --------------- | ------------------------ |
+| `$REGION`       | Schwarzwald              |
+| `$REGIONBL`     | Baden-Württemberg        |
+| `$REGIONSBILD`  | schwarzwald_bg.webp      |
+| `$REGIONSSEITE` | regions_schwarzwald.html |
 
 #### Beispiel: Template für Verkäufer
 
-| Variablen              | Käsekeller Alpenglück           |
-|------------------------|---------------------------------|
-| `$REGION`              | Oberallgäu                     |
-| `$REGIONSSEITE`        | regions_oberallgäu.html        |
-| `$VERKÄUFER`           | Käsekeller Alpenglück          |
+| Variablen                | Käsekeller Alpenglück                                        |
+| ------------------------ | ------------------------------------------------------------ |
+| `$REGION`                | Oberallgäu                                                   |
+| `$REGIONSSEITE`          | regions_oberallgäu.html                                      |
+| `$VERKÄUFER`             | Käsekeller Alpenglück                                        |
 | `$VERKÄUFERBESCHREIBUNG` | Traditionsreicher Familienbetrieb aus dem Herzen des Allgäus |
-| `$VERKÄUFERBILD`       | käsekeller-alpenglück.webp     |
-| `$VERKÄUFERBL`         | Bayern                         |
-| `$VERKÄUFERREGION`     | Oberallgäu                     |
-| `$VERKÄUFERSEITE`      | seller_käsekeller-alpenglück.html |
-| `$VERKÄUFERSTANDORT`   | Oberstdorf                     |
-| `$VERKÄUFERSTANDORTBILD` | allgäu-oberstdorf.webp       |
+| `$VERKÄUFERBILD`         | käsekeller-alpenglück.webp                                   |
+| `$VERKÄUFERBL`           | Bayern                                                       |
+| `$VERKÄUFERREGION`       | Oberallgäu                                                   |
+| `$VERKÄUFERSEITE`        | seller_käsekeller-alpenglück.html                            |
+| `$VERKÄUFERSTANDORT`     | Oberstdorf                                                   |
+| `$VERKÄUFERSTANDORTBILD` | allgäu-oberstdorf.webp                                       |
 
 
 #### Beispiel: Template für Produkte
 
-| Variablen         | Allgäuer Bergkäse                |
-|--------------------|----------------------------------|
-| `$PRODUKT`         | Allgäuer Bergkäse               |
-| `$PRODUKTBILD`     | allgäuer-bergkäse.webp          |
-| `$PRODUKTPREIS`    | 6,99 € / 200 g                  |
-| `$PRODUKTSEITE`    | products_allgäuer-bergkäse.html |
-| `$VERKÄUFER`       | Käsekeller Alpenglück           |
-| `$VERKÄUFERBILD`   | käsekeller-alpenglück.webp      |
-| `$VERKÄUFERBL`     | Bayern                          |
-| `$VERKÄUFERREGION` | Oberallgäu                      |
-| `$VERKÄUFERREGIONSEITE` | regions_oberallgäu.html   |
-| `$VERKÄUFERSEITE`  | seller_käsekeller-alpenglück.html |
-| `$VERKÄUFERSTANDORT` | Oberstdorf                   |
-| `$VERKÄUFERSTANDORTBILD` | allgäu-oberstdorf.webp   |
+| Variablen                | Allgäuer Bergkäse                 |
+| ------------------------ | --------------------------------- |
+| `$PRODUKT`               | Allgäuer Bergkäse                 |
+| `$PRODUKTBILD`           | allgäuer-bergkäse.webp            |
+| `$PRODUKTPREIS`          | 6,99 € / 200 g                    |
+| `$PRODUKTSEITE`          | products_allgäuer-bergkäse.html   |
+| `$VERKÄUFER`             | Käsekeller Alpenglück             |
+| `$VERKÄUFERBILD`         | käsekeller-alpenglück.webp        |
+| `$VERKÄUFERBL`           | Bayern                            |
+| `$VERKÄUFERREGION`       | Oberallgäu                        |
+| `$VERKÄUFERREGIONSEITE`  | regions_oberallgäu.html           |
+| `$VERKÄUFERSEITE`        | seller_käsekeller-alpenglück.html |
+| `$VERKÄUFERSTANDORT`     | Oberstdorf                        |
+| `$VERKÄUFERSTANDORTBILD` | allgäu-oberstdorf.webp            |
 
 ---
 

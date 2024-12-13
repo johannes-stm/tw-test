@@ -1,3 +1,102 @@
 @tailwind base;
+
+:root {
+  --wm-black: #201e1e;
+  --wm-brown: #b07141;
+  --wm-beige: #f7ede2;
+  --wm-darkbrown: #50211d;
+  --wm-blue: #00ced1;
+  --wm-lightgray: #4b5563;
+  --wm-darkgray: #1f2937;
+}
+
+.container {
+  width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.scale-103 {
+  transform: scale(1.03);
+}
+
+.hover\:scale-103:hover {
+  transform: scale(1.03);
+}
+
+.text-wm-black {
+  color: var(--wm-black);
+}
+.text-wm-brown {
+  color: var(--wm-brown);
+}
+.text-wm-beige {
+  color: var(--wm-beige);
+}
+.text-wm-darkbrown {
+  color: var(--wm-darkbrown);
+}
+.text-wm-blue {
+  color: var(--wm-blue);
+}
+.text-wm-lightgray {
+  color: var(--wm-lightgray);
+}
+.text-wm-darkgray {
+  color: var(--wm-darkgray);
+}
+
+.bg-wm-black {
+  background-color: var(--wm-black);
+}
+.bg-wm-brown {
+  background-color: var(--wm-brown);
+}
+.bg-wm-beige {
+  background-color: var(--wm-beige);
+}
+.bg-wm-darkbrown {
+  background-color: var(--wm-darkbrown);
+}
+.bg-wm-blue {
+  background-color: var(--wm-blue);
+}
+.bg-wm-lightgray {
+  background-color: var(--wm-lightgray);
+}
+.bg-wm-darkgray {
+  background-color: var(--wm-darkgray);
+}
+
+.hover\:bg-wm-brown:hover {
+  background-color: var(--wm-brown);
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-wm-black {
+  border-color: var(--wm-black);
+}
+
+.border-wm-brown {
+  border-color: var(--wm-brown);
+}
+
+.border-wm-lightgray {
+  border-color: var(--wm-lightgray);
+}
+
+.hover\:border-wm-brown:hover {
+  border-color: var(--wm-brown);
+}
+
 @tailwind components;
 @tailwind utilities;
