@@ -32,6 +32,8 @@
 ## Projektübersicht
 Das **Einzigware Projekt** ist eine dynamische, barrierefreie Webseite, die die Anforderungen des HTML-Projekts erfüllt und dabei den aktuellen Standards der Webentwicklung entspricht. Sie wurde für eine deutschsprachige Zielgruppe entwickelt.
 
+[Einzigware - Regionale Produkte neu entdecken](https://einzigware.projekt.dhbw-heidenheim.de/)
+
 ### Zielsetzung
 - **Barrierefreiheit**: Umsetzung von WCAG 2.2 Standards.
 - **Performance**: Optimierte Ladezeiten durch effizientes CSS und Bildkomprimierung.
